@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="context listings-page-logged-in" data-id="id-1"></div>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">View datasets</li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+<div class="grid-row">
+  <div class="column-two-thirds listings-grid">
+
+    <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Use land or property data</h1>
+
+    <div class="dps-grid">
+      <div class="statement-bar">
+        <h2>You need an account to download this data</h2>
+        <a class="govuk-button" href="sign-in">Sign out</a>
+      </div>
+      <br />
+      <div class="dps-grid-tile">
+        <h3><a href="detailspages-overseas-signed-in">Overseas companies that own property in England and Wales</a></h3>
+        <p>Download data about overseas companies that own land in England and Wales.</p>
+        <div class="state-1">
+          <a href="#" class="download-links" download>Get full file</a>
+          <a href="#" class="download-links" download>Get change only file</a>
+        </div>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="detailspages-uk-signed-in">UK companies that own property in England and Wales</a></h3>
+        <p>Download data about UK companies that own land in England and Wales.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="detailspages-leases-signed-in">Registered leases</a></h3>
+        <p>Download data about leasehold properties in England and Wales.</p>
+      </div>
+
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="dps-grid">
+      <div class="statement-bar">
+        <h2>Free and open datasets</h2>
+      </div>
+      <br />
+    <!--   <p class="info">Some of these dataset are hosted on data.gov.uk. These datasets are free to use. You do not need to create an account to download these datasets.</p>-->
+      <div class="dps-grid-tile">
+        <h3><a href="#">HM Land Registry: 1862 Act Register</a></h3>
+        <p>Download data about overseas companies that own land in England and Wales.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="#">HM Land Registry: Price Paid Data</a></h3>
+        <p>Download data about UK companies that own land in England and Wales.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="#">HM Land Registry: Transaction Data</a></h3>
+        <p>Download data about leasehold properties in England and Wales.</p>
+      </div>
+      <div class="dps-grid-tile">
+        <h3><a href="#">UK House Price Index: reports</a></h3>
+        <p>Download data about leasehold properties in England and Wales.</p>
+      </div>
+      <div class="dps-grid-tile">
+        <h3><a href="#">National Polygon Service</a></h3>
+        <p>Download data about leasehold properties in England and Wales.</p>
+      </div>
+    </div>
+
+</div>
+
+
+
+<div class="column-one-third">
+
+<div class="gem-c-contextual-sidebar">
+
+    <!-- Rendering related navigation sidebar because no browse, no related links, no live taxons -->
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+{% endblock %}

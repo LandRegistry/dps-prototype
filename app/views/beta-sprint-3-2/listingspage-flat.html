@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="context" data-id="id-1"></div>
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign in</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+
+  <div class="govuk-grid-row listingspage listingspage-flat">
+      <h1 class="govuk-heading-xl">
+        Choose a data file
+      </h1>
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds no-padding listings-list-style">
+
+            <ol>
+              <li class="registered-leases">
+                <h2>
+                  <a class="selecteddataset" href="detailspages-dataset-v4">Registered leases</a>
+                </h2>
+                <p>Download data about leasehold properties in England and Wales.</p>
+
+                <p class="non-js"><a href="licence-v2">View licence</a></p>
+
+              </li>
+
+              <li class="overseas">
+                <h2>
+                <a class="selecteddataset" href="detailspages-dataset-overseas">Overseas companies that own property in England and Wales</a>
+                </h2>
+                <p>Download data about overseas companies that own land in England and Wales.</p>
+                  <p class="historic"></p>
+                </li>
+
+                <li class="uk-companies">
+                  <h2>
+                  <a class="selecteddataset" href="">UK companies that own property in England and Wales</a>
+                  </h2>
+                  <p>Download data about UK companies that own land in England and Wales.</p>
+                    <p class="historic"></p>
+                </li>
+            </ol>
+
+        </div>
+
+      </div>
+</div>
+
+{% endblock %}

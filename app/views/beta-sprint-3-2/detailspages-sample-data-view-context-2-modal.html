@@ -1,0 +1,248 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <div class="blue-box">
+
+      <span class="govuk-caption-xl">Example of data</span>
+      <h1 class="govuk-heading-xl">
+        Registered leases
+      </h1>
+
+      <p>Download data about leasehold properties in England and Wales.</p>
+
+      <br>
+      <p>Last updated on the  18 October 2018 (updated monthly).
+        <br>
+      <!-- <span class="govuk-body govuk-!-font-weight-bold"><a href="">Download CSV 15.8KB</a></span> -->
+      <span class="govuk-body govuk-!-font-weight-bold">File size is 15.8KB.</span>
+      </p>
+      <br>
+
+    <div class="state-1" style="margin-bottom: 40px;">
+    <div class="download-wrapper">
+        <a id="myBtn" class="gotostate2 download"><span style="color: black;">Get this data</span></a>
+    </div>
+    </div>
+
+    <div id="myModal" class="modal" style="color: black;">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <h1 class="govuk-heading-xl" style="color: black;">
+          Agree to the data licences
+        </h1>
+
+
+        <p style="color: black;">The file you are about to download includes data owned by:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>HM Land Registry</li>
+          <li>Ordnance Survey’s AddressBase Premium</li>
+          <li>Royal Mail’s PAF® database (address data) </li>
+       </ul>
+
+       <h2 class="govuk-heading-l">How you can use this data</h2>
+
+       <h3 class="govuk-heading-m">If you’re a business </h3>
+
+       <p style="color: black;">You can use this data to: </p>
+       <ul class="govuk-list govuk-list--bullet">
+         <li>prevent and detect crime, including for:</li>
+         <ul class="govuk-list govuk-list--bullet">
+           <li>the apprehension or prosecution of alleged offenders</li>
+           <li>proceedings in a court or tribunal</li>
+           <li>complying with an order, a court or a tribunal</li>
+       </ul>
+         <li>keep records about land and properties</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">If you’re a public body</h3>
+
+      <p style="color: black;">You can use this data if you have a:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="">Public Sector Mapping Agreement Licence</a></li>
+        <li><a href="">One Scotland Mapping Agreement Member Licence</a></li>
+      </ul>
+
+      <p style="color: black;">These licences are issued by Ordnance survey and public bodies must use the data under the terms of these licences.</p>
+
+      <p><a href="">Apply for a licence from Ordnance Survey</a>.</p>
+
+      <h2 class="govuk-heading-l">Not sure if you can use this data?</h2>
+
+      <p style="color: black;">Contact Royal Mail before you use this data. Ask them to confirm that your intended use is permitted under the terms of their licence.</p>
+
+      <p style="color: black;"><a href="">Email Royal Mail</a>.</p>
+
+      <h3 class="govuk-heading-m">Read the full licences </h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="">HM Land Registry’s data</a></li>
+        <li><a href="">Ordnance Survey’s AddressBase Premium licence</a></li>
+        <li><a href="">Royal Mail’s PAF® database licence</a></li>
+      </ul>
+
+      <br>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                I understand and agree to these licences
+              </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <a href="#" role="button" draggable="false" class="govuk-button disabled_btn">
+          Agree and continue
+        </a>
+        <br>
+        <a href="#" class="cancel-this">Cancel</a>
+
+      </div>
+
+    </div>
+      <!-- Start of Modal -->
+      <div class="state-2">
+
+    </div>
+
+      <!-- End of Modal -->
+
+      <div class="state-3">
+
+        <div class="download-wrapper">
+          <p style="color: white;">Download your file</p>
+          <br>
+            <a href="" class="download" download><span style="color: black;">Download full file</span></a>
+            <a href="" class="download" download><span style="color: black;">Download change only</span></a>
+        </div>
+        <br><br>
+        <a href="#" class="cancel-this">Cancel</a>
+      </div><!--end of state 3 -->
+
+      <p>This data set is <a href="" style="color: white;">free and licenced</a>.</p>
+
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+        <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.<p>
+
+        <br>
+        <table class="govuk-table table-hack">
+          <tbody>
+          <thead>
+          <td><strong>Data</strong></td>
+          <td><strong>What this means</strong></td>
+          <td><strong>Example data</strong></td>
+          </thead>
+          <tr>
+          <td>Property description</td>
+          <td>Description of the leased land, for example an address</td>
+          <td>1 Smith Street&nbsp;</td>
+          </tr>
+          <tr>
+          <td>Region and county</td>
+          <td>Location of the leasehold property</td>
+          <td>Region</td>
+          </tr>
+          <tr>
+          <td>Unique property reference number (UPRN)</td>
+          <td>
+          <p>Number used by HM Land Registry to identify the property location.</p>
+          <p>Similar to postcode, but more specific</p>
+          </td>
+          <td>abc00000003</td>
+          </tr>
+          <tr>
+          <td>Unique identifier</td>
+          <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
+          <td>123456</td>
+          </tr>
+          <tr>
+          <td>Date of lease</td>
+          <td>When the lease started</td>
+          <td>Date</td>
+          </tr>
+          <tr>
+          <td>Term</td>
+          <td>How long the lease lasts for</td>
+          <td>999 years</td>
+          </tr>
+          <tr>
+          <td>Tenure</td>
+          <td>How the land is owned (type of lease)</td>
+          <td>Leasehold</td>
+          </tr>
+          <tr>
+          <td>Alienation cause indicator</td>
+          <td>
+          <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
+          <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
+          </td>
+          <td>Clause details</td>
+          </tr>
+          <tr>
+          <td>Reg order</td>
+          <td>
+          <p>Some pieces of land have more than 1 lease on them.</p>
+          <p>The reg order shows the order of registration (which lease came first).</p>
+          </td>
+          <td>
+          <p>Lease 1 (DD/MM/YY)</p>
+          <p>Lease 2 (DD/MM/YY)</p>
+          </td>
+          </tr>
+          <tr>
+          <td>Price paid&nbsp;</td>
+          <td>Price paid for the land</td>
+          <td>1000000</td>
+          </tr>
+          </tbody>
+        </table>
+
+        </div>
+        <script>
+        document.body.className += ' ' + 'product-page';
+        </script>
+
+{% endblock %}

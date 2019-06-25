@@ -1,0 +1,297 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full ccod-details-page productpage">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            <a href="https://www.gov.uk/government/organisations/land-registry">HM Land Registry</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            <a href="listingspage-v7">Use land or property data</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="blue-box nps-product">
+        <span class="govuk-caption-xl">Dataset</span>
+        <h1 class="govuk-heading-xl">National Polygon Service</h1>
+        <p class="float_left new-left"><span class="new-free">Paid for</span></p>
+        <p>This data includes polygons, title number, estate interest, date of creation, date of update (where available), UPRN (Unique Property Reference Number – where available) and more.</p>
+        <p>It costs £20,000 a year, plus VAT.</p>
+        <p>Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly), <span class="govuk-body govuk-!-font-weight-bold">ZIP file</span>, containing a <span class="govuk-body govuk-!-font-weight-bold">shape file and CSVs</span>, <span class="govuk-body govuk-!-font-weight-bold">7.4Gb</span>
+        </p>
+        <p></p>
+
+
+                <p class="darker-blue">
+                  <span class="govuk-heading-m">Get this data</span>
+                  Contact HM Land Registry to <a class="white-link-text" href="#purchase-the-data">purchase this data</a>
+                </p>
+
+                <p class="darker-blue">
+                  <span class="govuk-heading-m">Get a sample of this data</span>
+                  <a class="white-link-text" href="start">Create an account</a> or <a class="white-link-text" href="sign-in">sign-in</a> to download sample data
+                </p>
+
+        <br>
+      </div>
+
+      <div class="toc" id="contents">
+        <p>Contents</p>
+        <ul>
+          <li>
+            <a href="#national-polygon-dataset">National Polygon dataset</a>
+          </li>
+          <li>
+            <a href="#title-descriptor-dataset">Title Descriptor dataset</a>
+          </li>
+          <li>
+            <a href="#title-number-and-uprn-look-up-dataset">Title Number and UPRN Look Up dataset</a>
+          </li>
+          <li>
+            <a href="#conditions-of-use">Conditions of use</a>
+          </li>
+          <li>
+            <a href="#set-up-process">Set-up process</a>
+          </li>
+          <li>
+            <a href="#cost">Cost</a>
+          </li>
+          <li>
+            <a href="#purchase-the-data">Purchase the data</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="product-info">
+
+
+
+    <div class="govspeak">
+<p class="govuk-body govuk-!-font-weight-bold">The National Polygon Service contains 3 licensed, chargeable datasets. Each dataset is only available as part of the National Polygon Service.</p>
+
+<h2 id="national-polygon-dataset">National Polygon dataset</h2>
+
+<p>The National Polygon dataset shows the indicative shape and position of each boundary of a registered title for land and/or property in England and Wales. Every title, whether freehold or leasehold, has at least one index polygon.</p>
+
+<p>This dataset contains more than 25 million titles and includes 28 million polygons. HM Land Registry index polygons are mapped against Ordnance Survey’s large scale map (<a rel="external" href="https://www.ordnancesurvey.co.uk/business-and-government/products/mastermap-products.html">MasterMap</a>).</p>
+
+<h3 id="data-provided">Data provided</h3>
+
+<p>The data includes:</p>
+
+<ul>
+<li>shape</li>
+<li>polygon identification</li>
+<li>title number</li>
+<li>date when polygon was created</li>
+<li>update date (date when all or part of the title was last updated)</li>
+<li>version of polygon identification number</li>
+<li>record status (indicates additions, changes and deletions to the records)</li>
+</ul>
+
+<h3 id="download-package">Download package</h3>
+
+<p>This dataset is a complete extract of the current state of the data and contains all of the changes that have occurred during the month. The data is provided as an ESRI shapefile.</p>
+
+<p>The options include:</p>
+
+<ul>
+<li>complete file: download the data at any time during the year</li>
+<li>change only update file: provided on the second working day of each month</li>
+<li>validation file: enables you to verify the information has been downloaded correctly</li>
+</ul>
+
+<div class="call-to-action">
+<p><a href="https://www.gov.uk/government/publications/national-polygon-dataset-specification">Read the full specification for the National Polygon dataset</a></p>
+</div>
+
+<h2 id="title-descriptor-dataset">Title Descriptor dataset</h2>
+
+<p>The Title Descriptor dataset describes the legal interest(s) that have been recorded against freehold and leasehold estates (property and/or land) registered in England and Wales. When an estate is registered it is assigned a unique title number, enabling individual records to be interrogated.</p>
+
+<h3 id="data-provided-1">Data provided</h3>
+
+<p>The data includes:</p>
+
+<ul>
+<li>title number (unique number that identifies the registration)</li>
+<li>estate interest (describes the legal estate or legal interest that has been registered)</li>
+<li>class of title (describes Registrar’s confidence in the ownership of the title at the point of registration)</li>
+<li>registered status (indicates if the title is registered)</li>
+<li>record status (indicates additions, changes and deletions to the records)</li>
+</ul>
+
+<h3 id="download-package-1">Download package</h3>
+
+<p>This dataset is a complete extract of the current state of the data and contains all of the changes that have occurred during the month. The data is provided as a CSV file.</p>
+
+<p>The options include:</p>
+
+<ul>
+<li>complete file: download the data at any time during the year</li>
+<li>change only update file: provided on the second working day of each month</li>
+<li>validation file: enables you to verify the information has been downloaded correctly</li>
+</ul>
+
+<div class="call-to-action">
+<p><a href="https://www.gov.uk/government/publications/title-descriptor-dataset-specification">Read the full specification for the Title Descriptor dataset</a></p>
+</div>
+
+<h2 id="title-number-and-uprn-look-up-dataset">Title Number and <abbr title="Unique Property Reference Number">UPRN</abbr> Look Up dataset</h2>
+
+<p>The Title Number and UPRN Look Up dataset contains HM Land Registry title numbers and associated UPRNs (Unique Property Reference Numbers) for freehold and leasehold property/land registered in England and Wales.</p>
+
+<p><a rel="external" href="http://www.iahub.net/docs/1418748883990.pdf">UPRNs (PDF)</a> are unique twelve digit numbers assigned to every addressable location in the UK. The information is created by GeoPlace, a joint venture between local authorities, who name and number every street and property, and Ordnance Survey. Ordnance Survey’s <a rel="external" href="https://www.ordnancesurvey.co.uk/business-and-government/products/addressbase-products.html">AddressBase</a> links both property and land information to a map whenever possible.</p>
+
+<p>Title numbers and UPRNs can only be linked where a relationship between the title number and AddressBase address has been identified.</p>
+
+<p>UPRNs provide a comprehensive, complete and consistent identifier throughout a property’s life. Cross-referenced with title numbers they enable files to be matched and merged with datasets from different sources to create valuable insight.</p>
+
+<h3 id="data-provided-2">Data provided</h3>
+
+<p>The data includes:</p>
+
+<ul>
+<li>title number (unique number that identifies the registration)</li>
+<li>unique Property Reference Number (identifier of a spatial address)</li>
+</ul>
+
+<h3 id="download-package-2">Download package</h3>
+
+<p>This dataset is a complete extract of the current state of the data. The data is provided as a CSV file.</p>
+
+<p>The options include:</p>
+
+<ul>
+<li>complete file: download the data at any time during the year, complete file will be refreshed monthly</li>
+<li>validation file: enables you to verify the information has been downloaded correctly</li>
+</ul>
+
+<div class="call-to-action">
+<p><a href="https://www.gov.uk/government/publications/title-number-and-uprn-look-up-dataset-specification">Read the full specification for the Title Number and <abbr title="Unique Property Reference Number">UPRN</abbr> Lookup dataset</a></p>
+</div>
+
+<h3 id="download-free-sample-dataset">Download free sample dataset</h3>
+
+<p>The free sample of the National Polygon Service dataset contains a 5km<sup>2</sup> extract of the Bristol area. The data is available up to 5 February 2016. It is intended that the data will be updated annually.</p>
+
+<p>The data includes:</p>
+
+<ul>
+<li>National Polygon dataset</li>
+<li>Title Descriptor dataset</li>
+<li>Title Number and <abbr title="Unique Property Reference Number">UPRN</abbr> Look Up dataset</li>
+</ul>
+
+<p>This data is not released under the <a rel="external" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a>. To download the data, you must provide some information about yourself and accept the <a rel="external" href="https://datasets.landregistry.gov.uk/nps/printable_terms/">terms and conditions</a>.</p>
+
+<p>We collect and hold personal and non-personal information, which may be validated, to identify who has requested the data. For more information about how we handle personal data, see our <a href="https://www.gov.uk/government/organisations/land-registry/about/personal-information-charter">personal information charter</a>.</p>
+
+<div class="call-to-action">
+<p class="govuk-inset-text">To download this sample date, you must <a href="sign-in">sign in</a> or <a href="start">create an account</a></p>
+</div>
+
+<h2 id="conditions-of-use">Conditions of use</h2>
+
+<p>Your use of the National Polygon Service is governed by licence terms and conditions. The annual licence permits you to resell the data to clients for their internal use, whether commercial or non-commercial. Members of Public Sector Mapping Agreement (<abbr title="Public Sector Mapping Agreement">PSMA</abbr>) and/or One Scotland Mapping Agreement (<abbr title="One Scotland Mapping Agreement">OSMA</abbr>) are permitted to use the data for their core business use, under the terms of <abbr title="Public Sector Mapping Agreement">PSMA</abbr>/<abbr title="One Scotland Mapping Agreement">OSMA</abbr>.</p>
+
+<p>The licence does not cover the use of third party rights, as HM Land Registry use Ordnance Survey data in the preparation of the polygons. If you need this, please <a rel="external" href="https://www.ordnancesurvey.co.uk/contact/">contact Ordnance Survey</a> for the relevant licence conditions.</p>
+
+<h2 id="set-up-process">Set-up process</h2>
+
+<p>To access the data you will need to:</p>
+
+<ul>
+<li>
+<a rel="external" href="https://www.ordnancesurvey.co.uk/contact/">contact Ordnance Survey</a> to enter into the relevant licence conditions</li>
+<li>
+<a href="#purchase-the-data">contact our Data Services Team</a> to sign our licence</li>
+<li>pay an upfront data supply charge</li>
+<li>download the CSV data file</li>
+</ul>
+
+<h2 id="cost">Cost</h2>
+
+<p>There is an annual charge of £20,000.</p>
+
+<p>Payment terms of £5,000 plus an administrative fee of £100 every three months are also available.</p>
+
+<p>All prices are subject to VAT.</p>
+
+<h2 id="purchase-the-data">Purchase the data</h2>
+
+<p>For more information, or to purchase the data, please contact us:</p>
+
+<div class="contact postal-address" id="contact_2135">
+<div class="content">
+  <h3>Data Services Team</h3>
+
+  <div class="vcard contact-inner">
+      <p class="adr">
+<span class="fn">HM Land Registry</span><br>
+<span class="street-address">Rosebrae Court
+<br>
+Woodside Ferry Approach</span><br>
+<span class="locality">Birkenhead</span><br>
+<span class="region">Merseyside</span><br>
+<span class="postal-code">CH41 6DU</span>
+</p>
+
+
+      <div class="email-url-number">
+          <p class="email">
+            <span class="type">Email</span>
+            <a class="email" href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk</a>
+          </p>
+          <p class="contact_form_url">
+            <span class="type">Contact form</span>
+            <a href="https://help.landregistry.gov.uk/app/contactus_comm_services/">https://help.landregis...</a>
+          </p>
+          <p class="tel">
+            <span class="type">Telephone</span>
+            0300 006 0478
+          </p>
+      </div>
+
+
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+      </div>
+
+      </div>
+      <div class="base-bar">
+        <div class="base-bar-inset">
+          <a class="app-c-back-to-top dont-print" href="#contents">
+              <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+                <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+              </svg>
+              Contents
+          </a>
+        </div>
+      </div>
+        <script>
+        document.body.className += ' ' + 'product-page';
+        </script>
+
+{% endblock %}

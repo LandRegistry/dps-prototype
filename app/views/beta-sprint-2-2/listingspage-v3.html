@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign in</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+
+  <div class="govuk-grid-row listingspage">
+      <h1 class="govuk-heading-xl">
+        Choose a data file
+      </h1>
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds no-padding listings-list-style">
+
+            <ol>
+
+              <li class="registered-leases">
+                <h2>
+                  <a class="selecteddataset" href="detailspages-dataset-v4">Registered leases</a>
+                </h2>
+                <p>Download data about leasehold properties in England and Wales.</p>
+                <p class="historic"></p>
+              </li>
+
+              <li class="overseas">
+                <h2>
+                <a class="selecteddataset" href="detailspages-dataset-overseas">Overseas companies that own property in England and Wales</a>
+                </h2>
+                <p>Download data about overseas companies that own land in England and Wales.</p>
+                  <p class="historic"></p>
+                </li>
+
+                <li class="uk-companies">
+                  <h2>
+                  <a class="selecteddataset" href="">UK companies that own property in England and Wales</a>
+                  </h2>
+                  <p>Download data about UK companies that own land in England and Wales.</p>
+                    <p class="historic"></p>
+                  </li>
+
+            </ol>
+
+        </div>
+
+      </div>
+</div>
+
+{% endblock %}

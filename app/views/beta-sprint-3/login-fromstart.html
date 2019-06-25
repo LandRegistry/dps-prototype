@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Sign in to your account</li>
+    </ol>
+  </div>
+
+  <div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sign in</h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="post-code">
+            Email
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="post-code" name="post-code" type="text">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="post-code">
+            Password
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="post-code" name="post-code" type="password">
+        </div>
+        <a href="" type="submit" class="govuk-button targetloginpage">
+          Sign in
+        </a>
+        <br>
+        <p class="govuk-body"><a href="reset-password">I forgot my password</a></p>
+
+        <p><a href="createaccount">Create an account</a></p>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+//get currebnt URL
+/*var pathname = window.location.pathname; // Returns path only
+var url      = window.location.href;     // Returns full URL
+var origin   = window.location.origin;   // Returns base URL
+//alert(orgin);/ */
+var referrer =  document.referrer;
+var referrer = referrer.replace("https://land-reg.herokuapp.com/beta-sprint-3/", "");
+//copy and paste below and change tagert to logged in version
+if (referrer == 'detailspages-dataset-overseas') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
+}
+//alert(targetloginpage);
+if (referrer == 'detailspages-dataset-v4') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
+}
+if (referrer == 'detailspages-dataset-v4-logged-in') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
+}
+if (referrer == 'listingspage-v3-loggedin') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
+}
+if (referrer == 'listingspage-v3') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
+}
+if (referrer == 'start-v2') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
+}
+if (referrer == 'detailspages-dataset-overseas') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
+}
+if (referrer == 'listingspage-flat-signed-out') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
+}
+if (referrer == 'create-personal-account/5-confirmation') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
+}
+//
+</script>
+{% endblock %}

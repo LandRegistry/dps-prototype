@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-v4">Registered Leases Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Free and licensed</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <a href="detailspages-dataset-v4-logged-in" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">About this licence</span>Free and licensed
+        </h1>
+
+
+        <h2>Conditions for using the dataset<h2>
+        <p class="govuk-body">The property addresses in the information are processed against Ordnance Survey’s AddressBase Premium product, which incorporates Royal Mail’s PAF® database (address data).</p>
+        <p class="govuk-body">You can use the addresses in the information as long as you agree to the following terms</p>
+
+        <h3>Private sector use:</h3>
+        <p class="govuk-body">For personal and/or non-commercial use.
+          <ul class="govuk-list govuk-list--bullet">
+            <li>The effective management of land and properties, assisting with the maintenance of ownership records, and ensuring that land transactions are promptly and accurately recorded.</li>
+            <li>For the prevention or detection of crime, the apprehension or prosecution of alleged offenders, any proceedings in a court or tribunal or complying with an order or a court or a tribunal.</li>
+          </ul>
+
+
+
+        <h3>Public body use:</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If you hold a Public Sector Mapping Agreement Licence or a One Scotland Mapping Agreement Member Licence issued by Ordnance Survey, your permitted use of the property addresses is in accordance with the terms of that Licence.</li>
+          <li>If you want to use the property addresses contained within the Information in any other way, you must contact Royal Mail. Email <a href="maito:address.management@royalmail.com">address.management@royalmail.com</a></li>
+       </ul>
+
+
+       <div class="govuk-warning-text">
+         <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+         <strong class="govuk-warning-text__text">
+           <span class="govuk-warning-text__assistive">Warning</span>
+           If you use the data in any other way you may be at risk of being fined.
+         </strong>
+       </div>
+
+        <h3>By continuing</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you confirm that you agree to the <a href="free-commercial-licence">licencing agreement</a> for Free and licensed datasets</li>
+          <li>you will have access to all datasets covered by this licence</li>
+        </ul>
+
+        <br>
+
+        <h3 class="govuk-heading-m">Datasets that are free and licensed</h3>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="detailspages-dataset-v4">Registered Leases Data</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Overseas Companies Ownership Data</a>
+          </li>
+        </ul>
+        <h3 class="govuk-heading-m">Other licence types</h3>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="OGL-licence">Open Government Licence</a>
+          </li>
+        </ul>
+
+        <br>
+
+        <a href="listingspage-v3" role="button" class="govuk-button">
+          Find datasets
+        </a>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

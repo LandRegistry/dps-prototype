@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="context" data-id="id-1"></div>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">View datasets</li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds listings-grid">
+<span class="govuk-caption-xl">HM Land Registry</span>
+    <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Use land or property data</h1>
+    <p>HM Land Registry publishes data files about land and property on this page.</p>
+
+    <p>These files show ownership data: </p>
+    <ul>
+      <li>for every address in England and Wales (where available) </li>
+      <li>in tabular (spreadsheet) or shapefile (shapes on a map) formats</li>
+    </ul>
+
+    <p class="in-red"><span class="govuk-!-font-weight-bold">Looking for information about 1 address? </span><br><a href="https://www.gov.uk/search-property-information-land-registry">Search by postcode</a> to find out who owns a property and if there’s a mortgage on it. </p>
+     
+
+    <p>Most of this data is free and open (everyone can use it) but a small number of data files have a stricter licence. This means that you can use the data, but you can only use it in a certain way. If you want to download data with stricter licensing terms, you need to create a free account.</p>
+
+<!--     <p>Data with stricter licences may also have:</p>
+   <ul>
+      <li>conditions of access</li>
+      <li>a fee</li>
+    </ul>
+    <p>You can see the list of data files with a fee (and their costs) on <a href="https://www.gov.uk/guidance/hm-land-registry-registration-services-fees">HM Land Registry’s fees page</a>.</p>-->
+<br /><br /><br />
+
+    <div class="dps-grid">
+      <div class="statement-bar">
+        <h2>You need an account to download this data</h2>
+        <a class="govuk-button" href="sign-in">Sign in</a>
+      </div>
+      <br />
+      <p class="info">
+        You must <a class="govuk-!-font-weight-bold" href="sign-in">sign in</a> or <a class="govuk-!-font-weight-bold" href="start">create an account</a> to download these files.
+        Once you have an account, you can download all licensed data from HM Land Registry. <a class="govuk-!-font-weight-bold" href="why-signup">Why do I need an account?</a></p>
+
+
+      <div class="dps-grid-tile">
+        <h3><a href="detailspages-overseas">Overseas companies that own property in England and Wales</a></h3>
+        <p>Download data about overseas companies that own land in England and Wales.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="detailspages-uk">UK companies that own property in England and Wales</a></h3>
+        <p>Download data about UK companies that own land in England and Wales.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="detailspages-leases">Registered leases</a></h3>
+        <p>Download data about leasehold properties in England and Wales.</p>
+      </div>
+      <p><br />
+      <br />
+      <br><br></p>
+
+      <br />
+    </div>
+    <br />
+
+
+    <div class="dps-grid">
+      <div class="statement-bar">
+        <h2>You can download this data without an account</h2>
+      </div>
+      <br />
+      <!--<p class="info">Some of these dataset are hosted on data.gov.uk. These datasets are free to use. You do not need to create an account to download these datasets.</p>-->
+      <div class="dps-grid-tile">
+        <h3><a href="#">HM Land Registry: 1862 Act Register</a></h3>
+        <p>Download data about overseas companies that own land in England and Wales.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="#">HM Land Registry: Price Paid Data</a></h3>
+        <p>Price Paid Data contains the sale prices of properties in England and Wales submitted to HM Land Registry for registration.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h3><a href="#">HM Land Registry: Transaction Data</a></h3>
+        <p>Our Transaction Data includes information about the number and types of applications we have completed.</p>
+      </div>
+      <div class="dps-grid-tile">
+        <h3><a href="#">UK House Price Index: reports</a></h3>
+        <p>The UK House Price Index (HPI) uses house sales data from HM Land Registry, Registers of Scotland, and Land and Property Services Northern Ireland and is calculated by the Office for National Statistics.</p>
+      </div>
+    <!--  <div class="dps-grid-tile">
+        <h3><a href="#">National Polygon Service</a></h3>
+        <p>Download data about leasehold properties in England and Wales.</p>
+      </div> -->
+    </div>
+
+</div>
+
+
+
+<div class="column-one-third">
+
+<div class="gem-c-contextual-sidebar">
+
+    <!-- Rendering related navigation sidebar because no browse, no related links, no live taxons -->
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+{% endblock %}

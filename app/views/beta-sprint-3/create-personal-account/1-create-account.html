@@ -1,0 +1,106 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="../createaccount" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+      <h1 class="govuk-heading-xl">
+      Your details
+      </h1>
+
+<!--<p>You need to create an account before you download <span class="govuk-!-font-weight-bold">some</span> of the data from this service. You won’t be charged and no payment will be taken. HM Land Registry asks for your debit/credit card details so we can check your identity</p>-->
+
+<form id="createaccount">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-width-three-quarters" for="full-name">
+          Title
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="full-name" name="full-name" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-width-three-quarters" for="full-name">
+          First name
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="full-name" name="full-name" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-width-three-quarters" for="full-name">
+          Last name
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="full-name" name="full-name" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email">
+          Email
+        </label>
+        <span id="email-hint" class="govuk-hint">
+          We will only use this to send you login details for your account.
+        </span>
+        <input class="govuk-input govuk-!-width-three-quarters" id="email" name="email" type="text" aria-describedby="email-hint">
+      </div>
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-width-three-quarters" for="full-name">
+          Phone
+        </label>
+        <span id="telephone-number-hint" class="govuk-hint">
+          For international numbers include the country code
+        </span>
+        <input class="govuk-input govuk-!-width-three-quarters" id="full-name" name="full-name" type="text">
+      </div>
+
+      <br>
+
+      <h3 class="govuk-heading-m">Sign up to give feedback about this service</h3>
+
+      <p>Your views matter.</p>
+
+      <p>HM Land Registry intends to release more of its data.</p>
+
+      <p>Please tell us if you are happy to be involved in research for future product and service developments:</p>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I am happy for HM Land Registry to invite me to take part in research for further products and services
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <p>If you wish to change your mind at any time, you can do is by contacting <a href="">data.services@landregistry.gov.uk</a>.</p>
+
+      <p>HM Land Registry will only use the data supplied by you as part of the research. We will not sell your data to any third party.​</p>
+
+      <p>All data will be anonymised if research results are published. The information will only be retained for the period of the research.</p>
+
+      <p>Please see our <a href="">personal information charter</a>.</p>
+
+      <br />
+
+      <a href="1-create-account-address" role="button" class="govuk-button">
+        Continue
+      </a>
+    </form>
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

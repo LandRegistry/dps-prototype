@@ -1,0 +1,70 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row filter-user-type">
+
+    <div class="govuk-grid-column-two-thirds">
+      <a href="start-v2" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+      <h1 class="govuk-heading-xl">
+        Choose an account
+      </h1>
+
+      <!--<h3 class="govuk-heading-m">How will you use this data?</h3>
+
+      <p>This data is for:</p>-->
+      <div class="govuk-form-group">
+        <form id="user-select">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios">
+
+            <div class="multiple-choice">
+              <div class="govuk-radios__item">
+                <input id="personal" name="what-is-this-data-for" type="radio" value="personal">
+                <label class="govuk-label govuk-radios__label govuk-!-font-size-24 govuk-!-font-weight-bold" for="where-do-you-live-1">
+                  Personal
+                  <!--<p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-regular">I have a personal interest in this data</p>-->
+                </label>
+              </div>
+            </div>
+            <br />
+              <div class="multiple-choice">
+                <div class="govuk-radios__item">
+                  <input id="uk-organisation" name="what-is-this-data-for" type="radio" value="uk-organisation">
+                  <label class="govuk-label govuk-radios__label govuk-!-font-size-24 govuk-!-font-weight-bold" for="where-do-you-live-2">
+                    Professional, working in the UK
+                    <!--<p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-regular">I will use this data for work</p>-->
+                  </label>
+                </div>
+              </div>
+              <br />
+              <div class="multiple-choice">
+                <div class="govuk-radios__item">
+                  <input id="overseas-organisation" name="what-is-this-data-for" type="radio" value="overseas-organisation">
+                  <label class="govuk-label govuk-radios__label govuk-!-font-size-24 govuk-!-font-weight-bold" for="where-do-you-live-3">
+                    Professional, working outside the UK
+                    <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-regular"></p>
+                  </label>
+                </div>
+            </div>
+          </div>
+          </fieldset>
+        </form>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+        <a href="createaccount-yourdetails" role="button" class="govuk-button">
+          Continue
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

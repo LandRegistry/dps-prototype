@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="detailspages-dataset-v4-logged-in" class="govuk-back-link">Back</a>
+<div class="context" data-id="id-1"></div>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Why you need an account</li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+
+
+  <div class="grid-row why-sign-up">
+    <div class="column-two-thirds listings-grid">
+
+      <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Why do I need an account to download HM Land Registry data?</h1>
+
+
+      <p>HM Land Registry asks you to create an account because this data is licensed (you can only use it in a certain way).</p>
+      <p>There are legal consequences for data misuse (using it outside the licence). For example, if you sell this data after downloading it, HM Land Registry can share your account details with Royal Mail and you may be taken to court.</p>
+      <p>The data files for account-holders all have a licence. This means that you can only use this data in a certain way. They may also have:</p>
+      <ul>
+        <li>conditions of access (you need to go through security clearance before you can see the data)</li>
+        <li>a fee  </li>
+      </ul>
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          If you do not use the data according to the licence, you may be taken to court for data misuse.
+        </strong>
+      </div>
+      <p>You do not need to pay anything to open an account and most of this data is also free.</p>
+      <p>Read each data licence to find out how you can use the data. If you are not sure, HM Land Registry recommends that you check with Royal Mail: <a href="mailto:example@royalmail.com">example@royalmail.com</a></p>
+
+
+      <div class="govuk-inset-text">
+        <p><a href="start">Create an account</a> or <a href="sign-in">sign in</a>.</p>
+      </div>
+  </div>
+
+</div>
+
+
+
+{% endblock %}

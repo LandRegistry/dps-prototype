@@ -1,0 +1,70 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v2">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-v2">Registered Leases Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Licence agreement</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Licence agreement</span> Free Commercial
+        </h1>
+
+        <p>[IMPORTANT INFORMATION ABOUT LICENCE - main points about licence]</p>
+
+
+        <p>By continuing</p>
+        <ul>
+          <li>you confirm that you agree to the <a href="">licencing agreement</a> for Free Commercial datasets</li>
+          <li>you will have access to all datasets covered by this licence</li>
+        </ul>
+
+        <br>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                I agree
+              </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <a href="download-file-options-withlicence" role="button" class="govuk-button">
+          Agree and continue
+        </a>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

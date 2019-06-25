@@ -1,0 +1,116 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="login" data-topnav="Community">Logout</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-third">
+          <aside class="app-related-items" role="complementary">
+            <h2 class="govuk-heading-m" id="subsection-title">
+              Your account
+            </h2>
+              <nav role="navigation" aria-labelledby="subsection-title">
+                <ul class="govuk-list govuk-!-font-size-16">
+                 <li>
+                   <a href="">
+                   Manage account details
+                 </a>
+                 </li>
+                 <li>
+                   <a href="">
+                   Manage licences
+                 </a>
+                 </li>
+               </ul>
+               <a href="listingspage-v3-loggedin" role="button" class="govuk-button">
+                 Find datasets
+               </a>
+             </nav>
+           </aside>
+         </div>
+
+         <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Company name</span>
+            John Smith
+          </h1>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half data-vis">
+              <div class="data-vis-element">
+                <h2 class="govuk-heading-l">3</h2>
+                <p>Datasets downloaded</p>
+              </div>
+            </div>
+
+          <div class="govuk-grid-column-one-half data-vis">
+            <div class="data-vis-element">
+            <h2 class="govuk-heading-l">1</h2>
+            <p>Accepted licence</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-grid-row">
+
+          <br>
+
+          <h3 class="govuk-heading-m">Your account activity</h3>
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+              <td class="govuk-table__cell" >Commercial and Corporate
+                <span class="govuk-caption-m">Version 0.0.2</span>
+              </td>
+                <td class="govuk-table__cell">24 October 2018</td>
+                <td class="govuk-table__cell change-answer"><a href="">View download</a></td>
+              </tr>
+            </thead>
+
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Overseas Companies
+                <span class="govuk-caption-m">Version 0.0.2</span>
+              </td>
+                <td class="govuk-table__cell">24 October 2018</td>
+                <td class="govuk-table__cell change-answer"><a href="#">View download</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Free commercial</td>
+                  <td class="govuk-table__cell">24 October 2018</td>
+                  <td class="govuk-table__cell change-answer"><a href="#">View licence</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

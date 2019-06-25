@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Your link has expired</h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="post-code">
+            Email
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="post-code" name="post-code" type="text">
+        </div>
+
+        <a href="confirm-reset-password" type="submit" class="govuk-button">
+          Send link
+        </a>
+
+        
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

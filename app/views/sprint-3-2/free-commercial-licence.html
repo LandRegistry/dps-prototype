@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-v4">Registered Leases Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Free Commercial</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <a href="listingspage-v3" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">About this licence</span>Free Commercial
+        </h1>
+
+
+        <h3 class="govuk-heading-m">What does this licence mean</h3>
+        <p>[ABOUT this dataset]</p>
+        <h3 class="govuk-heading-m">Third Party Intellectual Property rights</h3>
+        <p>Royal Mail and Ordnance Survey, permits your use of Address Data for personal and/or non-commercial. If you want to use the Address Data in any other way, you must contact Royal Mail</p>
+        <h3 class="govuk-heading-m">Datasets with an Open Government Licence</h3>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="detailspages-dataset-v4">Registered Leases Data</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Overseas</a>
+          </li>
+        </ul>
+        <h3 class="govuk-heading-m">Other licence types</h3>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="OGL-licence">Open Government Licence</a>
+          </li>
+        </ul>
+
+        <br>
+
+        <a href="listingspage-v3" role="button" class="govuk-button">
+          Find datasets
+        </a>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

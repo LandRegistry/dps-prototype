@@ -1,0 +1,84 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="dashboard-v6" data-topnav="Get started">Your profile</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-v4-logged-in">Registered Leases Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Licence agreement</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Licence agreement</span> Free Commercial
+        </h1>
+
+        <p>[IMPORTANT INFORMATION ABOUT LICENCE - main points about licence]</p>
+
+        <div class="govuk-inset-text">
+          <p><span class="govuk-body govuk-!-font-weight-bold">Please note:</span> This dataset is also subject to third party Intellectual Property rights </p>
+          <p>Royal Mail and Ordnance Survey permits your use of Address Data for personal and/or non-commercial usage. If you want to use the Address Data in any other way, you must contact Royal Mail.</p>
+        </div>
+
+        <p>By continuing</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you confirm that you agree to the <a href="free-commercial-licence">licencing agreement</a> for Free Commercial datasets</li>
+          <li>you will have access to all datasets covered by this licence</li>
+        </ul>
+
+        <br>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                I agree
+              </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <a href="download-file-options-withlicence" role="button" class="govuk-button">
+          Agree and continue
+        </a>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

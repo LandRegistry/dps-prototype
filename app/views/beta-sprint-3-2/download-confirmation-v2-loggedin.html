@@ -1,0 +1,101 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Sign out</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-l">Download your dataset</h1>
+
+
+            <dl class="app-check-your-answers app-check-your-answers--short">
+                    <div class="app-check-your-answers__contents">
+                      <dd class="app-check-your-answers__answer">
+                      Registered Leases Data - change only file
+                    </dd>
+                      <dd class="app-check-your-answers__answer">
+                        <a href="#">
+                          Change
+                        </a>
+                      </dd>
+                      <dd class="app-check-your-answers__change">
+
+                        <a href="#" download>
+                          Download</span>
+                        </a>
+                      </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                      <dd class="app-check-your-answers__answer">
+                        Technical specification
+                      </dd>
+                      <dd class="app-check-your-answers__answer">
+
+                      </dd>
+                      <dd class="app-check-your-answers__change">
+                        <a href="#" download>
+                          Download
+                        </a>
+                      </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                      <dd class="app-check-your-answers__answer">
+                        Licence
+                      </dd>
+
+                      <dd class="app-check-your-answers__change">
+                        <a href="#" download>
+                          Download
+                        </a>
+                      </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                      <dt class="app-check-your-answers__question">
+                        Contact details
+                      </dt>
+                      <dd class="app-check-your-answers__answer">
+                        07700 900457<br>
+                        sarah.phillips@example.com
+                      </dd>
+                      <dd class="app-check-your-answers__change">
+                        <a href="#">
+                          Change<span class="govuk-visually-hidden"> contact details</span>
+                        </a>
+                      </dd>
+                    </div>
+                  </dl>
+
+
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+
+{% endblock %}

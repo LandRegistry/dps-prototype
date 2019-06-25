@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row filter-user-type">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Create an account
+      </h1>
+
+      <div class="govuk-form-group">
+        <form id="user-select">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="personal" name="personal" type="radio" value="personal">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                  for my own personal use
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="uk-organisation" name="uk-organisation" type="radio" value="uk-organisation">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                  on behalf of a UK organisation
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="overseas-organisation" name="overseas-organisation" type="radio" value="overseas-organisation">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  on behalf of an overseas organisation
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+        <a href="createaccount-yourdetails" role="button" class="govuk-button">
+          Continue
+        </a>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

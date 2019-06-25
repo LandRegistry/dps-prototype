@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="../1-create-account" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+      <h1 class="govuk-heading-xl">
+      Your address
+      </h1>
+
+<!--<p>You need to create an account before you download <span class="govuk-!-font-weight-bold">some</span> of the data from this service. You won’t be charged and no payment will be taken. HM Land Registry asks for your debit/credit card details so we can check your identity</p>-->
+
+    <form id="createaccount">
+
+      <fieldset class="govuk-fieldset">
+
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-line-1">
+            Building and street
+            <span class="govuk-visually-hidden">line 1 of 2</span>
+          </label>
+          <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-line-2">
+            <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+          </label>
+          <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-town">
+            Town or city
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-county">
+            County
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-postcode">
+            Postcode
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+        </div>
+
+      </fieldset>
+
+      <a href="1-2-create-password" role="button" class="govuk-button">
+        Continue
+      </a>
+    </form>
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

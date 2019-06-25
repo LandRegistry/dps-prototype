@@ -1,0 +1,206 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+  <div class="govuk-grid-row listingspage">
+      <h1 class="govuk-heading-xl">
+        Find datasets
+      </h1>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h3>
+                  Filter datasets by:
+                </h3>
+              </legend>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+                  <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                  Free and licenced
+                </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+                  <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+                  All licenses
+                </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+                  <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Open goverment licence
+                </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+                  <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Paid and licenced
+                </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="spacer"></div>
+            <button type="submit" class="govuk-button">
+              Apply filters
+            </button>
+            <div class="spacer"></div>
+            <a href="#">Remove filters</a>
+          </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+
+            <div class="row-data-item">
+              <div class="add-to-download">
+                <div class="plus-icon">+</div>
+                Add to download
+              </div>
+                <h2><a href="#">Dataset Title</a></h2>
+                <table class="govuk-table">
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Licence</th>
+                      <td class="govuk-table__cell"><span class="licence-type">Free Commercial</span></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Price of dataset</th>
+                      <td class="govuk-table__cell ">£</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Last updated</th>
+                      <td class="govuk-table__cell ">11 April 2017</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Size</th>
+                      <td class="govuk-table__cell ">5Gb</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Rows in dataset</th>
+                      <td class="govuk-table__cell ">Approximately 3 and a half million</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                  <p>The dataset comprises a list of all titles owned by companies incorporated in the UK and English and Welsh corporate bodies.</p>
+            </div>
+
+            <div class="row-data-item">
+              <div class="add-to-download">
+                <div class="plus-icon">+</div>
+                Add to download
+              </div>
+                <h2><a href="detailspages-dataset">Registered Leases Data</a></h2>
+                <table class="govuk-table">
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Licence</th>
+                      <td class="govuk-table__cell"><span class="licence-type">Free Commercial</span></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Price of dataset</th>
+                      <td class="govuk-table__cell ">£</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Last updated</th>
+                      <td class="govuk-table__cell ">11 April 2017</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Size</th>
+                      <td class="govuk-table__cell ">5Gb</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Rows in dataset</th>
+                      <td class="govuk-table__cell ">Approximately 3 and a half million</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                  <p>The dataset comprises a list of all titles owned by companies incorporated in the UK and English and Welsh corporate bodies.</p>
+            </div>
+
+            <div class="row-data-item">
+              <div class="add-to-download">
+                <div class="plus-icon">+</div>
+                Add to download
+              </div>
+                <h2><a href="#">Overseas</a></h2>
+                <table class="govuk-table">
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Licence</th>
+                      <td class="govuk-table__cell"><span class="licence-type">Free Commercial</span></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Price of dataset</th>
+                      <td class="govuk-table__cell ">£</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Last updated</th>
+                      <td class="govuk-table__cell ">11 April 2017</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Size</th>
+                      <td class="govuk-table__cell ">5Gb</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Rows in dataset</th>
+                      <td class="govuk-table__cell ">Approximately 3 and a half million</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                  <p>The dataset comprises a list of all titles owned by companies incorporated in the UK and English and Welsh corporate bodies.</p>
+            </div>
+
+
+        </div>
+      </div>
+<div class="fixed-view-downloads">
+  <div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+
+<p>Adding <span></span> to your download.</p>
+<div class="govuk-checkboxes">
+<div class="govuk-checkboxes__item">
+  <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+  <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+  JSON
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+  <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+  <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+  XML
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+  <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+  <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+  CSV
+</label>
+</div>
+</div>
+<a class="govuk-button">Add to download</a>
+</fieldset>
+</div>
+  <div class="inset-text">
+    <a href="downloadpage" role="button" class="govuk-button">
+    View your download
+    </a>
+    <a class="closethis" href="#">Close</a>
+  </div>
+</div>
+</div>
+
+{% endblock %}

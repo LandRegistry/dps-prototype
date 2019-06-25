@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="../createaccount" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <h1 class="govuk-heading-xl">
+       Organisation details
+      </h1>
+
+        <form>
+
+            <div class="govuk-inset-text">
+              <p>This section is about:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>the company or charity you work for​</li>
+                <li>the place where you study or do research</li>
+              </ul>
+            </div>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="name">
+                      Organisation name
+                    </label>
+                    <input class="govuk-input" id="name" name="name" type="text">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="name">
+                      Country of incorporation
+                    </label>
+                    <input class="govuk-input" id="name" name="name" type="text">
+                  </div>
+
+                  <div class="govuk-inset-text">
+                    <p>This is the country where the organisation you work for/study at was registered. You can find out where your organisation is registered on GOV.UK.</p>
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-1">
+                      Building and street
+                      <span class="govuk-visually-hidden">line 1 of 2</span>
+                    </label>
+                    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">
+                      <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-town">
+                      Town or city
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-county">
+                      County
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-postcode">
+                      Postcode
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+                  </div>
+
+                </fieldset>
+
+
+              </div>
+
+              <a href="2-6-createaccount-confirmation" role="button" class="govuk-button">
+                Continue
+              </a>
+
+
+            </form>
+
+          </div>
+        </div>
+
+{% endblock %}

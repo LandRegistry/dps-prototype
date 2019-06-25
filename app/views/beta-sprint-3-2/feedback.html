@@ -1,0 +1,247 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container feedback-page">
+
+
+
+
+    <div id="wrapper">
+        <main id="content" role="main" class="group category-page">
+
+
+
+  <div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item" aria-current="false">
+            <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="false">
+            <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/contact" data-track-options='{"dimension28":"2","dimension29":"Contact"}' class="govuk-breadcrumbs__link" aria-current="false" href="/contact">Contact</a>
+        </li>
+    </ol>
+  </div>
+
+
+
+          <header class="page-header group">
+            <div class="full-width">
+              <h1 class="govuk-heading-xl">Contact HM Land Registry</h1>
+            </div>
+          </header>
+
+          <div class="contact-container full-width group">
+
+  <div class="inner">
+    <form class="contact-form" action="/contact/govuk" accept-charset="UTF-8" method="post">
+  <input name="utf8" type="hidden" value="✓">
+      <p>This form is for issues to do with the HM Land Registry.</p>
+      <p>You can use it to ask a question, report a problem or suggest an improvement to the HM Land Registry team.</p>
+      <p>We can’t reply to you with advice. We don’t have access to information about you held by government departments.</p>
+
+      <fieldset id="location">
+        <legend class="govuk-heading-l">What's it to do with?</legend>
+          <label class="selectable">
+            <input type="radio" name="contact[location]" id="location-all" value="all" checked> The whole site
+          </label>
+
+          <p>
+
+        <label class="selectable">
+          <input type="radio" name="contact[location]" id="location-specific" value="specific"> A specific page
+        </label>
+
+
+          <input type="text" name="contact[link]" id="link" placeholder="Enter URL or name of page" value="" disabled="disabled">
+
+          <label class="selectable">
+            <input type="radio" name="contact[location]" id="location-dataaset" value="dataset"> A dataset
+          </label>
+          </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>What are the details?</legend>
+        <div class="group">
+          <p>For example if you were searching for something, what did you type into the search box?</p>
+
+
+  <div class="gem-c-govspeak govuk-govspeak ">
+
+            <div class="application-notice help-notice">
+              <p class="warning-message">
+                Don’t include personal or financial information, for example your National Insurance number or credit card details.
+              </p>
+            </div>
+
+  </div>
+
+
+          <label for="textdetails" class="visuallyhidden">Detail</label>
+          <textarea name="contact[textdetails]" class="full-size counted" id="textdetails" required aria-required="true"></textarea>
+
+
+          <p id="textdetailscounter" class="hint" aria-live="polite" aria-atomic="false">(Limit is 1200 characters)</p>
+        </div>
+      </fieldset>
+
+      <fieldset id="contact-details">
+        <legend>Do you want a reply?</legend>
+        <p>If you'd like us to get back to you, please leave your details below.</p>
+
+          <p class="group">
+
+          <label for="name">Your name</label>
+          <input name="contact[name]" id="name" type="text" class="full-name" value="">
+        </p>
+
+          <p class="group">
+
+          <label for="email">Your email address</label>
+          <input name="contact[email]" id="email" type="email" class="email" value="">
+          <span class="hint">We'll only use this to reply to your message.</span>
+
+        </p>
+      </fieldset>
+
+      <p class="action group">
+        <button type="submit" class="govuk-button">Send message</button>
+      </p>
+  </form>
+  </div>
+
+          </div>
+        </main>
+
+  <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+    <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+      <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+        <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+        <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+          Maybe
+  </a><br>
+        <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+          Yes <span class="visually-hidden">this page is useful</span>
+  </a><br>
+        <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+          No <span class="visually-hidden">this page is not useful</span>
+  </a><br>
+        <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+          Is there anything wrong with this page?
+  </a>  <br>  </div>
+
+      <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+        Thank you for your feedback
+      </div>
+    </div>
+
+    <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post">
+      <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+      <div class="gem-c-feedback__grid-row">
+        <div class="gem-c-feedback__column-two-thirds">
+          <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+
+          <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+          <h3 class="gem-c-feedback__form-heading">Help us improve HM Land Registry/h3>
+          <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+
+  <div class="govuk-form-group">
+
+  <label for="input-ed55b478" class="gem-c-label govuk-label ">
+    What were you doing?
+  </label>
+
+
+
+
+    <input name="what_doing" class="gem-c-input govuk-input" id="input-ed55b478" type="text" aria-describedby="feedback_explanation">
+  </div>
+
+
+  <div class="govuk-form-group">
+
+  <label for="input-10c462c8" class="gem-c-label govuk-label ">
+    What went wrong?
+  </label>
+
+
+
+
+    <input name="what_wrong" class="gem-c-input govuk-input" id="input-10c462c8" type="text">
+  </div>
+
+
+    <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+        </div>
+      </div>
+    </form>
+
+    <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+      <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+      <div class="gem-c-feedback__grid-row">
+        <div class="gem-c-feedback__column-two-thirds">
+          <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+          <input type="hidden" name="url" value="https://www.gov.uk/contact/govuk">
+          <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+          <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+          <input name="email_survey_signup[survey_source]" type="hidden" value="https://www.gov.uk/contact/govuk">
+          <input name="email_survey_signup[ga_client_id]" type="hidden" value="1627485790.1515403243">
+
+          <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+          <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+
+  <div class="govuk-form-group">
+
+  <label for="input-62f09eba" class="gem-c-label govuk-label ">
+    Email address
+  </label>
+
+
+
+
+    <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-62f09eba" type="email" aria-describedby="survey_explanation">
+  </div>
+
+
+    <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+          <a href="" class="gem-c-feedback__email-link govuk-link" id="take-survey" target="_blank" rel="noopener noreferrer">Don’t have an email address?</a>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+      </div>
+
+
+
+
+
+</div>
+
+<script>
+  document.getElementById('link').value = document.referrer;
+
+</script>
+
+
+{% endblock %}

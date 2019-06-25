@@ -1,0 +1,144 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <div class="blue-box">
+
+      <span class="govuk-caption-xl">Example of data</span>
+      <h1 class="govuk-heading-xl">
+        Registered leases
+      </h1>
+
+      <p>Download data about leasehold properties in England and Wales.</p>
+
+      <br>
+      <p>Last updated on the  18 October 2018 (updated monthly).
+        <br>
+      <!-- <span class="govuk-body govuk-!-font-weight-bold"><a href="">Download CSV 15.8KB</a></span> -->
+      <span class="govuk-body govuk-!-font-weight-bold">File size is 15.8KB.</span>
+      </p>
+      <br>
+      <a href="" class="download" download><span style="color: black;">Download sample data</span></a>
+      <br>
+      <br>
+      <br>
+      <p>This data set is <a href="" style="color: white;">free and licenced</a>.</p>
+
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+        <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.<p>
+
+        <br>
+        <table class="govuk-table table-hack">
+          <tbody>
+          <thead>
+          <td><strong>Data</strong></td>
+          <td><strong>What this means</strong></td>
+          <td><strong>Example data</strong></td>
+          </thead>
+          <tr>
+          <td>Property description</td>
+          <td>Description of the leased land, for example an address</td>
+          <td>1 Smith Street&nbsp;</td>
+          </tr>
+          <tr>
+          <td>Region and county</td>
+          <td>Location of the leasehold property</td>
+          <td>Region</td>
+          </tr>
+          <tr>
+          <td>Unique property reference number (UPRN)</td>
+          <td>
+          <p>Number used by HM Land Registry to identify the property location.</p>
+          <p>Similar to postcode, but more specific</p>
+          </td>
+          <td>abc00000003</td>
+          </tr>
+          <tr>
+          <td>Unique identifier</td>
+          <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
+          <td>123456</td>
+          </tr>
+          <tr>
+          <td>Date of lease</td>
+          <td>When the lease started</td>
+          <td>Date</td>
+          </tr>
+          <tr>
+          <td>Term</td>
+          <td>How long the lease lasts for</td>
+          <td>999 years</td>
+          </tr>
+          <tr>
+          <td>Tenure</td>
+          <td>How the land is owned (type of lease)</td>
+          <td>Leasehold</td>
+          </tr>
+          <tr>
+          <td>Alienation cause indicator</td>
+          <td>
+          <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
+          <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
+          </td>
+          <td>Clause details</td>
+          </tr>
+          <tr>
+          <td>Reg order</td>
+          <td>
+          <p>Some pieces of land have more than 1 lease on them.</p>
+          <p>The reg order shows the order of registration (which lease came first).</p>
+          </td>
+          <td>
+          <p>Lease 1 (DD/MM/YY)</p>
+          <p>Lease 2 (DD/MM/YY)</p>
+          </td>
+          </tr>
+          <tr>
+          <td>Price paid&nbsp;</td>
+          <td>Price paid for the land</td>
+          <td>1000000</td>
+          </tr>
+          </tbody>
+        </table>
+
+        </div>
+        <script>
+        document.body.className += ' ' + 'product-page';
+        </script>
+
+{% endblock %}

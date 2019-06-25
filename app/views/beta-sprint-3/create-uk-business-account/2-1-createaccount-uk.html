@@ -1,0 +1,93 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="../createaccount" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <h1 class="govuk-heading-xl">
+       Your details
+      </h1>
+
+          <form>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                  Title
+                </label>
+              <input class="govuk-input govuk-input--width-10" id="address-line-1" name="address-line-1" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-line-1">
+                First name
+              </label>
+              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-line-1">
+                Last name
+              </label>
+              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-town">
+                Email
+              </label>
+              <input class="govuk-input" id="address-town" name="address-town" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-postcode">
+                Phone
+              </label>
+              <input class="govuk-input govuk-input--width-20" id="address-postcode" name="address-postcode" type="text">
+            </div>
+            <br>
+            <h3 class="govuk-heading-m">Sign up to give feedback about this service</h3>
+
+            <p>Your views matter.</p>
+
+            <p>HM Land Registry intends to release more of its data.</p>
+
+            <p>Please tell us if you are happy to be involved in research for future product and service developments:</p>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                      I am happy for HM Land Registry to invite me to take part in research for further products and services
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <p>If you wish to change your mind at any time, you can do is by contacting <a href="">data.services@landregistry.gov.uk</a>.</p>
+
+            <p>HM Land Registry will only use the data supplied by you as part of the research. We will not sell your data to any third party.​</p>
+
+            <p>All data will be anonymised if research results are published. The information will only be retained for the period of the research.</p>
+
+            <p>Please see our <a href="">personal information charter</a>.</p>
+
+            <br />
+
+                <a href="organisation-details" role="button" class="govuk-button">
+                  Continue
+                </a>
+
+            </form>
+          </div>
+        </div>
+
+{% endblock %}

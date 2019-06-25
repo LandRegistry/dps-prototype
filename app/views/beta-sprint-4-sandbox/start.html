@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="detailspages-dataset-v4-logged-in" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">HM Land Registry data: sign in or create an account</h1>
+
+        <p>It is free to create an account for HM Land Registry’s licensed data and it takes about 5 minutes to apply. Once you have created your account, you can download all of the licensed data files.</p>
+        <p class="govuk-!-font-weight-bold">If you’re using the data for personal use or for a non-UK organisation, you can start downloading data immediately after creating your account.</p>
+        <p>If you are using the data for a UK organisation, HM Land Registry can take up to 2 days to approve your account while we run security checks. In most cases, your account will be approved more quickly.</p>
+
+        <div class="govuk-inset-text">
+          <p>Before you create an account, <a href="data-licences">check the data licences to find out how you can use this data</a>.  </p>
+        </div>
+
+        <a href="createaccount" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+        <h2>Before you start</h3>
+        <h3>Information you need to open an account</h3>
+        <p>To create an account, you’ll need to tell HM Land Registry your name, email, address and phone number. You’ll also need to tell us if you’re a UK resident.</p>
+        <p>If you’re using the data as part of your work for a UK organisation, you’ll also need to include the name, address, type and registration number of the organisation you work for.</p>
+        <p>If you’re working for a non-UK organisation, you’ll need to include the name, address and country of incorporation of the organisation you work for.</p>
+        <h3> Why do I need to open an account?</h3>
+        <p>HM Land Registry asks for this information because these data files have a licence, conditions of access and/or a fee. You must agree to the licence for each data file before you can download it.</p>
+        <h3>Free data and data with an access fee</h3>
+
+        <div class="govuk-inset-text">
+          You do not need to pay anything to open an account and most of the licensed data is also free.
+        </div>
+
+        <p>There are a small number of data files with a fee. You can see the list of the data files with a fee (and their costs) on HM Land Registry’s fees page.</p>
+        <p>The free data files are:</p>
+        <ul>
+          <li>data file 1</li>
+          <li>data file 2</li>
+        </ul>
+        <h3>Consequences of data misuse</h3>
+        <p>Data files with a licence have usage restrictions (you can use the data, but you can only use it in a certain way).</p>
+        <p>HM Land Registry asks you to create an account because of the legal consequences for data misuse. For example, if you sell the data HM Land Registry can share your account details with Royal Mail and you may be taken to court.</p>
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            If you do not use the data according to the licence, you may be taken to court for data misuse.
+          </strong>
+        </div>
+
+        <p>Read each data licence to find out how you can use the data. If you are not sure, HM Land Registry recommends that you check with Royal Mail: <a href="mailto:example@royalmail.com">example@royalmail.com</a></p>
+
+        <h3>How to get this data by visiting your local HM Land Registry office</h3>
+        <p>Start by finding your nearest HM Land Registry Office.</p>
+        <p>When you visit your nearest office, bring:</p>
+        <ul>
+          <li>ID 1</li>
+          <li>ID 2</li>
+        </ul>
+        <p>A member of staff will run security checks on you and share the data you need in a paper format.</p>
+        <h3>How to get this data by post</h3>
+        <p>Print [DO WE HAVE A PAPER APPLICATION FORM?] and fill it out.</p>
+        <p>When you post this form, include:</p>
+        <ul>
+          <li>ID 1</li>
+          <li>ID 2</li>
+        </ul>
+        <p>Post the completed form and copies of your identification to HM Land Registry:</p>
+        <div class="govuk-inset-text">
+          <p>HM Land Registry<br>Citizen Centre<br>PO Box 74<br>Gloucester<br>GL14 9BB</p>
+        </div>
+        <p>If your identification is verified HM Land Registry will post the printed data to you.</p>
+
+        <h3>Help with this form</h3>
+        <p>Need help understanding this data? Contact HM Land Registry:</p>
+        <ul>
+
+
+          <li><p><p>Email: <a href="mailto:support@landregistry.gov.uk">support@landregistry.gov.uk</a></p></li>
+          <li><p><p>Phone: 0300 006 0411</p></li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

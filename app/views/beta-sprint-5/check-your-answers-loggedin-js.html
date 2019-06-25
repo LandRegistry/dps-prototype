@@ -1,0 +1,115 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Sign out</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL-v2">INSPIRE Polygon Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="download-file-options-v2">Download options</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Check your choices</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <a href="download-file-options-v2-loggedin" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+        <h1 class="govuk-heading-xl">
+          Check your choices before downloading
+        </h1>
+<div class="download-otopn-selected">
+        <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Dataset</th>
+                <td class="govuk-table__cell ">Overseas companies that own property in England and Wales</td>
+                <td class="govuk-table__cell "></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Download options</th>
+                <td class="govuk-table__cell">
+                  <ul class="check-your-answers">
+                    {% for option in data['download-option'] %}
+                    <li>
+                      {{ option }}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </td>
+                <td class="govuk-table__cell change-answer"><a href="download-file-options-v2">Change</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">File size</th>
+                <td class="govuk-table__cell ">5GB</td>
+                <td class="govuk-table__cell "></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Licence</th>
+                <td class="govuk-table__cell ">Free and licenced
+
+                </td>
+                <td class="govuk-table__cell change-answer"><a href="OGL-licence">View</a></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <p>Datasets are large files. The length of time it takes to complete a download will vary, depending on your internet connection speed and the size of the datasets you have selected.
+          </p>
+
+</div>
+
+
+        <div class="download-started">
+          <h2 class="hide">Your download has started</h2>
+
+          <h2>What next</h2>
+          <p><a href="listingspage-v3">See more datasets</a></p>
+
+          <h2>Problem with your download</h2>
+          <a href="overseas-companies-that-own-property-in-england-and-wales.zip" download>Download again</a>
+       </div>
+
+       <a href="overseas-companies-that-own-property-in-england-and-wales.zip" role="button" class="govuk-button download-now" download>
+         Download
+       </a>
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

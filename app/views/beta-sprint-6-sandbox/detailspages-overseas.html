@@ -1,0 +1,301 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen product-page">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="sign-in" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <div class="blue-box">
+
+      <span class="govuk-caption-xl">Dataset</span>
+      <h1 class="govuk-heading-xl">
+
+Overseas companies that own property in England and Wales
+      </h1>
+<p class="float_left hidden"><span class="new">Licence agreed</span></p>
+      <p>Download data about overseas companies that own land in England and Wales.</p>
+
+      <p class="govuk-!-font-weight-bold">You need to <a class="white-link-text" href="start">create an account</a> or <a class="white-link-text" href="login-fromstart">sign in</a> to download this dataset.</p>
+
+      <br>
+      <p>Last updated on the  18 October 2018 (updated monthly).
+        <br>
+      <!-- <span class="govuk-body govuk-!-font-weight-bold"><a href="">Download CSV 15.8KB</a></span> -->
+      <span class="govuk-body govuk-!-font-weight-bold">File size is 15.8KB.</span>
+      </p>
+
+      <br>
+      <p>This dataset is <a href="" style="color: white;">free and licenced</a>.</p>
+
+      </div>
+
+      <br>
+      <br><p>Read the technical <a href="">specification for Overseas companies that own property in England and Wales</a>.</p>
+
+      <br>
+
+      <h2 class="govuk-heading-m">Example of data from Overseas companies that own property in England and Wales.<h2>
+      <p>The data shown in this example is not real data. This example is to show what you will see if you download the file. </p>
+
+        <br>
+
+        <table width="619" class="govuk-table table-hack">
+<tbody>
+<tr>
+<td width="133">
+<p><strong>Data</strong></p>
+</td>
+<td width="123">
+<p><strong>What this means</strong></p>
+</td>
+<td width="121">
+<p><strong>Example Data 1</strong></p>
+</td>
+<td width="123">
+<p><strong>Example Data 2</strong></p>
+</td>
+<td width="119">
+<p><strong>Example Data 3</strong></p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Proprietor name</p>
+</td>
+<td width="123">
+<p>Name of overseas company</p>
+</td>
+<td width="121">
+<p>OWNER_28</p>
+</td>
+<td width="123">
+<p>OWNER_1</p>
+</td>
+<td width="119">
+<p>OWNER_29</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Proprietorship Category</p>
+</td>
+<td width="123">
+<p>Type of company</p>
+</td>
+<td width="121">
+<p>Corporate Body</p>
+</td>
+<td width="123">
+<p>Industrial and Provident Society (Corporate Body)</p>
+</td>
+<td width="119">
+<p>Industrial and Provident Society (Company)</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Company registration number</p>
+</td>
+<td width="123">
+<p>Reference number used by Companies house to identify the company</p>
+</td>
+<td width="121">
+<p>FHV347443</p>
+</td>
+<td width="123">
+<p>rrN607820</p>
+</td>
+<td width="119">
+<p>jbP356247</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Property Address</p>
+</td>
+<td width="123">
+<p>Land or property bought by the company</p>
+</td>
+<td width="121">
+<p>Test Address for title 0000002 (AA00 0AA)</p>
+</td>
+<td width="123">
+<p>Test Address for title abc0000006 (A1 0AA)</p>
+</td>
+<td width="119">
+<p>Test Address for title TTN0000009 (PP88 0AA)</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Proprietor&nbsp; address</p>
+</td>
+<td width="123">
+<p>Address of company</p>
+</td>
+<td width="121">
+<p>Test Address for title 0000002 (AA00 0AA)</p>
+</td>
+<td width="123">
+<p>Test Address for title abc0000006 (A1 0AA)</p>
+</td>
+<td width="119">
+<p>Test Address for title TTN0000009 (PP88 0AA)</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Price paid</p>
+</td>
+<td width="123">
+<p>Price paid for the land</p>
+</td>
+<td width="121">
+<p>1000000</p>
+</td>
+<td width="123">
+<p>1000000</p>
+</td>
+<td width="119">
+<p>1000000</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Tenure</p>
+</td>
+<td width="123">
+<p>How the land is owned (freehold or leasehold)</p>
+</td>
+<td width="121">
+<p>Leasehold</p>
+</td>
+<td width="123">
+<p>Leasehold</p>
+</td>
+<td width="119">
+<p>Freehold</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Title number</p>
+</td>
+<td width="123">
+<p>Number used by HM Land Registry to identify the landowner and land</p>
+</td>
+<td width="121">
+<p>2</p>
+</td>
+<td width="123">
+<p>abc0000006</p>
+</td>
+<td width="119">
+<p>TTN0000009</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Country Incorporated</p>
+</td>
+<td width="123">
+<p>Country (where company is registered)</p>
+</td>
+<td width="121">
+<p>Country</p>
+</td>
+<td width="123">
+<p>Country</p>
+</td>
+<td width="119">
+<p>Country</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Date Proprietor added</p>
+</td>
+<td width="123">
+<p>Date (company became legal owner of the land)</p>
+</td>
+<td width="121">
+<p>Date</p>
+</td>
+<td width="123">
+<p>Date</p>
+</td>
+<td width="119">
+<p>Date</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Additional Proprietor Indicator</p>
+</td>
+<td width="123">
+<p>Any other owners (who share this property)</p>
+</td>
+<td width="121">
+<p>&nbsp;</p>
+</td>
+<td width="123">
+<p>&nbsp;</p>
+</td>
+<td width="119">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="133">
+<p>Multiple address Indicator</p>
+</td>
+<td width="123">
+<p>Company owns more than 1 property</p>
+</td>
+<td width="121">
+<p>N</p>
+</td>
+<td width="123">
+<p>N</p>
+</td>
+<td width="119">
+<p>Y</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        <script>
+        document.body.className += ' ' + 'product-page';
+        </script>
+
+{% endblock %}

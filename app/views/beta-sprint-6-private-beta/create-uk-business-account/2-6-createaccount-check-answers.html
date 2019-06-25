@@ -1,0 +1,170 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="1-3-createaccount-address-part2" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+        <h1 class="govuk-heading-xl">
+          Check your answers
+        </h1>
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Title
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Mr
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            First name
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            John
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Last name
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Smith
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Email
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            john.smith@something.com
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Phone
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            07876453421
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Organisation name​
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Name
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Organisation type
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Charity
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="change-organisation-details">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Organisation address
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            72 Guild Street<br>
+            London<br>
+            SE23 6FH
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="change-organisation-details">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Registration number
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            2738475893
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="change-organisation-details">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <br>
+
+      <h2>Terms of use</h2>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                I have read and agreed to <a href="terms-of-use">the terms of use </a>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <br>
+
+      <a class="govuk-button" href="2-6-createaccount-confirmation" role="button">
+        Continue
+      </a>
+
+</div>
+
+{% endblock %}

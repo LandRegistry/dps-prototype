@@ -1,0 +1,336 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-grid-row listingspage listingspage-context-5">
+
+    <h1 class="govuk-heading-xl">
+      Choose a data file
+    </h1>
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds no-padding listings-page-table">
+
+        <div class="listings-page-item">
+
+        <h2>
+        <a href="">Registered leases</a>
+        </h2>
+
+        <p>Download data about overseas companies that own land in England and Wales.</p>
+
+        <!-- View licence -->
+
+        <div class="download-details" id="step-1">
+          <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                	Free and licensed
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                <a href="#" id="view-licence">View licence</a>
+              </dd>
+              <dd class="app-check-your-answers__answer">
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Accept licence -->
+
+        <div class="download-details" id="step-2" style="display:none">
+          <div class="govuk-breadcrumbs-internal">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" id="accept-licence-back-step-2" style="border-bottom: 1px solid black;">Data set details</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item" aria-current="page">View licence</li>
+            </ol>
+          </div>
+        <h2>View licence</h2>
+        <p>The file you are about to download includes data owned by:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>HM Land Registry</li>
+          <li>Ordnance Survey’s AddressBase Premium</li>
+          <li>Royal Mail’s PAF® database (address data)</li>
+        </ul>
+        <h4 class="govuk-heading-s">If you’re a business</h4>
+        <p>You can use this data to: </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>prevent and detect crime, including for:</li>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the apprehension or prosecution of alleged offenders</li>
+            <li>proceedings in a court or tribunal</li>
+            <li>complying with an order, a court or a tribunal</li>
+        </ul>
+          <li>keep records about land and properties</li>
+       </ul>
+       <h4 class="govuk-heading-s">If you’re a public body</h4>
+       <p>You can use this data if you have a:</p>
+       <ul class="govuk-list govuk-list--bullet">
+         <li><a href="">Public Sector Mapping Agreement Licence</a></li>
+         <li><a href="">One Scotland Mapping Agreement Member Licence</a></li>
+       </ul>
+        <p>By choosing to continue, you accept the terms of use and licence for this data. ​</p>
+        <a id="accept-licence" role="button" class="govuk-button">
+          Continue
+        </a>
+      </div>
+
+      <!-- Download options -->
+
+      <div class="download-details" id="step-3" style="display:none">
+
+        <div class="govuk-breadcrumbs-internal">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" id="accept-licence-back-step-3" style="border-bottom: 1px solid black;">Data set details</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" id="download-options-back-step-3" style="border-bottom: 1px solid black;">View licence</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="page">Download options</li>
+          </ol>
+        </div>
+
+          <dl class="app-check-your-answers app-check-your-answers--short">
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                Agreed
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                December 2018
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+              </dd>
+
+            </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="">Licence</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="#" download>Technical Specification</a>
+                </dd>
+                <dd class="app-check-your-answers__answer">
+
+                </dd>
+              </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="#" id="latest-version" download>Latest version (5.5Gb)</a>
+                </dd>
+                <dd class="app-check-your-answers__answer">
+                  <a href="#" download>Latest change only (22Mb)</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+
+                </dd>
+              </div>
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  View
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="" class="older-versions">Older versions</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                </dd>
+
+              </div>
+            </dl>
+
+        </div>
+
+        <!-- Download complete -->
+
+        <div class="download-details" id="step-4" style="display:none">
+
+          <p>Download again here.</p>
+
+          <dl class="app-check-your-answers app-check-your-answers--short">
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                Agreed
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                December 2018
+              </dd>
+            </div>
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Last download
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                December 2018
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                <a href="">Download again (5.5Gb)</a>
+              </dd>
+            </div>
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="">Licence</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="#" download>Technical Specification</a>
+                </dd>
+                <dd class="app-check-your-answers__answer">
+
+                </dd>
+              </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__answer left-alligned">
+                  <a href="">Latest version (5.5Gb)</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="#" download>Latest change only (22Mb)</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+
+                </dd>
+              </div>
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  View
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="#" download>Older versions</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="" class="older-versions"></a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                </dd>
+
+              </div>
+            </dl>
+
+          </div>
+
+    </div>
+
+
+    <div class="listings-page-item">
+
+      <h2>
+      <a href="">Overseas companies that own property in England and Wales</a>
+      </h2>
+
+      <p>Download data about overseas companies that own land in England and Wales.</p>
+
+    <!-- View licence -->
+
+      <div class="download-details" id="step-1">
+        <dl class="app-check-your-answers app-check-your-answers--short">
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              Licence
+            </dt>
+            <dd class="app-check-your-answers__answer">
+                Free and licensed
+            </dd>
+            <dd class="app-check-your-answers__change left-alligned">
+              <a href="#">View licence</a>
+            </dd>
+            <dd class="app-check-your-answers__answer">
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="listings-page-item">
+
+      <h2>
+      <a href="">UK companies that own property in England and Wales</a>
+      </h2>
+
+      <p>Download data about UK companies that own land in England and Wales.</p>
+
+    <!-- View licence -->
+
+      <div class="download-details" id="step-1">
+        <dl class="app-check-your-answers app-check-your-answers--short">
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              Licence
+            </dt>
+            <dd class="app-check-your-answers__answer">
+                Free and licensed
+            </dd>
+            <dd class="app-check-your-answers__change left-alligned">
+              <a href="#">View licence</a>
+            </dd>
+            <dd class="app-check-your-answers__answer">
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+    </div>
+
+
+
+</div>
+</div>
+</div>
+
+
+{% endblock %}

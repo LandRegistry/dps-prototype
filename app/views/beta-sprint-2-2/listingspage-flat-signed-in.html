@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="listingspage-flat-signed-out" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+
+  <div class="govuk-grid-row listingspage">
+      <h1 class="govuk-heading-xl">
+        Choose a data file
+      </h1>
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds no-padding listings-list-style transact-listings">
+
+            <ol>
+
+              <li class="data-set odd">
+                <dl>
+                    <h2><a href="">Registered leases</a></h2>
+                    <p>Download data about leasehold properties in England and Wales.</p>
+                    <p><a href="#" download>Download sample CSV file</a>. This is not live data.</p>
+                    <div class="govuk-!-font-weight-bold box-title">Last updated:</div><div class="box-content">15 December 2018</div>
+                    <div class="govuk-!-font-weight-bold box-title">Restrictions:</div><div class="box-content"><a href="">Free and licensed</a></p></div>
+                </dl>
+                <div class="button-row"><a href="login-fromstart" role="button" draggable="false" class="govuk-button" download>
+                  Full file [20Gb]
+                </a>
+                <a href="login-fromstart" role="button" draggable="false" class="govuk-button" download>
+                  Change only [16Mb]
+                </a>
+<br />
+<a href="historical-files">See older versions</a>
+                </div>
+
+              </li>
+
+
+            </ol>
+
+        </div>
+
+      </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+ {% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+ {% block content %}
+ <div class="govuk-width-container">
+   <main class="govuk-main-wrapper">
+       <div class="govuk-grid-row">
+          <a href="detailspages-dataset-v4" class="govuk-back-link">Back</a>
+
+          <h1 class="govuk-heading-xl">Generate API Key</h1>
+
+      </div>
+       <div class="govuk-grid-row">
+       <div class="govuk-grid-column-one-third">
+        <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 300px;">
+          <h2 class="page-contents__title">Page contents:</h2>
+          <ul class="govuk-list govuk-list--bullet api-toc">
+              <li><a href="#p1" class="active">About the API</a></li>
+              <li><a href="#p2">What datasets you can access</a></li>
+              <li><a href="#p3">How to generate an API key</a></li>
+              <li><a href="#p4">Full documentation</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <h2 id="p1" class="govuk-heading-l">About the API</h2>
+          <p>Developers can access dataset with via the API as an alternative to the using the web interface for this service. The API provides both RESTful and functional interfaces, all in JSON format, making it suitable for a wide range of clients.</p>
+
+
+        <h2 id="p2" class="govuk-heading-l">What datasets you can access</h2>
+          <p>Not all of our datasets are available through our API access. Datasets that have [xxxx] licence attached cannot be accessed using the API.</p>
+          <p>API access is however available for following datasets:</p>
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="detailspages-overseas-toc">Overseas companies that own property in England and Wales</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="detailspages-uk-companies-toc">UK companies that own property in England and Wales</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="detailspages-registered-leases-toc">Registered leases</a>
+            </li>
+          </ul>
+
+        <h2 id="p3" class="govuk-heading-l">How to generate an API key</h2>
+          <p>To access this data, you need to</p>
+          <ol>
+            <li><a href="start">Create an account</a>, or <a href="sign-in">sign in</a>.</li>
+            <li>Read and <a href="agree-to-licence">agree to the licence</a>.</li>
+            <li><a href="start">Create an account, or <a href=""sign-in">sign in</a>.</li>
+          </ol>
+          <p>You need to have an account to access datasets using the API. If you haven’t already created one, <a href="createaccount">you can do so by clicking here</a>.</p>
+
+          <p>If you have an account, <a href="login">you need to sign-in</a> before you can generate an API key.</p>
+          <p>Once you have created an account and have signed-in, you can navigate to the <a href="create-api-key-details">API key generation screen</a>.</p>
+          <p>After you have signed in, a link to generate an API key will appear in the admin menu.</p>
+          <img style="text-align: center" src="/public/images/api-key-image.png">
+
+          <p>By agreeing to both the licence agreement and the terms of use, you can generate an API key.</p>
+          <div class="govuk-inset-text">
+            <p>The base URL for the API is: <a href="https://something.gov.uk/api">https://something.gov.uk/api</a>
+          </div>
+
+
+
+        <h2 id="p4" class="govuk-heading-l">Full documentation</h2>
+          <p>The API is provided by the CKAN software and <a href="http://docs.ckan.org/en/release-v2.2.3/api.html">full documentation is provided here</a>.</p>
+
+      </div>
+     </div>
+
+  </main>
+</div>
+ {% endblock %}

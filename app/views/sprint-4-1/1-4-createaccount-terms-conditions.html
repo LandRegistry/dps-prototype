@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="1-5-createaccount-check-answers" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds terms">
+      <h1 class="govuk-heading-xl">
+        Terms and conditions
+      </h1>
+
+      <p>[IMPORTANT INFORMATION ABOUT TERMS AND CONDITIONS - main points the user should be aware of]</p>
+
+      <p>By continuing:</p>
+      <ul>
+        <li>you confirm that you agree to the <a href="#">terms and conditions</a> for this service.</li>
+      </ul>
+      <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
+      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+          <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+          I agree
+        </label>
+        </div>
+        <div class="govuk-!-padding-bottom-5"></div>
+      <a href="1-6-createaccount-confirmation" role="button" class="govuk-button" >
+        Accept and send application
+      </a>
+    </div>
+</div>
+
+{% endblock %}

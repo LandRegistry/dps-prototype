@@ -1,0 +1,65 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<iframe id="download_iframe" style="display:none;"></iframe>
+<script>
+function Download() {
+   //document.getElementById('download_iframe').src = window.location.assign('beta-sprint-1-2/dataset.csv.zip');
+};
+
+Download();
+</script>
+
+
+<div class="govuk-width-container">
+
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-panel govuk-panel--confirmation">
+            <h2 class="govuk-panel__title">
+              Your dataset is downloading
+            </h2>
+          </div>
+          <br>
+          <h3 class="govuk-heading-m">What happens next</h3>
+
+          <p class="govuk-body">
+            <a href="listingspage-v3-loggedin">Find other datasets</a>
+          </p>
+
+          <h3 class="govuk-heading-m">Problem with your download?</h3>
+
+          <p class="govuk-body">
+            <a href="download-failed">I cannot see the download</a>
+          </p>
+
+          <br>
+
+          <p class="govuk-body">
+            <a href="#" class="govuk-link">What do you think of this service?</a> (takes 30 seconds)
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,42 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h2 class="govuk-panel__title">
+          Application sent to HM Land Registry
+        </h2>
+      </div>
+
+      <p class="govuk-body">
+          HM Land Registry is checking your company details.
+      </p>
+
+      <h3 class="govuk-heading-m">What happens next?</h3>
+
+      <p class="govuk-body">
+          You don’t have to do anything else. HM Land Registry will check that you work for a UK company. This can take up to 1 day.
+      </p>
+
+      <p>After that, HM Land Registry will email you to:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>confirm your account has been created, or</li>
+        <li>ask for more information </li>
+      </ul>
+
+      <!-- <p><a href="#">What did you think of this service?</a> (takes 30 seconds)</p> -->
+      <p><a href="#">Exit this service</a></p>
+      <p><a href="#">Print this page</a></p>
+      <br />
+      <p>[For testing. <a href="start-v2">Link back to homepage</a>.]</p>
+</div>
+
+
+{% endblock %}

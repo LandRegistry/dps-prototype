@@ -1,0 +1,260 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full ccod-details-page productpage">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            <a href="https://www.gov.uk/government/organisations/land-registry">HM Land Registry</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            <a href="listingspage-v7">Use land and property data</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="blue-box">
+        <span class="govuk-caption-xl">Dataset</span>
+        <h1 class="govuk-heading-xl">UK companies that own property in England and Wales</h1>
+        <p class="float_left new-left"><span class="new-free">FREE</span></p>
+        <p>Download data about UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more. This data was originally named Commercial and corporate data (CCOD).</p>
+        <p>Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly), <span class="govuk-body govuk-!-font-weight-bold">CSV</span>, <span class="govuk-body govuk-!-font-weight-bold">1.25Gb</span>
+        </p>
+        <p class="govuk-!-font-weight-bold darker-blue">You need to <a class="white-link-text" href="start">create an account</a> or <a class="white-link-text" href="sign-in">sign in</a> to download this file.</p>
+        <br>
+      </div>
+
+      <div class="toc" id="contents">
+        <p>Contents</p>
+        <ul>
+          <li><a href="#sampledata">Example data (see and download a example)</a></li>
+          <li><a href="#techspecs">Technical specifications</a></li>
+          <li><a href="#howtodownload">How to download</a></li>
+          <li><a href="#api">API access</a></li>
+          <li><a href="#dataquality">Data quality (where HM Land Registry gets the data) </a></li>
+          <li><a href="#licence">Licence</a></li>
+          <li><a href="#included">Included</a></li>
+          <li><a href="#notincluded">Not included</a></li>
+          <li><a href="#how">How to get this data by phone or in person</a></li>
+        </ul>
+      </div>
+      <div class="product-info">
+        <h2 id="sampledata">Example data (see and download an example)</h2>
+        <p>This is an example of the data you will see in the file: UK companies that own property in England and Wales. You do not need an account to download this example.</p>
+        <div class="govuk-inset-text">
+          <p>You can also <a class="govuk-body govuk-!-font-weight-bold" href="/public/files/uk-dataset-sample.csv" download>download an example of this data</a>.</p>
+        </div>
+        <table  class="govuk-table table-hack">
+        					<tbody>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="col">Data</th>
+                      <th class="govuk-table__header" scope="col">What this means</th>
+                      <th class="govuk-table__header" scope="col">Example data 1</th>
+                      <th class="govuk-table__header" scope="col">Example data 2</th>
+                    </tr>
+                  </thead>
+        					<tr>
+        						<th class="govuk-table__header">Title number </th>
+        						<td>Number used by HM Land Registry to identify the land and landowner</td>
+        						<td>ZZ1234</td>
+        						<td>ZZ1235</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Tenure </th>
+        						<td>How the land is owned (freehold or leasehold)</td>
+        						<td>Freehold</td>
+        						<td>Leasehold</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Property address </th>
+        						<td>Address or description of the land</td>
+        						<td>1 Anywhere Street, Atown, SE87 8BB</td>
+        						<td>Land on the South Side of Anywhere Street, Atown, SE87 8BB</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">District </th>
+        						<td>Location 1</td>
+        						<td>Chesterfield </td>
+        						<td>Chesterfield </td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">County </th>
+        						<td>Location 2</td>
+        						<td>Derbyshire </td>
+        						<td>Derbyshire</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Region</th>
+        						<td>Location 3</td>
+        						<td>East Midlands </td>
+        						<td>East Midlands </td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Postcode</th>
+        						<td>Location 4</td>
+        						<td>SE87 8BB</td>
+        						<td>SE87 8BB</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Multiple address indicator </th>
+        						<td>More than one address on record </td>
+        						<td>Y</td>
+        						<td>N</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Price paid </th>
+        						<td>Price paid for the land</td>
+        						<td>170000</td>
+        						<td></td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Proprietor name</th>
+        						<td>Name of the owner</td>
+        						<td>A COMPANY LIMITED </td>
+        						<td>A HOUSING ASSOCIATION </td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Company registration number </th>
+        						<td>Reference number used by Companies House to identify a company</td>
+        						<td>123456</td>
+        						<td></td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Proprietor category </th>
+        						<td>Type of company</td>
+        						<td>Limited Company or Public Limited Company</td>
+        						<td>Housing Association/Society (Company)</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Proprietor address </th>
+        						<td>Address of company</td>
+        						<td>55 The Street. Atown, AT89 8BB</td>
+        						<td>105 The Street, Btown, BT89 8BB</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Date proprietor added</th>
+        						<td>Date when HM Land Registry records the new landowner as the owner</td>
+        						<td>16 March 2019</td>
+        						<td>23 May 1997</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Additional proprietor indicator </th>
+        						<td>Any other owners who share this land</td>
+        						<td>Y</td>
+        						<td>N</td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Change indicator (change only update) </th>
+        						<td>Any changes this month</td>
+        						<td>A </td>
+        						<td>D </td>
+        					</tr>
+        					<tr>
+        						<th class="govuk-table__header">Change date</th>
+        						<td>When the change was made</td>
+        						<td>30 April 2019</td>
+        						<td>30 April 2019</td>
+        					</tr>
+        				</tbody>
+              </table>
+
+        <h2 id="techspecs">Technical specifications</h2>
+        <p>Read the <a href="https://www.gov.uk/guidance/hm-land-registry-overseas-companies-ownership-data">dataset Technical specifications for UK companies that own property in England and Wales</a></p>
+
+        <h2 id="#howtodownload">How to download</h2>
+
+        <h2 id="#api" class="govuk-heading-l">Accessing the data with the API</h2>
+        <p>You can access this data using an API. To use the API, you need to</p>
+        <ol>
+          <li><a href="start">Create an account</a>, or <a href="sign-in">sign in</a>.</li>
+          <li>Read and <a href="agree-to-licence-2">agree to the licence</a>,</li>
+          <li>and get <a href="listingspage-tabs#api-access">your API key</a></li>
+        </ol>
+
+        <h2 id="dataquality">Data quality (where HM Land Registry gets the data)</h2>
+        <h3>Where does the information come from?</h3>
+        <p>The information comes from:</p>
+        <ul>
+          <li>citizens</li>
+          <li>corporate bodies</li>
+          <li>conveyancers</li>
+          <li>deeds</li>
+          <li>other documents</li>
+        </ul>
+        <h3>Inconsistencies in the data</h3>
+        <p>HM Land Registry data comes from different sources. This means that not everything is written the same way. For example, one address may say ’24 The Willows’ and another might be written as ‘Field south of N14’.</p>
+        <p>You may also see:</p>
+        <ul>
+          <li>spelling errors or typos</li>
+          <li>descriptions instead of addresses (land being developed may not have an address)</li>
+          <li>partial postcodes or no postcode at all</li>
+          <li>mistakes in company registration numbers</li>
+          <li>no data for date of registration</li>
+          <li>no data for company registration number</li>
+          <li>2 different companies with the same registration number</li>
+          <li>incorrect data due to human error</li>
+        </ul>
+        <p>These inconsistencies are usually either the result of human error (mistakes and typos) or HM Land Registry simply does not have the data.</p>
+        <p>Think you’ve found a mistake in HM Land Registry data? Contact HM Land Registry: <a href="mailto:example@hmlandregistry.gov.uk">example@hmlandregistry.gov.uk</a></p>
+
+        <h2 id="licence">Licence</h2>
+
+        You can also <a href="https://data.landregistry.gov.uk/data_pub/terms-of-use/read/ccod">download this licence</a>. You do not need an account to do this.
+
+        <p>If you do not understand the licence, ask Royal Mail. Royal Mail owns some of this data and HM Land Registry owns the rest:
+          <a href="mailto:example@royalmail.com">example@royalmail.com</a></p>
+
+        <p>You can <a href="public/files/licence_agreement.html" download>download this licence</a> if you need to share it with someone else.</p>
+
+        <h2 id="included">Included</h2>
+        <h3>What is included?</h3>
+        <p>This data shows every (completed) record HM Land Registry has about property-owning companies registered in the UK.</p>
+
+        <h2 id="notincluded">Not included</h2>
+        <h3>What is not included?</h3>
+        <p>HM Land Registry data does not show:</p>
+        <ul>
+          <li>pending applications (we can’t show you a record while it is being written)</li>
+          <li>land or property owned by private individuals, charities or overseas companies</li>
+          <li>company registration numbers before 1996 (unless a company gave theirs voluntarily)</li>
+        </ul>
+        <p>Sometimes we cannot publish data from a new or updated record. For example, if a private individual is the new owner of 1 Smith Street, you will not see the owner’s identity.</p>
+        <p>HM Land Registry can only show you the information we are given. For example:</p>
+        <ul>
+          <li>you buy a new flat on 1 January 2018</li>
+          <li>you tell HM Land Registry about this on 3 March 2018</li>
+          <li>HM Land Registry does not know that you are the legal owner until 3 March</li>
+          <li>data downloaded before 3 March will not show you as the owner of your flat</li>
+        </ul>
+
+        <h2 id="how">How to get this data by phone or in person</h2>
+        DST process!
+
+      </div>
+      </div>
+      <div class="base-bar">
+        <div class="base-bar-inset">
+          <a class="app-c-back-to-top dont-print" href="#contents">
+              <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+                <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+              </svg>
+              Contents
+          </a>
+        </div>
+      </div>
+        <script>
+        document.body.className += ' ' + 'product-page';
+        </script>
+
+{% endblock %}

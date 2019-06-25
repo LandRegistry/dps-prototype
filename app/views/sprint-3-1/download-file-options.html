@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v2">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL">Inspire</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Download options</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+            <form action="check-your-answers" method="post" class="form">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-fieldset__heading">Your download options</h1>
+                  </legend>
+
+                  <br>
+
+                  <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item" data-target="cvs-file">
+                      <input class="govuk-checkboxes__input" name="download-option" type="checkbox" value="CVS file" {{ checked("download-option", "CVS file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >CVS file</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item" data-target="json-file">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="JSON file" {{ checked("download-option", "JSON file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >JSON file</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item" data-target="xml-file">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="XML file" {{ checked("download-option", "XML file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >XML file</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item" data-target="Licence agreement">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Licence agreement" {{ checked("download-option", "Licence agreement") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >Licence agreement</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item" data-target="tech-spec">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Technical Specification" {{ checked("download-option", "Technical Specification") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >Technical Specification</label>
+                    </div>
+
+                  </div>
+
+                </fieldset>
+              </div>
+              <button class="govuk-button">Continue</button>
+            </form>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+{% endblock %}

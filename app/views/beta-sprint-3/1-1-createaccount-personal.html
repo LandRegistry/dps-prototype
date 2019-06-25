@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row filter-user-type">
+    <div class="govuk-grid-column-two-thirds">
+
+<a href="createaccount" class="govuk-back-link">Back</a>
+
+<h1 class="govuk-heading-xl">
+  Access data for personal use
+</h1>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <p>To request access to the data you will need to create an account. To do this you will need to: </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Provide your name, address, email address and telephone number</li>
+      <li>Provide your debit or credit card details for security purposes, no payment will be taken from your card</li>
+      <li>Accept the terms and conditions for the service </li>
+    </ul>
+
+    <a href="1-1-createaccount-yourdetails" role="button" class="govuk-button">
+      Continue
+    </a>
+  </div>
+</div>
+
+    </div>
+</div>
+
+{% endblock %}

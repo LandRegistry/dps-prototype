@@ -1,0 +1,101 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-grid-row listingspage">
+    <h1 class="govuk-heading-xl">
+      Choose a data file
+    </h1>
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds no-padding listings-list-style listings-page-table">
+
+        <ol>
+
+          <li>
+            <h2>
+              <a href="detailspages-dataset-v4-logged-in">Registered leases</a>
+            </h2>
+
+            <p>Download data about leasehold properties in England and Wales.</p>
+            <!-- <div>
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">Licence accepted</th>
+                  <td class="govuk-table__cell">12 August 2018</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">View licence</th>
+                  <td class="govuk-table__cell"><a href="OGL-licence">Free and licenced</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">Last download</th>
+                  <td class="govuk-table__cell">August 2018</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">Last updated</th>
+                  <td class="govuk-table__cell">September 2018</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <a href="" role="button" class="govuk-button listings-button">
+                      Download options
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+
+        </ol>
+
+          <li >
+            <h2>
+            <a href="detailspages-dataset-overseas-logged-in">Overseas companies that own property in England and Wales</a>
+            </h2>
+            <p>Download data about overseas companies that own land in England and Wales.</p>
+          </li>
+
+          <li >
+            <h2>
+            <a href="">UK companies that own property in England and Wales</a>
+            </h2>
+            <p>Download data about UK companies that own land in England and Wales.</p>
+          </li>
+
+        </ol>
+
+      </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

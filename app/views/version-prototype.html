@@ -1,0 +1,31 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        How to version the prototype
+      </h1>
+
+
+      <p>To version the prototype:</p>
+
+        <ol>
+          <li>Copy prototype folder</li>
+          <li>Update the index file to link to new start / first page</li>
+          <li>Go to login-fromstart.html and update hardcoded link the references the sprint</li>
+          <li>If new sprint, add link the newest sprint tab on the design tracker and update URL</li>
+          <li>Update links on all email temnplates</li>
+        </ol>
+
+
+      </div>
+    </div>
+
+{% endblock %}

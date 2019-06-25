@@ -1,0 +1,82 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row filter-user-type">
+    <div class="govuk-grid-column-two-thirds">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <a href="2-3-org-add" class="govuk-back-link">Back</a>
+
+        <span class="govuk-caption-xl">Create your account</span>
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Contact information
+            </h1>
+          </legend>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              Title
+            </label>
+            <select class="govuk-select" id="sort" name="sort">
+              <option value="published">Mr</option>
+              <option value="updated">Mrs</option>
+              <option value="views">Miss</option>
+              <option value="comments">Ms</option>
+              <option value="comments">Other</option>
+            </select>
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-line-1">
+              First name
+            </label>
+            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-line-1">
+              Last name
+            </label>
+            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-town">
+            Email address
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-county">
+              County
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-postcode">
+              Contact phone number
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+          </div>
+
+        </fieldset>
+
+
+
+      </div>
+    </div>
+
+    </div>
+</div>
+
+{% endblock %}

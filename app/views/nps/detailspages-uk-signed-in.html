@@ -1,0 +1,397 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="detailspages-uk" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <div class="blue-box">
+
+      <span class="govuk-caption-xl">Dataset</span>
+      <h1 class="govuk-heading-xl">
+
+UK companies that own property in England and Wales
+      </h1>
+<p class="float_left hidden"><span class="new">Licence agreed</span></p>
+      <p>This dataset shows UK companies that own land and property in England and Wales. This dataset was originally named Commercial and corporate data (CCOD). </p>
+
+      <br>
+      <p>Last updated on the 18th October 2018 (updated monthly).
+        <br>
+      <!-- <span class="govuk-body govuk-!-font-weight-bold"><a href="">Download CSV 15.8KB</a></span> -->
+      <span class="govuk-body govuk-!-font-weight-bold">File size is 15.8KB.</span>
+      </p>
+      <br>
+      <p class="align-fix">This dataset is <a href="" style="color: white;">free and licenced</a>.</p>
+
+
+      <br>
+
+      <div id="myModal" class="modal" style="color: black;">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+          <h1 class="govuk-heading-xl" style="color: black;">
+            Agree to the data licences
+          </h1>
+
+
+          <p style="color: black;">The file you are about to download includes data owned by:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>HM Land Registry</li>
+            <li>Ordnance Survey’s AddressBase Premium</li>
+            <li>Royal Mail’s PAF® database (address data) </li>
+         </ul>
+
+         <h2 class="govuk-heading-l">How you can use this data</h2>
+
+         <h3 class="govuk-heading-m">If you’re a business </h3>
+
+         <p style="color: black;">You can use this data to: </p>
+         <ul class="govuk-list govuk-list--bullet">
+           <li>prevent and detect crime, including for:</li>
+           <ul class="govuk-list govuk-list--bullet">
+             <li>the apprehension or prosecution of alleged offenders</li>
+             <li>proceedings in a court or tribunal</li>
+             <li>complying with an order, a court or a tribunal</li>
+         </ul>
+           <li>keep records about land and properties</li>
+        </ul>
+
+        <h3 class="govuk-heading-m">If you’re a public body</h3>
+
+        <p style="color: black;">You can use this data if you have a:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="">Public Sector Mapping Agreement Licence</a></li>
+          <li><a href="">One Scotland Mapping Agreement Member Licence</a></li>
+        </ul>
+
+        <p style="color: black;">These licences are issued by Ordnance survey and public bodies must use the data under the terms of these licences.</p>
+
+        <p><a href="">Apply for a licence from Ordnance Survey</a>.</p>
+
+        <h2 class="govuk-heading-l">Not sure if you can use this data?</h2>
+
+        <p style="color: black;">Contact Royal Mail before you use this data. Ask them to confirm that your intended use is permitted under the terms of their licence.</p>
+
+        <p style="color: black;"><a href="">Email Royal Mail</a>.</p>
+
+        <h3 class="govuk-heading-m">Read the full licences </h3>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="">HM Land Registry’s data</a></li>
+          <li><a href="">Ordnance Survey’s AddressBase Premium licence</a></li>
+          <li><a href="">Royal Mail’s PAF® database licence</a></li>
+        </ul>
+
+        <br>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+                  <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                  I understand and agree to these licences
+                </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <a href="#" role="button" draggable="false" class="govuk-button disabled_btn">
+            Agree and continue
+          </a>
+          <br>
+          <a href="#" class="cancel-this">Cancel</a>
+
+        </div>
+
+      </div>
+    <div class="attachment-details">
+
+<!-- added new
+
+        <div class="state-1">
+          <div class="download-wrapper">
+              <a href="" class="gotostate2 download"><span>Get this data</span></a>
+          </div>
+        </div><!-- end of state 1 -->
+        <div class="state-1">
+          <div class="download-wrapper">
+              <a class="gotostate2 download"><span>Get this data</span></a>
+          </div>
+        </div>
+        <div class="state-2">
+
+        <div class="download-wrapper">
+          <h2 class="govuk-heading-m">Agree to licence</h2>
+          <br />
+              <div class="govuk-checkboxes__item">
+
+                 <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british" aria-describedby="nationality-1-item-hint">
+                 <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                I have read and agree to <a class="open-dialoge-box" id="myBtn">the licence</a>
+                 </label>
+
+               </div>
+               <br>
+
+               <a role="button" draggable="false" class="govuk-button disabled_btn">
+                 Agree and continue
+               </a>
+               <br>
+               <a href="#" class="cancel-this">Cancel</a>
+
+          </div>
+        </div><!-- end of state 2 -->
+        <div class="state-3">
+          <div class="download-wrapper">
+              <a href="" class="download" data-slide="1" download><span>Download latest full file</span></a>
+              <a href="" class="download" data-slide="2" download><span>Download latest change only</span></a>
+
+          </div>
+
+        </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+
+      <br>
+      <br>
+      <br>
+<p><a href="">Read the technical specification for UK companies that own property in England and Wales.</a></p>
+        <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.<p>
+
+<h3 class="govuk-heading-m">Example data</h3>
+        <br>
+        <table class="govuk-table table-hack">
+        <tbody>
+        <tr>
+        <td width="128">
+        <p><strong>Data</strong></p>
+        </td>
+        <td width="119">
+        <p><strong>What this means</strong></p>
+        </td>
+        <td width="116">
+        <p><strong>Example Data 1</strong></p>
+        </td>
+        <td width="119">
+        <p><strong>Example Data 2</strong></p>
+        </td>
+        <td width="115">
+        <p><strong>Example Data 3</strong></p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Proprietor name</p>
+        </td>
+        <td width="119">
+        <p>Name of UK company</p>
+        </td>
+        <td width="116">
+        <p>OWNER_28</p>
+        </td>
+        <td width="119">
+        <p>OWNER_1</p>
+        </td>
+        <td width="115">
+        <p>OWNER_29</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Proprietorship Category</p>
+        </td>
+        <td width="119">
+        <p>Type of company</p>
+        </td>
+        <td width="116">
+        <p>Corporate Body</p>
+        </td>
+        <td width="119">
+        <p>Industrial and Provident Society (Corporate Body)</p>
+        </td>
+        <td width="115">
+        <p>Industrial and Provident Society (Company)</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Company registration number</p>
+        </td>
+        <td width="119">
+        <p>Reference number used by Companies house to identify the company</p>
+        </td>
+        <td width="116">
+        <p>FHV347443</p>
+        </td>
+        <td width="119">
+        <p>rrN607820</p>
+        </td>
+        <td width="115">
+        <p>jbP356247</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Property Address</p>
+        </td>
+        <td width="119">
+        <p>Land or property bought by the company</p>
+        </td>
+        <td width="116">
+        <p>Test Address for title 0000002 (AA00 0AA)</p>
+        </td>
+        <td width="119">
+        <p>Test Address for title abc0000006 (A1 0AA)</p>
+        </td>
+        <td width="115">
+        <p>Test Address for title TTN0000009 (PP88 0AA)</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Proprietor&nbsp; address</p>
+        </td>
+        <td width="119">
+        <p>Address of company</p>
+        </td>
+        <td width="116">
+        <p>Test Address for title 0000002 (AA00 0AA)</p>
+        </td>
+        <td width="119">
+        <p>Test Address for title abc0000006 (A1 0AA)</p>
+        </td>
+        <td width="115">
+        <p>Test Address for title TTN0000009 (PP88 0AA)</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Price paid</p>
+        </td>
+        <td width="119">
+        <p>Price paid for the land</p>
+        </td>
+        <td width="116">
+        <p>1000000</p>
+        </td>
+        <td width="119">
+        <p>1000000</p>
+        </td>
+        <td width="115">
+        <p>1000000</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Tenure</p>
+        </td>
+        <td width="119">
+        <p>How the land is owned (freehold or leasehold)</p>
+        </td>
+        <td width="116">
+        <p>Leasehold</p>
+        </td>
+        <td width="119">
+        <p>Leasehold</p>
+        </td>
+        <td width="115">
+        <p>Freehold</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Title number</p>
+        </td>
+        <td width="119">
+        <p>Number used by HM Land Registry to identify the landowner and land</p>
+        </td>
+        <td width="116">
+        <p>2</p>
+        </td>
+        <td width="119">
+        <p>abc0000006</p>
+        </td>
+        <td width="115">
+        <p>TTN0000009</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Date Proprietor added</p>
+        </td>
+        <td width="119">
+        <p>Date (company became legal owner of the land)</p>
+        </td>
+        <td width="116">
+        <p>Date</p>
+        </td>
+        <td width="119">
+        <p>Date</p>
+        </td>
+        <td width="115">
+        <p>Date</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="128">
+        <p>Multiple address Indicator</p>
+        </td>
+        <td width="119">
+        <p>Company owns more than 1 property</p>
+        </td>
+        <td width="116">
+        <p>N</p>
+        </td>
+        <td width="119">
+        <p>N</p>
+        </td>
+        <td width="115">
+        <p>Y</p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+
+        </div>
+        <script>
+        document.body.className += ' ' + 'product-page';
+        </script>
+
+{% endblock %}

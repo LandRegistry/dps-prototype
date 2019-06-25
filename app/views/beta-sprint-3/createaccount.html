@@ -1,0 +1,58 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row filter-user-type">
+
+    <div class="govuk-grid-column-two-thirds">
+      <a href="start-v2" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+      <h1 class="govuk-heading-xl">
+        Create an account
+      </h1>
+
+      <h3 class="govuk-heading-m">How will you use this data?</h3>
+
+      <p>This data is for:</p>
+      <div class="govuk-form-group">
+        <form id="user-select">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="personal" name="what-is-this-data-for" type="radio" value="personal">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                  me
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="uk-organisation" name="what-is-this-data-for" type="radio" value="uk-organisation">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  my work for a UK organisation
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="overseas-organisation" name="what-is-this-data-for" type="radio" value="overseas-organisation">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                  my work for an overseas organisation
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+        <a href="createaccount-yourdetails" role="button" class="govuk-button">
+          Continue
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

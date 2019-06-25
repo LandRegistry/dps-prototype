@@ -1,0 +1,63 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL-v2">INSPIRE Polygon Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="download-file-options-v2">Download options</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Check your choices</li>
+    </ol>
+  </div>
+
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <a href="download-confirmation-withlicence" class="govuk-back-link">Back</a>
+  <br>
+  <br>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          Download again
+        </h1>
+
+        <p class="govuk-body">Check the download history in your browser to make sure:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the file has started downloading</li>
+            <li>how long it will take to download</li>
+          </ul>
+
+        <p class="govuk-body">If you cannot see the data file in your download history, <a href="beta-sprint-1-2/dataset.csv.zip" download>start the download again</a>.</p>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

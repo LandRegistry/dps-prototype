@@ -1,0 +1,99 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="dashboard-v6" data-topnav="Get started">Your profile</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL-v2">INSPIRE Polygon Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Dataset download options</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <a href="detailspages-dataset-OGL-v2-loggedin" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+            <form action="check-your-answers-loggedin" method="post" class="form">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <span class="govuk-caption-xl">INSPIRE Polygon Data</span>
+                    <h1 class="govuk-fieldset__heading">Dataset download options</h1>
+                  </legend>
+
+                  <br>
+
+                  <div class="govuk-checkboxes">
+                    <h3 class="govuk-heading-m">Available file types</h3>
+                    <div class="govuk-checkboxes__item" data-target="csv-file">
+                      <input class="govuk-checkboxes__input" name="download-option" type="checkbox" value="CSV file" {{ checked("download-option", "CSV file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >CSV file</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item" data-target="json-file">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="JSON file" {{ checked("download-option", "JSON file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >JSON file</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item" data-target="xml-file">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="XML file" {{ checked("download-option", "XML file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >XML file</label>
+                    </div>
+
+                    <br>
+                    <h3 class="govuk-heading-m">Download additional information</h3>
+                    <div class="govuk-checkboxes__item" data-target="Licence agreement">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Licence agreement" {{ checked("download-option", "Licence agreement") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >Licence agreement</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item" data-target="tech-spec">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Technical Specification" {{ checked("download-option", "Technical Specification") }}>
+                      <label class="gov uk-label govuk-checkboxes__label" >Technical specification</label>
+                    </div>
+
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <button type="submit" class="govuk-button">Continue</button>
+
+            </form>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+{% endblock %}

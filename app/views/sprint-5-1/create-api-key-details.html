@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Sign out</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="create-api-key-details" data-topnav="Get started">API access</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-v4-logged-in">Registered Leases Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Licence agreement</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="detailspages-dataset-v4-logged-in" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+        <h1 class="govuk-heading-xl">Create API key</h1>
+
+        <h2>Before you start<h2>
+        <p class="govuk-body">The datasets available are protected under licencing terms. </p>
+        <p class="govuk-body">You will need to read and accept the <a href="">licence agreement</a> before getting access to the API key.</p>
+        <p class="govuk-body">Please make sure that you are aware of the dataset details and the Technical Specification for each dataset before accessing the data.</p>
+
+        <h3 class="govuk-heading-m">Datasets with API access</h3>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="">INSPIRE Polygon Data</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="">Registered Leases Data</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="">Overseas Companies Ownership Data</a>
+          </li>
+        </ul>
+
+        <a href="api-licence" role="button" class="govuk-button">
+          Continue
+        </a>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

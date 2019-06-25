@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row listingspage">
+      <h1 class="govuk-heading-xl">
+        Choose a data file
+      </h1>
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds no-padding listings-list-style">
+
+            <ol>
+              <li >
+                <h2>
+                  <a href="">Commercial and corporate data (CCOD)</a>
+                </h2>
+                <p>UK companies that own land and property in England and Wales. </p>
+              </li>
+
+              <li >
+                <h2>
+                  <a href="detailspages-dataset-OGL-v2">Land and property boundaries (polygon data)</a>
+                </h2>
+                <p>The landowner and their land (property boundary) in England and Wales.</p>
+                <p>This is a geospatial data file (one that shows data as shapes on a map).</p>
+              </li>
+
+              <li >
+                <h2>
+                  <a href="detailspages-dataset-v4">Registered leases data</a>
+                </h2>
+                <p>Land and property in England and Wales with a leasehold tenure. A leasehold tenure is where the user owns the property for a fixed period of time.</p>
+              </li>
+
+              <li >
+                <h2>
+                  <a href="">Overseas companies ownership data</a>
+                </h2>
+                <p>Overseas companies that own land and property in England and Wales.</p>
+              </li>
+
+            </ol>
+
+        </div>
+
+      </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,208 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases Data</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <a href="listingspage-v3" class="govuk-back-link">Back</a>
+          <br>
+          <br>
+          <h1 class="govuk-heading-xl">Registered Leases Data: about this dataset</h1>
+          <p class="govuk-body-l"> </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+        <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 300px;">
+          <h2 class="page-contents__title">Page contents:</h2>
+          <ul class="govuk-list govuk-list--bullet">
+              <li><a href="#important-information" class="active">About this licence</a></li>
+              <li><a href="#about-this-dataset" class="">Registered leases dataset details</a></li>
+              <li><a href="#sample-data">What the dataset looks like</a></li>
+              <li><a href="#how-to-download">How to download the dataset</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+
+          <br>
+          <p>The Registered Leases dataset comprises a number of data elements relating to leasehold entries on HM Land Registry’s register.</p>
+          <p>Data captured includes: lease date, the duration or term of the lease and parties to the lease, and also noted is a registered lease against the landlord’s title, providing this is registered.</p>
+
+          <h2 id="important-information" class="govuk-heading-l">About this licence</h2>
+          <p>Royal Mail and Ordnance Survey, permits your use of Address Data for personal and/or non-commercial. If you want to use the Address Data in any other way, you must contact Royal Mail.</p>
+
+          <h2 id="about-this-dataset" class="govuk-heading-l">Registered leases dataset details</h2>
+          <dl class="app-check-your-answers app-check-your-answers--short">
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                 <a href="free-commercial-licence">Free and licensed</a>
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Technical specification
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                <a href="#">View technical specification</a>
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Last update
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                1 August 2018
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Next update
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                1 September 2018
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+              Version
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                1.2.1
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                File size
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                500MB
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Rows in dataset
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                Approximately 7 million
+              </dd>
+            </div>
+
+          </dl>
+
+          <br>
+          <br>
+
+          <h2 id="sample-data" class="govuk-heading-l">What the dataset looks like</h2>
+
+          <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#JSON">
+                JSON
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#XML">
+                  XML
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#CSV">
+                  CSV
+                </a>
+            </li>
+          </ul>
+
+          <section class="govuk-tabs__panel" id="JSON">
+            <h2 class="govuk-heading-l">JSON</h2>
+            <pre><code id=account></code></pre>
+          </section>
+
+          <section class="govuk-tabs__panel" id="XML">
+            <h2 class="govuk-heading-l">XML</h2>
+
+          </section>
+          <section class="govuk-tabs__panel" id="CSV">
+            <h2 class="govuk-heading-l">CSV</h2>
+          </section>
+        </div>
+
+        <h2 id="how-to-download" class="govuk-heading-l">How to download the dataset</h2>
+
+        <div class="govuk-inset-text">
+          <p>Due to the licence for this dataset you will need to sign in to your account before downloading</p>
+
+            <a href="login" role="button" class="govuk-button">
+              Sign in
+            </a>
+
+            <p>Or</p>
+
+            <p><a href="createaccount">Create an account</a></p>
+        </div>
+
+
+
+        <p>When downloading you will need to read and accept the <a href="free-commercial-licence">licence agreement</a>.</p>
+
+        <p>You will need to choose your download options, which comprise:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>JSON</li>
+          <li>XML</li>
+          <li>CSV</li>
+        </ul>
+
+        <p>You can also download the:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Technical specification</li>
+          <li>Licence agreement </li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

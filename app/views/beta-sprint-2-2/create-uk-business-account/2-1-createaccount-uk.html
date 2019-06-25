@@ -1,0 +1,165 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="../createaccount" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <h1 class="govuk-heading-xl">
+       About you and your organisation
+      </h1>
+
+          <form>
+            <div class="govuk-form-group">
+              <h2>Your details</h2>
+                <label class="govuk-label" for="sort">
+                  Title
+                </label>
+              <input class="govuk-input govuk-input--width-10" id="address-line-1" name="address-line-1" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-line-1">
+                First name
+              </label>
+              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-line-1">
+                Last name
+              </label>
+              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-town">
+                Email
+              </label>
+              <input class="govuk-input" id="address-town" name="address-town" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-postcode">
+                Phone
+              </label>
+              <input class="govuk-input govuk-input--width-20" id="address-postcode" name="address-postcode" type="text">
+            </div>
+
+            <h2>Organisation details​</h2>
+
+            <div class="govuk-inset-text">
+              <p>This section is about:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>the company or charity you work for​</li>
+                <li>the place where you study or do research</li>
+              </ul>
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="name">
+                Organisation name
+              </label>
+              <input class="govuk-input" id="name" name="name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+              <p>Organisation type:</p>
+                <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                      Company
+                    </label>
+                  </div>
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-email">
+                          Registration number
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email">
+                        <div class="govuk-inset-text">
+                          <p>You can find out where your company is registered on GOV.UK. ​</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        Charity
+                      </label>
+                    </div>
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Charity number
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
+                      </div>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                        Government
+                      </label>
+                    </div>
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-4" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-4">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-4">
+                        Local authority
+                      </label>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-1">
+                      Building and street
+                      <span class="govuk-visually-hidden">line 1 of 2</span>
+                    </label>
+                    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">
+                      <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-town">
+                      Town or city
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-county">
+                      County
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-postcode">
+                      Postcode
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+                  </div>
+                <a href="1-2-create-password" role="button" class="govuk-button">
+                  Continue
+                </a>
+            </form>
+          </div>
+        </div>
+
+{% endblock %}

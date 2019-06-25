@@ -1,0 +1,121 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="" data-topnav="Community">Logout</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Your account</span>
+            John Smith
+          </h1>
+
+          <p class="govuk-body govuk-!-font-size-19"><a href="">Manage your account</a></p>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half data-vis">
+            <div class="data-vis-element">
+              <h2 class="govuk-heading-l">4</h2>
+              <p>Datasets downloaded</p>
+              <button type="submit" class="govuk-button">
+               Find datasets
+             </button>
+            </div>
+          </div>
+          <div class="govuk-grid-column-one-half data-vis">
+              <div class="data-vis-element">
+                <h2 class="govuk-heading-l">1</h2>
+                <p>Accepted licence</p>
+                <button type="submit" class="govuk-button">
+                 Manage licences
+               </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-grid-row">
+          <br>
+          <br>
+          <h2 class="govuk-heading-l">Your downloads</h2>
+          <h3 class="govuk-heading-m"><a href="">Free Commercial Licence</a></h3>
+
+          <table class="govuk-table">
+
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell" >Commercial and Corporate
+              <span class="govuk-caption-m">Version 0.0.2</span>
+            </td>
+              <td class="govuk-table__cell">24 October 2018</td>
+              <td class="govuk-table__cell change-answer"><a href="#">View download</a></td>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Overseas Companies
+              <span class="govuk-caption-m">Version 0.0.2</span>
+            </td>
+              <td class="govuk-table__cell">24 October 2018</td>
+              <td class="govuk-table__cell change-answer"><a href="#">View download</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">National Polygon Service
+              <span class="govuk-caption-m">Version 0.0.2</span>
+            </td>
+                <td class="govuk-table__cell">24 October 2018</td>
+                <td class="govuk-table__cell change-answer"><a href="#">View download</a></td>
+            </tr>
+          </tbody>
+
+        </table>
+
+        <h3 class="govuk-heading-m"><a href="">Open Government licence</a>
+          <svg role="presentation" focusable="false" class="govuk-footer__licence-logo ogl-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+            <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+          </svg>
+        </h3>
+          <div class="govuk-inset-text">
+            Information about OGL licences and that the users details will not be saved - but then can we display this below? Probably not.. unless we have an opt in area
+          </div>
+
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Price Paid
+            <span class="govuk-caption-m">Version 0.0.2</span>
+          </td>
+            <td class="govuk-table__cell">24 October 2018</td>
+            <td class="govuk-table__cell change-answer"><a href="#">View download</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+</main>
+</div>
+
+
+
+{% endblock %}

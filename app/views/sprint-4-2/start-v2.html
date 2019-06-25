@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Get land and property data</h1>
+
+        <p class="govuk-body">Use this service to get datasets on land and property in England and Wales.</p>
+        <p class="govuk-body">This service that incorporates:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>INSPIRE Polygon Data</li>
+            <li>Overseas Companies Ownership Data</li>
+            <li>and Registered Lease Data.</li>
+          </ul>
+        <!--  <p class="govuk-body">It makes access to this data more simple and will include up to 30 datasets in the next 3 years.</p>-->
+
+        <div class="govuk-inset-text">
+            <p class="govuk-body">
+              The datasets can be large and are only suitable for databases and machine reading.
+            </p>
+        </div>
+
+        <a href="listingspage-v3" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">You will need to <a href="createaccount">create an account</a> before you can download some datasets. If you already have an account then <a href="login-fromstart">sign in</a> now.</p>
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

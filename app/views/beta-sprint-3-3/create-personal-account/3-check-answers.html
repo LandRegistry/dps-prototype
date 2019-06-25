@@ -1,0 +1,134 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="1-2-create-password" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+      <h1 class="govuk-heading-xl">
+        Check your answers
+      </h1>
+        <dl class="app-check-your-answers app-check-your-answers--short">
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Title
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  Mr
+                </dd>
+                <dd class="app-check-your-answers__change">
+                  <a href="#">
+                    Change<span class="govuk-visually-hidden"> previous application number</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  First name
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  John
+                </dd>
+                <dd class="app-check-your-answers__change">
+                  <a href="#">
+                    Change<span class="govuk-visually-hidden"> licence type</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Last name
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  Smith
+                </dd>
+                <dd class="app-check-your-answers__change">
+                  <a href="#">
+                    Change<span class="govuk-visually-hidden"> home address</span>
+                  </a>
+                </dd>
+              </div>
+
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Email
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  john.smith@emailaddress.com
+                </dd>
+                <dd class="app-check-your-answers__change">
+                  <a href="#">
+                    Change<span class="govuk-visually-hidden"> licence period</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Phone
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  07099456738
+                </dd>
+                <dd class="app-check-your-answers__change">
+                  <a href="#">
+                    Change<span class="govuk-visually-hidden"> licence period</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Address
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  72 Guild Street<br>
+                  London<br>
+                  SE23 6FH
+                </dd>
+                <dd class="app-check-your-answers__change">
+                  <a href="#">
+                    Change<span class="govuk-visually-hidden"> licence period</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <h2>Terms of use</h2>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                      I have read and agreed to <a href="terms-of-use">the terms of use </a>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <h2>Before sending your application</h2>
+            <p class="govuk-body">On the next page you will be asked to enter your credit/debit card information. HM Land Registry asks for your card details so we can check your identity.</p>
+            <div class="govuk-inset-text">
+            <p>You will not be charged and no payment will be taken.</p>
+          </div>
+
+          <a href="4-govpay" role="button" class="govuk-button">
+        Continue
+      </a>
+    </div>
+
+</div>
+
+{% endblock %}

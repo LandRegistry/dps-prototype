@@ -1,0 +1,62 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row design-system">
+      <h1 class="govuk-heading-xl">Design system</h1>
+      <div class="govuk-tabs" data-module="tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+        Elements
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Patterns
+      </a>
+    </li>
+  </ul>
+
+  <section class="govuk-tabs__panel" id="past-day">
+    <h2 class="govuk-heading-l">Elements</h2>
+
+    <h3>Notifications (listings page) - pillboxes</h3>
+
+    <div class="new-ds">Licence agreed</div>
+    <div class="new-ds new-blue">New data added</div>
+    <div class="new-ds new-red"> <span class="govuk-warning-text__icon" aria-hidden="true">!</span>Licene agreement has changed</div>
+    <br />
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l">Elements</h2>
+
+    <h2>Notifications</h2>
+
+    <h3>Warnings - small</h3>
+    <ul><p>Useage</p>
+      <li>Licence has changed - in listings</li>
+    </ul>
+
+
+
+  </section>
+
+</div>
+
+
+
+
+  </div>
+
+{% endblock %}

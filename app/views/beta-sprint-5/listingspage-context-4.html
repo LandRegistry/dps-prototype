@@ -1,0 +1,472 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-grid-row listingspage">
+    <h1 class="govuk-heading-xl">
+      Choose a data file
+    </h1>
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds no-padding listings-page-table">
+
+        <div class="listings-page-item">
+            <h2>
+              <a href="detailspages-dataset-v4-logged-in">Registered leases</a> <span class="new">Update available</span>
+            </h2>
+
+            <p>Download data about leasehold properties in England and Wales.</p>
+
+            <ul>
+              <li class="govuk-!-font-size-16"><span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-16">Licence agreed:</span> July 2018</li>
+              <li class="govuk-!-font-size-16"><span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-16">Previous download:</span> July 2018</li>
+              <li class="govuk-!-font-size-16"><span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-16">Latest version:</span> August 2018</li>
+            </ul>
+
+            <div class="download-details">
+
+              <p>You have already agreed to the licence. Download again here. </p>
+
+              <dl class="app-check-your-answers app-check-your-answers--short">
+
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                      Documentation
+                    </dt>
+                    <dd class="app-check-your-answers__answer">
+                      <a href="">Licence</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Technical Specification</a>
+                    </dd>
+                    <dd class="app-check-your-answers__answer">
+
+                    </dd>
+                  </div>
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                      Data set
+                    </dt>
+                    <dd class="app-check-your-answers__answer left-alligned">
+                      <a href="">Last download (5.5Gb)</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Latest version (5.5Gb)</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+
+                    </dd>
+                  </div>
+
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                      Data set
+                    </dt>
+                    <dd class="app-check-your-answers__answer">
+                      <a href="#" download>Latest change only (22Mb)</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="" class="older-versions">See older versions</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                    </dd>
+
+                  </div>
+                </dl>
+
+              </div>
+
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    See a sample of the data
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <table class="govuk-table table-hack">
+                    <tbody>
+                      <thead>
+                      <td><strong>Data</strong></td>
+                      <td><strong>What this means</strong></td>
+                      <td><strong>Example data</strong></td>
+                      </thead>
+                      <tr>
+                      <td>Property description</td>
+                      <td>Description of the leased land, for example an address</td>
+                      <td>1 Smith Street&nbsp;</td>
+                      </tr>
+                      <tr>
+                      <td>Region and county</td>
+                      <td>Location of the leasehold property</td>
+                      <td>Region</td>
+                      </tr>
+                      <tr>
+                      <td>Unique property reference number (UPRN)</td>
+                      <td>
+                      <p>Number used by HM Land Registry to identify the property location.</p>
+                      <p>Similar to postcode, but more specific</p>
+                      </td>
+                      <td>abc00000003</td>
+                      </tr>
+                      <tr>
+                      <td>Unique identifier</td>
+                      <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
+                      <td>123456</td>
+                      </tr>
+                      <tr>
+                      <td>Date of lease</td>
+                      <td>When the lease started</td>
+                      <td>Date</td>
+                      </tr>
+                      <tr>
+                      <td>Term</td>
+                      <td>How long the lease lasts for</td>
+                      <td>999 years</td>
+                      </tr>
+                      <tr>
+                      <td>Tenure</td>
+                      <td>How the land is owned (type of lease)</td>
+                      <td>Leasehold</td>
+                      </tr>
+                      <tr>
+                      <td>Alienation cause indicator</td>
+                      <td>
+                      <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
+                      <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
+                      </td>
+                      <td>Clause details</td>
+                      </tr>
+                      <tr>
+                      <td>Reg order</td>
+                      <td>
+                      <p>Some pieces of land have more than 1 lease on them.</p>
+                      <p>The reg order shows the order of registration (which lease came first).</p>
+                      </td>
+                      <td>
+                      <p>Lease 1 (DD/MM/YY)</p>
+                      <p>Lease 2 (DD/MM/YY)</p>
+                      </td>
+                      </tr>
+                      <tr>
+                      <td>Price paid&nbsp;</td>
+                      <td>Price paid for the land</td>
+                      <td>1000000</td>
+                      </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </details>
+
+            </div>
+
+            <div class="listings-page-item">
+            <h2>
+            <a href="detailspages-dataset-overseas-logged-in">Overseas companies that own property in England and Wales</a>
+            </h2>
+            <p>Download data about overseas companies that own land in England and Wales.</p>
+
+            <div class="download-details">
+
+              <p>You still need to agree to the licence. Download here.</p>
+
+              <dl class="app-check-your-answers app-check-your-answers--short">
+
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                      Documentation
+                    </dt>
+                    <dd class="app-check-your-answers__answer">
+                      <a href="">Licence</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Technical Specification</a>
+                    </dd>
+                    <dd class="app-check-your-answers__answer">
+
+                    </dd>
+                  </div>
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                      Data set
+                    </dt>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Latest version (5.5Gb)</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Latest change only (22Mb)</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+
+                    </dd>
+                  </div>
+
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+
+                    </dt>
+                    <dd class="app-check-your-answers__answer">
+                      <a href="" class="older-versions">See older versions</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                    </dd>
+
+                  </div>
+                </dl>
+
+              </div>
+
+            <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  See a sample of the data
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <table class="govuk-table table-hack">
+                  <tbody>
+                    <thead>
+                    <td><strong>Data</strong></td>
+                    <td><strong>What this means</strong></td>
+                    <td><strong>Example data</strong></td>
+                    </thead>
+                    <tr>
+                    <td>Property description</td>
+                    <td>Description of the leased land, for example an address</td>
+                    <td>1 Smith Street&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Region and county</td>
+                    <td>Location of the leasehold property</td>
+                    <td>Region</td>
+                    </tr>
+                    <tr>
+                    <td>Unique property reference number (UPRN)</td>
+                    <td>
+                    <p>Number used by HM Land Registry to identify the property location.</p>
+                    <p>Similar to postcode, but more specific</p>
+                    </td>
+                    <td>abc00000003</td>
+                    </tr>
+                    <tr>
+                    <td>Unique identifier</td>
+                    <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
+                    <td>123456</td>
+                    </tr>
+                    <tr>
+                    <td>Date of lease</td>
+                    <td>When the lease started</td>
+                    <td>Date</td>
+                    </tr>
+                    <tr>
+                    <td>Term</td>
+                    <td>How long the lease lasts for</td>
+                    <td>999 years</td>
+                    </tr>
+                    <tr>
+                    <td>Tenure</td>
+                    <td>How the land is owned (type of lease)</td>
+                    <td>Leasehold</td>
+                    </tr>
+                    <tr>
+                    <td>Alienation cause indicator</td>
+                    <td>
+                    <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
+                    <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
+                    </td>
+                    <td>Clause details</td>
+                    </tr>
+                    <tr>
+                    <td>Reg order</td>
+                    <td>
+                    <p>Some pieces of land have more than 1 lease on them.</p>
+                    <p>The reg order shows the order of registration (which lease came first).</p>
+                    </td>
+                    <td>
+                    <p>Lease 1 (DD/MM/YY)</p>
+                    <p>Lease 2 (DD/MM/YY)</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Price paid&nbsp;</td>
+                    <td>Price paid for the land</td>
+                    <td>1000000</td>
+                    </tr>
+                    </tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+
+          <div class="listings-page-item">
+            <h2>
+            <a href="">UK companies that own property in England and Wales</a>
+            </h2>
+            <p>Download data about UK companies that own land in England and Wales.</p>
+            <div class="download-details">
+
+              <p>You still need to agree to the licence. Download here.</p>
+
+              <dl class="app-check-your-answers app-check-your-answers--short">
+
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                      Documentation
+                    </dt>
+                    <dd class="app-check-your-answers__answer">
+                      <a href="">Licence</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Technical Specification</a>
+                    </dd>
+                    <dd class="app-check-your-answers__answer">
+
+                    </dd>
+                  </div>
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                      Data set
+                    </dt>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Latest version (5.5Gb)</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                      <a href="#" download>Latest change only (22Mb)</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+
+                    </dd>
+                  </div>
+
+                  <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+
+                    </dt>
+                    <dd class="app-check-your-answers__answer">
+                      <a href="" class="older-versions">See older versions</a>
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                    </dd>
+                    <dd class="app-check-your-answers__change left-alligned">
+                    </dd>
+
+                  </div>
+                </dl>
+
+              </div>
+            <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  See a sample of the data
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <table class="govuk-table table-hack">
+                  <tbody>
+                    <thead>
+                    <td><strong>Data</strong></td>
+                    <td><strong>What this means</strong></td>
+                    <td><strong>Example data</strong></td>
+                    </thead>
+                    <tr>
+                    <td>Property description</td>
+                    <td>Description of the leased land, for example an address</td>
+                    <td>1 Smith Street&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Region and county</td>
+                    <td>Location of the leasehold property</td>
+                    <td>Region</td>
+                    </tr>
+                    <tr>
+                    <td>Unique property reference number (UPRN)</td>
+                    <td>
+                    <p>Number used by HM Land Registry to identify the property location.</p>
+                    <p>Similar to postcode, but more specific</p>
+                    </td>
+                    <td>abc00000003</td>
+                    </tr>
+                    <tr>
+                    <td>Unique identifier</td>
+                    <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
+                    <td>123456</td>
+                    </tr>
+                    <tr>
+                    <td>Date of lease</td>
+                    <td>When the lease started</td>
+                    <td>Date</td>
+                    </tr>
+                    <tr>
+                    <td>Term</td>
+                    <td>How long the lease lasts for</td>
+                    <td>999 years</td>
+                    </tr>
+                    <tr>
+                    <td>Tenure</td>
+                    <td>How the land is owned (type of lease)</td>
+                    <td>Leasehold</td>
+                    </tr>
+                    <tr>
+                    <td>Alienation cause indicator</td>
+                    <td>
+                    <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
+                    <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
+                    </td>
+                    <td>Clause details</td>
+                    </tr>
+                    <tr>
+                    <td>Reg order</td>
+                    <td>
+                    <p>Some pieces of land have more than 1 lease on them.</p>
+                    <p>The reg order shows the order of registration (which lease came first).</p>
+                    </td>
+                    <td>
+                    <p>Lease 1 (DD/MM/YY)</p>
+                    <p>Lease 2 (DD/MM/YY)</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Price paid&nbsp;</td>
+                    <td>Price paid for the land</td>
+                    <td>1000000</td>
+                    </tr>
+                    </tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+
+      </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

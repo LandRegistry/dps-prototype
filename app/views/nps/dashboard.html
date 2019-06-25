@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="detailspages-dataset-v4-logged-in" class="govuk-back-link">Back</a>
+<div class="dashboard-width">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+
+        <h1 class="govuk-heading-xl">Dashboard</h1>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th valign="top" class="govuk-table__header" scope="col">Dataset</th>
+              <th valign="top" class="govuk-table__header" scope="col">Description</th>
+              <th valign="top" class="govuk-table__header" scope="col" width="150px">Licence</th>
+              <th valign="top"class="govuk-table__header" scope="col" width="150px">Download history</th>
+              <th valign="top"class="govuk-table__header" scope="col">Download</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th valign="top" class="govuk-table__header" scope="row"><a href="detailspages-uk">UK companies that own property in England and Wales</a></th>
+              <td valign="top" class="govuk-table__cell">Download data about UK companies that own land in England and Wales.</td>
+              <td valign="top" class="govuk-table__cell"><span class="new">Licence agreed</span></td>
+              <td valign="top" class="govuk-table__cell"><p>12 March 2019</p></td>
+              <td valign="top" class="govuk-table__cell">
+                <a href="#" role="button" draggable="false" class="govuk-button" download>Download everything</a>
+                <a href="#" role="button" draggable="false" download>Download Latest</a><br>
+                <a href="#" role="button" draggable="false">See older versions</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th valign="top" class="govuk-table__header" scope="row"><a href="detailspages-overseas">Overseas companies that own property in England and Wales</a></th>
+              <td valign="top" class="govuk-table__cell">Download data about overseas companies that own land in England and Wales.</td>
+              <td valign="top" class="govuk-table__cell"><a href="">View licence</a></td>
+              <td valign="top" class="govuk-table__cell"><p></p></td>
+              <td valign="top" class="govuk-table__cell">
+                <a href="#" role="button" draggable="false" download>Agree to licence and download</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th valign="top" class="govuk-table__header" scope="row">CCOD</th>
+              <td valign="top" class="govuk-table__cell">£109.80 per week</td>
+              <td valign="top" class="govuk-table__cell"><span class="new">Licence agreed</span></td>
+              <td valign="top" class="govuk-table__cell"><p>12 March 2019</p></td>
+              <td valign="top" class="govuk-table__cell"><a href="#" role="button" draggable="false" class="govuk-button" download>Download everything</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,95 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Sign out</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dashboard-v6">Your profile</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Manage account details</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <a href="dashboard-v6" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Your profile</span> Manage account details
+        </h1>
+
+        <h2 class="govuk-heading-m">
+        Personal details
+        </h2>
+
+        <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Name</th>
+                <td class="govuk-table__cell ">John Smith</td>
+                <td class="govuk-table__cell change-answer"><a href="">Change</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Email address</th>
+                <td class="govuk-table__cell ">j.smith@gmail.com</td>
+                <td class="govuk-table__cell change-answer"><a href="">Change</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Password</th>
+                <td class="govuk-table__cell ">**********</td>
+                <td class="govuk-table__cell change-answer"><a href="">Change</a></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <!-- <h2 class="govuk-heading-m">
+        General Data Protection Regulation
+        </h2>
+
+        <p class="govuk-body govuk-!-font-size-19">What is this and what does it mean to the user?</p> -->
+
+        <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">General Data Protection Regulation</th>
+                <td class="govuk-table__cell ">Opt in</td>
+                <td class="govuk-table__cell change-answer"><a href="">Change</a></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <p class="govuk-body govuk-!-font-size-19"><a href="dashboard-v6">Delete account</a></p>
+        <br>
+        <p class="govuk-body govuk-!-font-size-19"><a href="dashboard-v6">Return to profile</a></p>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Get land and property data from HM Land Registry</h1>
+
+        <p class="govuk-body">Use this service to get land and property data for England and Wales.</p>
+        <p class="govuk-body">Download information about:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>registered leases</li>
+            <li>overseas companies that own property in England and Wales</li>
+            <li>UK companies that own property in England and Wales</li>
+          </ul>
+
+        <a href="listingspage-v3" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">Before you download a data set, you need to <a href="createaccount">create an account</a>.</p>
+        <p class="govuk-body">If you already have an account, <a href="login-fromstart">sign in</a> now.</p>
+
+        <br>
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

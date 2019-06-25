@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Get land and property data from HM Land Registry</h1>
+
+        <p>Use this service to download land ownership data for England and Wales. </p>
+
+        <p class="govuk-inset-text">If you are looking for information about a single address, try <a href="https://eservices.landregistry.gov.uk/eservices/FindAProperty/view/QuickEnquiryInit.do">this service</a> instead.</p>
+
+        <p>For some datasets, you'll need to <a href="createaccount">create an account</a> and agree a licence in order to download.</p>
+
+        <p class="govuk-!-font-weight-bold">It is important to be aware that:</p>
+        <ul>
+          <li><p>the datasets are very large and typically contain over 20 million rows of data</p></li>
+          <li><p>the datasets do not always display fully on some applications such as MS Excel</p></li>
+        </ul>
+      <br>
+        <a href="listingspage-context-1-flat" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+<!--
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">Before you download a data set, you need to <a href="createaccount">create an account</a>.</p>
+        <p class="govuk-body">If you already have an account, <a href="login-fromstart">sign in</a> now.</p>
+
+        <br>
+-->
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

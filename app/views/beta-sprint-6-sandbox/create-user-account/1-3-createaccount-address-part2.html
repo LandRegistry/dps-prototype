@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="1-2-createaccount-address" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Create an account</span>
+        Your home address
+      </h1>
+
+      <p class="govuk-body-l">Postcode</p>
+
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">SA13 T56</th>
+            <td class="govuk-table__cell "><a href="#">change</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+          Sort by
+        </label>
+        <select class="govuk-select" id="sort" name="sort">
+          <option value="published">1 Alans Avenue</option>
+          <option value="updated">2 Alans Avenue</option>
+          <option value="views">3 Alans Avenue</option>
+          <option value="comments">4 Alans Avenue</option>
+          <option value="published">5 Alans Avenue</option>
+          <option value="updated">6 Alans Avenue</option>
+          <option value="views">7 Alans Avenue</option>
+          <option value="comments">8 Alans Avenue</option>
+        </select>
+      </div>
+      <a href="#">I can’t find my address in the list</a>
+      <div class="govuk-!-padding-bottom-3"></div>
+      <a href="1-5-createaccount-check-answers" role="button" class="govuk-button">
+        Continue
+      </a>
+    </div>
+</div>
+
+{% endblock %}

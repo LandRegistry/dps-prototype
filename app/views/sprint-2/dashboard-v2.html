@@ -1,0 +1,157 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row dashboard">
+
+      <h1 class="govuk-heading-xl">
+        Your account
+      </h1>
+<a href="#" class="float_right">Log out</a>
+
+<div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+<h2 class="govuk-tabs__title">
+Contents
+</h2>
+
+<ul class="govuk-tabs__list">
+<li class="govuk-tabs__list-item">
+  <a class="govuk-tabs__tab" href="#past-day">
+      Your account
+    </a>
+</li>
+<li class="govuk-tabs__list-item">
+  <a class="govuk-tabs__tab" href="#past-week">
+      Download history
+    </a>
+</li>
+<li class="govuk-tabs__list-item">
+  <a class="govuk-tabs__tab" href="#past-month">
+      Licences
+    </a>
+</li>
+<li class="govuk-tabs__list-item">
+  <a class="govuk-tabs__tab" href="#past-year">
+      Find datasets
+    </a>
+</li>
+</ul>
+
+<section class="govuk-tabs__panel" id="past-day">
+<h2 class="govuk-heading-l">Your account</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__cell govuk-table__header"  scope="col">First name</th>
+      <td class="govuk-table__cell">John</td>
+      <td class="govuk-table__cell"><a href="#">Change</a></td>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__cell govuk-table__header"  scope="col">Last name</th>
+      <td class="govuk-table__cell ">Smith</td>
+      <td class="govuk-table__cell"><a href="#">Change</a></td>
+
+    </tr>
+    <tr class="govuk-table__row">
+    <th class="govuk-table__header govuk-table__header" scope="col">Email address</th>
+      <td class="govuk-table__cell ">john.smith@gmail.com</td>
+      <td class="govuk-table__cell"><a href="#">Change</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+    <th class="govuk-table__header govuk-table__header" scope="col">Password</th>
+      <td class="govuk-table__cell ">***********</td>
+      <td class="govuk-table__cell"><a href="#">Change</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section class="govuk-tabs__panel" id="past-week">
+<h2 class="govuk-heading-l">Download history</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__cell govuk-table__header" scope="col">Dataset</th>
+      <td class="govuk-table__cell govuk-table__header">Date downloaded</td>
+      <td class="govuk-table__cell govuk-table__header">Version</td>
+      <td class="govuk-table__cell govuk-table__header">Licence</td>
+    </tr>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__cell govuk-table__header" scope="col"><a href="#">Overseas</a></th>
+      <td class="govuk-table__cell">24 October 2018</td>
+      <td class="govuk-table__cell">0.0.2</td>
+      <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__cell" scope="col"><a href="#">Overseas</a></th>
+      <td class="govuk-table__cell">24 October 2018</td>
+      <td class="govuk-table__cell">0.0.2</td>
+      <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__cell" scope="col"><a href="#">Overseas</a></th>
+        <td class="govuk-table__cell">24 October 2018</td>
+        <td class="govuk-table__cell">0.0.2</td>
+        <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__cell" scope="col"><a href="#">Overseas</a></th>
+        <td class="govuk-table__cell">24 October 2018</td>
+        <td class="govuk-table__cell">0.0.2</td>
+        <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section class="govuk-tabs__panel" id="past-month">
+<h2 class="govuk-heading-l">Licences</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Licences</th>
+      <th class="govuk-table__header" scope="col">Date agreed</th>
+      <th class="govuk-table__header" scope="col">View licence agreement</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Licence type</td>
+      <td class="govuk-table__cell ">12 September 2018</td>
+      <td class="govuk-table__cell "><a  href="#">View licence</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Licence type</td>
+      <td class="govuk-table__cell ">11 September 2018</td>
+      <td class="govuk-table__cell "><a  href="#">View licence</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Licence type</td>
+      <td class="govuk-table__cell ">3 September 2018</td>
+      <td class="govuk-table__cell "><a  href="#">View licence</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section class="govuk-tabs__panel" id="past-year">
+<h2 class="govuk-heading-l">Find datasets</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sed metus vitae sodales. Vestibulum porttitor est at massa venenatis, in vulputate sem ultricies.</p>
+<a href="listingspage2" type="submit" class="govuk-button">
+  Find datasets
+</a>
+</section>
+</div>
+</div>
+
+{% endblock %}

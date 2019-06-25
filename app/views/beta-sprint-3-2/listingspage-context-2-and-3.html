@@ -1,0 +1,316 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="context" data-id="id-1"></div>
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+<div id="myModal" class="modal modal-listings" style="color: black;">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <h1 class="govuk-heading-xl" style="color: black;">
+      Agree to the data licences
+    </h1>
+
+
+    <p style="color: black;">The file you are about to download includes data owned by:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>HM Land Registry</li>
+      <li>Ordnance Survey’s AddressBase Premium</li>
+      <li>Royal Mail’s PAF® database (address data) </li>
+   </ul>
+
+   <h2 class="govuk-heading-l">How you can use this data</h2>
+
+   <h3 class="govuk-heading-m">If you’re a business </h3>
+
+   <p style="color: black;">You can use this data to: </p>
+   <ul class="govuk-list govuk-list--bullet">
+     <li>prevent and detect crime, including for:</li>
+     <ul class="govuk-list govuk-list--bullet">
+       <li>the apprehension or prosecution of alleged offenders</li>
+       <li>proceedings in a court or tribunal</li>
+       <li>complying with an order, a court or a tribunal</li>
+   </ul>
+     <li>keep records about land and properties</li>
+  </ul>
+
+  <h3 class="govuk-heading-m">If you’re a public body</h3>
+
+  <p style="color: black;">You can use this data if you have a:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li><a href="">Public Sector Mapping Agreement Licence</a></li>
+    <li><a href="">One Scotland Mapping Agreement Member Licence</a></li>
+  </ul>
+
+  <p style="color: black;">These licences are issued by Ordnance survey and public bodies must use the data under the terms of these licences.</p>
+
+  <p><a href="">Apply for a licence from Ordnance Survey</a>.</p>
+
+  <h2 class="govuk-heading-l">Not sure if you can use this data?</h2>
+
+  <p style="color: black;">Contact Royal Mail before you use this data. Ask them to confirm that your intended use is permitted under the terms of their licence.</p>
+
+  <p style="color: black;"><a href="">Email Royal Mail</a>.</p>
+
+  <h3 class="govuk-heading-m">Read the full licences </h3>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li><a href="">HM Land Registry’s data</a></li>
+    <li><a href="">Ordnance Survey’s AddressBase Premium licence</a></li>
+    <li><a href="">Royal Mail’s PAF® database licence</a></li>
+  </ul>
+
+  <br>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+            I understand and agree to these licences
+          </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <a href="#" role="button" draggable="false" class="govuk-button disabled_btn">
+      Agree and continue
+    </a>
+    <br>
+    <a href="#" class="cancel-this">Cancel</a>
+
+  </div>
+
+</div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">View datasets</li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds listings2 context2-3">
+    <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Download a data file</h1>
+
+    <div class="govuk-tabs listings-with-history" data-module="tabs">
+
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+            Available data
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-week">
+            Your download history
+          </a>
+        </li>
+
+      </ul>
+
+      <section class="govuk-tabs__panel" id="past-day">
+              <div class="consultation-outcome">
+                    <div class="gem-c-govspeak govuk-govspeak direction-ltr">
+                    <section class="attachment embedded context3-resize" id="attachment_1233011">
+                      <div class="attachment-thumb">
+                          <img src="https://www.gov.uk/government/assets/pub-cover-spreadsheet-471052e0d03e940bbc62528a05ac204a884b553e4943e63c8bffa6b8baef8967.png" />
+                      </div>
+                      <div class="attachment-details">
+                        <h2 class="title"><a href="detailspages-dataset-overseas">Overseas companies that own property in England and Wales</a></h2>
+                        <div class="state-1">
+
+                          <p class="metadata">
+                            <p class="float_left"><span class="type govuk-!-font-weight-bold govuk-tag app-task-list__task-completed">New data added to this file: 27 November 2018</span></p>
+                            <p class="float_left">Download data about overseas companies that own land in England and Wales.<br><br><span class="govuk-!-font-weight-bold">This file may not be suitable for users of assistive technology.</span></p>
+                          </p>
+                          <div class="download-wrapper">
+                              <a href="" class="gotostate2 download"><span>Get this data</span></a>
+                          </div>
+                        </div><!-- end of state 1 -->
+                        <div class="state-2">
+
+                        <div class="download-wrapper">
+                              <div class="govuk-checkboxes__item">
+                                 <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british" aria-describedby="nationality-1-item-hint">
+                                 <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                                I have read and agree to <a class="open-dialoge-box" id="myBtn">the licence</a>
+                                 </label>
+
+                               </div>
+                               <br>
+
+                               <a href="#" role="button" draggable="false" class="govuk-button disabled_btn">
+                                 Agree and continue
+                               </a>
+                               <br>
+                               <a href="#" class="cancel-this">Cancel</a>
+
+                          </div>
+                        </div><!-- end of state 2 -->
+                        <div class="state-3">
+                          <p class="metadata">
+                            <p class="float_left"><span class="new">Licence agreed</span></p>
+                            <p class="float_left">Download data about overseas companies that own land in England and Wales.<br>
+                            </p>
+                          </p>
+                          <div class="download-wrapper">
+                            <p class="govuk-!-font-weight-bold">A new version of this data was released on <span class="govuk-!-font-weight-bold">15 December 2018</span></p><br>
+                              <a href="" class="download" download><span>Download latest full file</span></a>
+                              <a href="" class="download" download><span>Download latest change only</span></a>
+                              <br><br><br><a href="">See older versions</a>
+                          </div>
+
+                        </div>
+
+                        </div><!-- end of state 3 -->
+
+
+                    </section>
+                    <section class="attachment embedded" id="attachment_1233011">
+                      <div class="attachment-thumb">
+                          <img src="https://www.gov.uk/government/assets/pub-cover-spreadsheet-471052e0d03e940bbc62528a05ac204a884b553e4943e63c8bffa6b8baef8967.png" />
+                      </div>
+                      <div class="attachment-details">
+                        <h2 class="title"><a href="detailspages-sample-data-view-context-2-modal">Registered leases</a></h2>
+                        <p class="metadata">
+                          <div class="govuk-warning-text alert-small">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text">
+                              <span class="govuk-warning-text__assistive">Warning</span>
+                              There has been a change to this licence agreement.
+                            </strong>
+                          </div>
+                          <p class="float_left">Download data about overseas companies that own land in England and Wales.<br>
+                          </p>
+                          <div class="govuk-inset-text">
+                            <p>You downloaded an older version of this data on <span class="govuk-!-font-weight-bold">5 December 2018. </span><br><a href="#">View the file you last downloaded here</a></p>
+                          </div>
+                        </p>
+
+                        <p>There has been a change the licence agreement for this data since you last downloaded. To download this dataset again, <a href="">you must agree to the new licence</a>.
+                      </div>
+                    </section>
+                    </div>
+                </div>
+
+
+      </section>
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week"><br>
+        <h2 class="govuk-heading-l">Your download history</h2>
+        <br>
+        <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Dataset
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Date downloaded
+          </dd>
+          <dd class="app-check-your-answers__change">
+              Licence agreed
+          </dd>
+          <dd class="app-check-your-answers__change">
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dd class="app-check-your-answers__question">
+          <a href="">Overseas</a>
+          </dd>
+          <dd class="app-check-your-answers__answer">
+            22 January 2019
+          </dd>
+          <dd class="app-check-your-answers__change">
+
+              22 January 2019 <a href="#"><span class="govuk-visually-hidden">View licence</span>
+            </a>
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Dowload again
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dd class="app-check-your-answers__question">
+              <a href="">Overseas</a>
+          </dd>
+          <dd class="app-check-your-answers__answer">
+            25 January 2019
+          </dd>
+          <dd class="app-check-your-answers__change">
+
+            25 January 2019<a href="#"><span class="govuk-visually-hidden">View licence</span>
+            </a>
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Dowload again
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dd class="app-check-your-answers__question">
+          <a href="">Overseas</a>
+          </dd>
+          <dd class="app-check-your-answers__answer">
+            19 January 2019
+          </dd>
+          <dd class="app-check-your-answers__change">
+
+              19 January 2019
+              <a href="#"><span class="govuk-visually-hidden">View licence</span>
+            </a>
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Dowload again
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      </section>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+{% endblock %}

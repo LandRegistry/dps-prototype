@@ -1,0 +1,98 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="dashboard-v6" data-topnav="Get started">Your profile</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Logout</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dashboard-v6">Your profile</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dashboard-v6">Your previous download</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dashboard-v6">Download options</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Check your choices</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          Check your choices before downloading
+        </h1>
+
+        <h2 class="govuk-heading-m">
+        Download details
+        </h2>
+
+        <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Dataset</th>
+                <td class="govuk-table__cell ">Commercial and Corporate</td>
+                <td class="govuk-table__cell "></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Download options</th>
+                <td class="govuk-table__cell">
+                  <ul class="check-your-answers">
+                    {% for option in data['download-option'] %}
+                    <li>
+                      {{ option }}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </td>
+                <td class="govuk-table__cell change-answer"><a href="download-file-options-v2">Change</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">File size</th>
+                <td class="govuk-table__cell ">5GB</td>
+                <td class="govuk-table__cell "></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Licence</th>
+                <td class="govuk-table__cell ">Free and licenced</td>
+                <td class="govuk-table__cell change-answer"><a href="OGL-licence">View</a></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <p>
+            Datasets are large files. The length of time it takes to complete a download will vary, depending on your internet connection speed and the size of the datasets you have selected.
+          </p>
+
+        <a href="download-confirmation-loggedin" role="button" class="govuk-button">
+          Download
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

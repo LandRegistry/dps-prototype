@@ -1,0 +1,69 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="" data-topnav="Community">Logout</a>
+    </li>
+  </ul>
+</nav>
+  <div class="govuk-grid-row dashboard dashboard-3">
+<a href="#" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Your account</span> John Smith
+    </h1>
+
+<a href="listingspage">Find more datasets</a>
+<div class="govuk-grid-row">
+
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__cell govuk-table__header" scope="col">Dataset</th>
+        <td class="govuk-table__cell govuk-table__header">Date downloaded</td>
+
+        <td class="govuk-table__cell govuk-table__header">Version</td>
+        <td class="govuk-table__cell govuk-table__header">Licence</td>
+      </tr>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__cell govuk-table__header" scope="col"><a href="#">Commercial and Corporate
+</a></th>
+        <td class="govuk-table__cell">24 October 2018</td>
+        <td class="govuk-table__cell">0.0.2</td>
+        <td class="govuk-table__cell"><a href="#">Free but licensed</a></td>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__cell" scope="col"><a href="#">Overseas Companies</a></th>
+        <td class="govuk-table__cell">24 October 2018</td>
+        <td class="govuk-table__cell">0.0.2</td>
+        <td class="govuk-table__cell"><a href="#">Free but licensed</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__cell" scope="col"><a href="#">National Polygon Service</a></th>
+          <td class="govuk-table__cell">24 October 2018</td>
+          <td class="govuk-table__cell">0.0.2</td>
+          <td class="govuk-table__cell"><a href="#">Paid and Licensed</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+
+</div>
+
+
+{% endblock %}

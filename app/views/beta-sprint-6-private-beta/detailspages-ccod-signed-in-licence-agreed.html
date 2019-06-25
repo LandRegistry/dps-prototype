@@ -1,0 +1,485 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccod-licence-agreed">
+<nav class="app-navigation-1 govuk-clearfix full-screen product-page">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="detailspages-overseas" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      <a href="https://www.gov.uk/government/organisations/land-registry">HM Land Registry</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      <a href="listingspage-signed-in-licence-agreed">Use land and property data</a>
+    </li>
+  </ol>
+</div>
+
+
+<div class="overlay">
+  <div class="dialoge-box">
+    <h2>Your data has started to download<h3>
+
+  <p>Not sure if your data has finished downloading? Check the list of downloads in your browser. </p>
+
+
+
+    <a class="govuk-button close-dialoge">Close</a>
+  </div>
+  <div class="dialoge-box-background"></div>
+</div>
+
+
+  <div class="govuk-grid-row ccod">
+    <div class="govuk-grid-column-full">
+      <br>
+      <br>
+
+      <div class="blue-box">
+
+      <span class="govuk-caption-xl">Dataset</span>
+      <h1 class="govuk-heading-xl">
+    UK companies that own property in England and Wales
+      </h1>
+<p class="float_left"><span class="new">Licence agreed</span><span class="last-downloaded-date"></span></p>
+<br>
+<p>Download data about UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more.  This dataset was originally named Commercial and Corporate Data (CCOD). </p>
+
+
+
+<div class="update-info govuk-inset-text">
+  <span class="govuk-!-font-weight-bold">Updated monthly</span><br>
+  <span>Last updated on the</span> <span class="govuk-!-font-weight-bold">2 March 2019</span><br>
+  <span>Next updated on the</span> <span  class="govuk-!-font-weight-bold">2 April 2019</span><br>
+  <span>File size is approx</span> <span  class="govuk-!-font-weight-bold">1.2Gb</span>
+</div>
+
+    <div class="attachment-details">
+
+<!-- added new
+
+        <div class="state-1">
+          <div class="download-wrapper">
+              <a href="" class="gotostate2 download"><span>Get this data</span></a>
+          </div>
+        </div><!-- end of state 1 -->
+        <div class="state-2">
+
+        <div class="download-wrapper">
+          <h2 class="govuk-heading-m">Agree to licence</h2>
+          <br />
+              <div class="govuk-checkboxes__item">
+
+                 <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british" aria-describedby="nationality-1-item-hint">
+                 <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                I have read and agree to <a class="open-dialoge-box" id="myBtn">the licence</a>
+                 </label>
+
+               </div>
+               <br>
+
+               <a role="button" draggable="false" class="govuk-button disabled_btn">
+                 Agree and continue
+               </a>
+               <br>
+               <a href="#" class="cancel-this">Cancel</a>
+
+          </div>
+        </div><!-- end of state 2 -->
+
+          <div class="download-wrapper">
+              <a href="ccd.csv" class="download open-dialogue" data-slide="1" download><span>Download all</span></a>
+              <a href="ccd.csv" class="download open-dialogue" data-slide="2" download><span>Download changes from last month</span></a>
+
+          </div>
+
+
+
+        </div><!-- end of state 3 -->
+
+  </div>
+  <br>
+          <div class="govuk-accordion" data-module="accordion" id="accordion-default"><div class="govuk-accordion__controls"></div>
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+
+              <button type="button" id="accordion-default-heading-1" aria-controls="accordion-default-content-1" class="govuk-accordion__section-button" aria-expanded="false">
+                  Technical specification
+                </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <p>Read the <a href="https://www.gov.uk/government/publications/commercial-and-corporate-ownership-data-technical-specification">technical specification for commercial and corporate ownership data</a></p>
+            </div>
+          </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-1" aria-controls="accordion-default-content-1" class="govuk-accordion__section-button" aria-expanded="false">
+                      Example of this data
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                    <p>The data shown in this example is not real data. This example is to show what you will see if you download the file. </p>
+                          <table width="619" class="govuk-table table-hack">
+                            <tbody>
+                              <tr>
+                              <td width="133">
+                              <p><strong>Data</strong></p>
+                              </td>
+                              <td width="123">
+                              <p><strong>What this means</strong></p>
+                              </td>
+                              <td width="121">
+                              <p><strong>Example data 1</strong></p>
+                              </td>
+                              <td width="123">
+                              <p><strong>Example data 2</strong></p>
+                              </td>
+                              <td width="119">
+                              <p><strong>Example data 3</strong></p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Proprietor name</p>
+                              </td>
+                              <td width="123">
+                              <p>Name of overseas company</p>
+                              </td>
+                              <td width="121">
+                              <p>OWNER_28</p>
+                              </td>
+                              <td width="123">
+                              <p>OWNER_1</p>
+                              </td>
+                              <td width="119">
+                              <p>OWNER_29</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Proprietorship category</p>
+                              </td>
+                              <td width="123">
+                              <p>Type of company</p>
+                              </td>
+                              <td width="121">
+                              <p>Corporate body</p>
+                              </td>
+                              <td width="123">
+                              <p>Industrial and Provident Society (Corporate Body)</p>
+                              </td>
+                              <td width="119">
+                              <p>Industrial and Provident Society (Company)</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Company registration number</p>
+                              </td>
+                              <td width="123">
+                              <p>Reference number used by Companies house to identify the company</p>
+                              </td>
+                              <td width="121">
+                              <p>FHV347443</p>
+                              </td>
+                              <td width="123">
+                              <p>rrN607820</p>
+                              </td>
+                              <td width="119">
+                              <p>jbP356247</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Property address</p>
+                              </td>
+                              <td width="123">
+                              <p>Land or property bought by the company</p>
+                              </td>
+                              <td width="121">
+                              <p>Test address for title 0000002 (AA00 0AA)</p>
+                              </td>
+                              <td width="123">
+                              <p>Test address for title abc0000006 (A1 0AA)</p>
+                              </td>
+                              <td width="119">
+                              <p>Test address for title TTN0000009 (PP88 0AA)</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Proprietor&nbsp; address</p>
+                              </td>
+                              <td width="123">
+                              <p>Address of company</p>
+                              </td>
+                              <td width="121">
+                              <p>Test address for title 0000002 (AA00 0AA)</p>
+                              </td>
+                              <td width="123">
+                              <p>Test address for title abc0000006 (A1 0AA)</p>
+                              </td>
+                              <td width="119">
+                              <p>Test address for title TTN0000009 (PP88 0AA)</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Price paid</p>
+                              </td>
+                              <td width="123">
+                              <p>Price paid for the land</p>
+                              </td>
+                              <td width="121">
+                              <p>1000000</p>
+                              </td>
+                              <td width="123">
+                              <p>1000000</p>
+                              </td>
+                              <td width="119">
+                              <p>1000000</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Tenure</p>
+                              </td>
+                              <td width="123">
+                              <p>How the land is owned (freehold or leasehold)</p>
+                              </td>
+                              <td width="121">
+                              <p>Leasehold</p>
+                              </td>
+                              <td width="123">
+                              <p>Leasehold</p>
+                              </td>
+                              <td width="119">
+                              <p>Freehold</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Title number</p>
+                              </td>
+                              <td width="123">
+                              <p>Number used by HM Land Registry to identify the landowner and land</p>
+                              </td>
+                              <td width="121">
+                              <p>2</p>
+                              </td>
+                              <td width="123">
+                              <p>abc0000006</p>
+                              </td>
+                              <td width="119">
+                              <p>TTN0000009</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Country incorporated</p>
+                              </td>
+                              <td width="123">
+                              <p>Country (where company is registered)</p>
+                              </td>
+                              <td width="121">
+                              <p>Country</p>
+                              </td>
+                              <td width="123">
+                              <p>Country</p>
+                              </td>
+                              <td width="119">
+                              <p>Country</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Date proprietor added</p>
+                              </td>
+                              <td width="123">
+                              <p>Date (company became legal owner of the land)</p>
+                              </td>
+                              <td width="121">
+                              <p>Date</p>
+                              </td>
+                              <td width="123">
+                              <p>Date</p>
+                              </td>
+                              <td width="119">
+                              <p>Date</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Additional proprietor indicator</p>
+                              </td>
+                              <td width="123">
+                              <p>Any other owners (who share this property)</p>
+                              </td>
+                              <td width="121">
+                              <p>&nbsp;</p>
+                              </td>
+                              <td width="123">
+                              <p>&nbsp;</p>
+                              </td>
+                              <td width="119">
+                              <p>&nbsp;</p>
+                              </td>
+                              </tr>
+                              <tr>
+                              <td width="133">
+                              <p>Multiple address indicator</p>
+                              </td>
+                              <td width="123">
+                              <p>Company owns more than 1 property</p>
+                              </td>
+                              <td width="121">
+                              <p>N</p>
+                              </td>
+                              <td width="123">
+                              <p>N</p>
+                              </td>
+                              <td width="119">
+                              <p>Y</p>
+                              </td>
+                              </tr>
+                              </tbody>
+                              </table>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-2" aria-controls="accordion-default-content-2" class="govuk-accordion__section-button" aria-expanded="false">
+                      Older versions
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                  <p class="govuk-body">This is the content for Writing well for specialists.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-3" aria-controls="accordion-default-content-3" class="govuk-accordion__section-button" aria-expanded="false">
+                      What’s included
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                  <p class="govuk-body">This is the content for Know your audience.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-4" aria-controls="accordion-default-content-4" class="govuk-accordion__section-button" aria-expanded="false">
+                      What’s not included
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p class="govuk-body">This is the content for How people read.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-4" aria-controls="accordion-default-content-4" class="govuk-accordion__section-button" aria-expanded="false">
+                      File type
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p class="govuk-body">This is the content for How people read.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-4" aria-controls="accordion-default-content-4" class="govuk-accordion__section-button" aria-expanded="false">
+                      Getting the data
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p class="govuk-body">This is the content for How people read.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-4" aria-controls="accordion-default-content-4" class="govuk-accordion__section-button" aria-expanded="false">
+                      Updating the data
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p class="govuk-body">This is the content for How people read.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-4" aria-controls="accordion-default-content-4" class="govuk-accordion__section-button" aria-expanded="false">
+                      What you can do with this data
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p>Commercial and corporate ownership data is released under licensed terms of use. These terms also set out the conditions for the re-use of data (in this case, addresses) which contains third party intellectual property rights.</p>
+                  <p>Property addresses contained within the commercial and corporate ownership data are processed against Ordnance Survey’s AddressBase Premium product, which incorporates Royal Mail’s PAF® database (Address Data).</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-4" aria-controls="accordion-default-content-4" class="govuk-accordion__section-button" aria-expanded="false">
+                      Licence
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p class="govuk-body">This is the content for How people read.</p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+
+                  <button type="button" id="accordion-default-heading-4" aria-controls="accordion-default-content-4" class="govuk-accordion__section-button" aria-expanded="false">
+                      Contact
+                    </button><span class="govuk-accordion__icon" aria-hidden="true"></span></h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <p class="govuk-body">This is the content for How people read.</p>
+                </div>
+              </div>
+
+              </div>
+          </div>
+
+
+
+          </div>
+          <script>
+          document.body.className += ' ' + 'product-page';
+          </script>
+  </div>
+  {% endblock %}

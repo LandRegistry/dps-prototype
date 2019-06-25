@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="context" data-id="id-1"></div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      <a href="https://www.gov.uk/government/organisations/land-registry">HM Land Registry</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      Use land and property data
+    </li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds listings-grid">
+    <span class="govuk-caption-xl">HM Land Registry</span>
+    <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Use land or property data</h1>
+
+  <p>HM Land Registry publishes big data files about land and property on this page.</p>
+  <p>Most of this data is free <a href="https://www.gov.uk/guidance/national-polygon-service">except for the national polygon service</a> and everyone can use it.</p>
+  <p>You can download some of this data without opening an account, but if you want to
+  download licensed data (data that can only be used in a certain way), you will need
+  to <a class="govuk-!-font-weight-bold" href="start">create an account</a> first.</p>
+  <ol>
+    <li><a href="#section1">See the data I can download without an account</a></li>
+    <li><a href="#section2">See the data I cannot download unless I create an account</a></li>
+  </ol>
+  <p>All of these files show data:</p>
+  <ul>
+    <li>organised by theme, for example ‘companies that own property’</li>
+    <li>as tabular (spreadsheet) files or shapefiles (shapes on a map)</li>
+  </ul>
+
+
+    <p class="in-red"><span class="govuk-!-font-weight-bold">Looking for information about one address? </span><br><a href="https://www.gov.uk/search-property-information-land-registry">Search by postcode</a> to find out who owns a property and if there’s a mortgage on it. </p>
+     
+    <br /><br /><br />
+
+    <div class="dps-grid">
+      <div class="statement-bar">
+        <h2 id="section1">You need an account to download this data</h2>
+        <a class="govuk-button" href="sign-in">Sign in</a>
+      </div>
+      <br />
+      <p class="info">
+        You must <a class="govuk-!-font-weight-bold" href="sign-in">sign in</a> or <a class="govuk-!-font-weight-bold" href="start">create an account</a> to download these files.
+      <a class="govuk-!-font-weight-bold" href="why-signup">Why do I need an account?</a>
+      </p>
+
+
+      <div class="dps-grid-tile">
+        <h3 id="section2"><a href="detailspages-ccod">UK companies that own property in England and Wales</a></h3>
+
+        <p>Download data about UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more.</p>
+
+          <a href="https://data.landregistry.gov.uk/data_pub/terms-of-use/read/ccod">Check how you can use this data</a>
+      </div>
+
+      <p><br />
+      <br />
+      <br><br></p>
+
+      <br />
+    </div>
+    <br />
+
+
+
+    </div>
+
+</div>
+
+
+
+<div class="column-one-third">
+
+<div class="gem-c-contextual-sidebar">
+
+    <!-- Rendering related navigation sidebar because no browse, no related links, no live taxons -->
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+{% endblock %}

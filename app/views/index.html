@@ -1,0 +1,873 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Get land and property data - Prototypes
+      </h1>
+
+
+      <p>This is the homepage for the Get land and property data prototype, showing the iterations that have been created through the GOV.UK Design system and their version history.</p>
+      <p>All previous or other variations were created through sketch and are not showcased on the homepage.</p>
+      <a href="version-prototype">How to version the prototype</a>.
+
+      <br><br><br>
+      <div class="sprint-wrap">
+
+        <h2 class="govuk-heading-l">Beta - Sprint 6</h2>
+        <div class="govuk-tabs" data-module="tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#current4">
+            Current
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#sandbox4">
+              Sandbox
+            </a>
+          </li>
+        </ul>
+
+        <section class="govuk-tabs__panel" id="current4">
+          <h2 class="govuk-heading-l">Current</h2>
+          <span class="govuk-caption-m">Released 8 May 2019</span>
+          <h2><a href="nps/listingspage-v7">National Polygon Service</a></h2>
+
+          <h3>Context 1</h3>
+          <p>User is not logged in</p>
+          <ul>
+            <li><a href="nps/listingspage-v7">Listings page</a></li>
+            <li><a href="nps/nps-toc">NPS product page</a></li>
+          </ul>
+
+
+          <h3>Context 2</h3>
+          <p>User has an account, but NOT agreed to licence</p>
+          <ul>
+            <li><a href="nps/listingspage-tabs">Listings page</a></li>
+            <li><a href="nps/nps-toc">NPS product page</a></li>
+            <li><a href="nps/agree-to-nps-licence">Sample data licence page</a></li>
+          </ul>
+
+
+          <h3>Context 3</h3>
+          <p>User HAS an account and HAS agreed to licence, but NOT paid for NPS</p>
+          <ul>
+            <li><a href="nps/listingspage-tabs-nps-licence-agreed">Listings page</a></li>
+            <li><a href="nps/nps-toc-licence-agreed">NPS product page</a></li>
+            <li><a href="nps/download-nps-sample">Download page</a></li>
+          </ul>
+
+          <h3>Context 4</h3>
+          <p>User paid for NPS</p>
+          <ul>
+            <li><a href="nps/listingspage-tabs-nps-licence-agreed">Listings page</a></li>
+            <li><a href="nps/nps-toc-licence-paid">NPS product page</a></li>
+            <li><a href="nps/download-nps-full">Download page</a></li>
+          </ul>
+          <br />
+          <h3>Other DST screen - not signed-off</h3>
+          <ul>
+            <li><a href="https://dst-screen.herokuapp.com/dst-nps/dst-worklist.html">DST - add customer account</a></li>
+            <li><a href="https://dst-screen.herokuapp.com/dst-nps/dst-approved-item.html">DST - allow access to NPS for an account that's active and no longer in Worklist, and isn't a newe account</a></li>
+            <li><a href="beta-sprint-6-sandbox/download-nps">Download National Polygon Service</a></li>
+          </ul>
+          <h2><a href="beta-sprint-6-sandbox/listingspage-v7">Version v7.5</a></h2>
+          <h2><a href="beta-sprint-6-sandbox/listingspage-tabs#history">Listings page with download history</a></h2>
+          <h2><a href="https://dst-screen.herokuapp.com/">DST admin interface</a></h2>
+          <br />
+          <h2><a href="beta-sprint-6-private-beta/listingspage">Version 6.0  - PB</a></h2>
+          <br />
+          <h2><a href="beta-sprint-6-sandbox/detailspages-overseas-toc">Product page v6.1</a></h2>
+          <br />
+          <ul>
+            <li><a href="beta-sprint-5/listingspage-context-3-flat-with-history">Context 3 users returning</a></li>
+            <li><a href="beta-sprint-5/emails/email-templates">Email templates</a></li>
+            <li><a href="beta-sprint-5/confirmation-error">Error page for expired account creation confirmation links</a></li>
+          </ul>
+
+          <br />
+
+          <h2>Account creation screens</h2>
+          <ul>
+            <li><a href="beta-sprint-5/reset-password">Reset password</a></li>
+            <li><a href="beta-sprint-5/password-link-expired">Request another password reset link</a></li>
+            <li><a href="beta-sprint-5/confirm-reset-password">Confirm password reset</a></li>
+            <li><a href="beta-sprint-5/confirm-password-created">Confirm password created</a></li>
+            <h3>Email templates</h3>
+            <li><a href="beta-sprint-5/emails/create-password">Activiate account / create password</a></li>
+            <li><a href="beta-sprint-5/emails/account-verified">Account verified</a></li>
+            <li><a href="beta-sprint-5/emails/account-rejected">Account rejected</a></li>
+          </ul>
+
+          <br />
+            <h2>DST Screens</h2>
+            <p>If within sprint</p>
+            <ul>
+                <li><a href="beta-sprint-5/dst">DST Screens</a></li>
+            </ul>
+
+          <br />
+
+          <h2>Design system</h2>
+          <ul>
+            <li><a href="design-system">Design system</a></li>
+          </ul>
+
+          <p class="view_design_tracker">
+            <a class="design_tracker_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1Uu14G07xVecEnPiXo6UdfSjyyLNzvLiC2VMDy368-Sw/edit#gid=1323121513">See full sprint 6 design change log for private beta</a>
+          </p>
+
+        </section>
+
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="sandbox4">
+          <span class="govuk-caption-m">Design backlog</span>
+          <h2 class="govuk-heading-l">Sandbox</h2>
+
+          <h2><a href="beta-sprint-6-sandbox/listingspage">Version 6.1 - sandbox</a></h2>
+          <p>Consolidates design for private beta and beyond</p>
+
+        <p class="view_design_tracker">
+          <a class="design_tracker_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1Uu14G07xVecEnPiXo6UdfSjyyLNzvLiC2VMDy368-Sw/edit#gid=1981118139">See full sprint 5 design change log for backlog</a>
+        </p>
+
+        </section>
+      </div>
+      <br><br><br><br>
+
+      <div class="sprint-wrap">
+
+        <h2 class="govuk-heading-l">Beta - Sprint 5</h2>
+        <div class="govuk-tabs" data-module="tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#current3">
+            Current
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#sandbox3">
+              Sandbox
+            </a>
+          </li>
+        </ul>
+
+        <section class="govuk-tabs__panel" id="current3">
+          <h2 class="govuk-heading-l">Current</h2>
+          <span class="govuk-caption-m">Released 5 February 2019</span>
+          <h2><a href="beta-sprint-4-sandbox/listingspage">Version 5.0 - latest</a></h2>
+          <br />
+          <h2 class="govuk-heading-m"><a href="beta-sprint-5/start-v2">Version 4.0 </a></h2>
+          <ul>
+            <li><a href="beta-sprint-5/listingspage-context-3-flat-with-history">Context 3 users returning</a></li>
+            <li><a href="beta-sprint-5/emails/email-templates">Email templates</a></li>
+            <li><a href="beta-sprint-5/confirmation-error">Error page for expired account creation confirmation links</a></li>
+          </ul>
+
+          <br />
+
+          <h2>Account creation screens</h2>
+          <ul>
+            <li><a href="beta-sprint-5/reset-password">Reset password</a></li>
+            <li><a href="beta-sprint-5/password-link-expired">Request another password reset link</a></li>
+            <li><a href="beta-sprint-5/confirm-reset-password">Confirm password reset</a></li>
+            <li><a href="beta-sprint-5/confirm-password-created">Confirm password created</a></li>
+            <h3>Email templates</h3>
+            <li><a href="beta-sprint-5/emails/create-password">Activiate account / create password</a></li>
+            <li><a href="beta-sprint-5/emails/account-verified">Account verified</a></li>
+            <li><a href="beta-sprint-5/emails/account-rejected">Account rejected</a></li>
+          </ul>
+
+          <br />
+            <h2>DST Screens</h2>
+            <p>If within sprint</p>
+            <ul>
+                <li><a href="beta-sprint-5/dst">DST Screens</a></li>
+            </ul>
+
+          <br />
+
+          <h2>Design system</h2>
+          <ul>
+            <li><a href="design-system">Design system</a></li>
+          </ul>
+
+          <p class="view_design_tracker">
+            <a class="design_tracker_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1Uu14G07xVecEnPiXo6UdfSjyyLNzvLiC2VMDy368-Sw/edit#gid=312123935">See full sprint 5 design change log</a>
+          </p>
+
+        </section>
+
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="sandbox3">
+          <span class="govuk-caption-m">Experimental concepts. Not signed off.</span>
+          <h2 class="govuk-heading-l">Sandbox</h2>
+
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-4-sandbox/listingspage">Listings Page POC</a></p>
+
+          <a href="beta-sprint-6-private-beta/listingspage">Version 6.0  - PB</a>
+          <a href="beta-sprint-6-sandbox/listingspage">Version 6.1 - sandbox</a>
+        </section>
+      </div>
+      <br><br>
+      <div class="sprint-wrap">
+
+        <h2 class="govuk-heading-l">Beta - Sprint 4</h2>
+        <div class="govuk-tabs" data-module="tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#current3">
+            Current
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#sandbox3">
+              Sandbox
+            </a>
+          </li>
+        </ul>
+
+        <section class="govuk-tabs__panel" id="current3">
+          <h2 class="govuk-heading-l">Current</h2>
+
+          <h2 class="govuk-heading-m"><a href="beta-sprint-3-3/start-v2">Version 3.3 - latest version</a></h2>
+          <ul>
+            <li><a href="beta-sprint-3-3/listingspage-context-3-flat-with-history">Context 3 users returning</a></li>
+            <li><a href="beta-sprint-3-3/emails/email-templates">Email templates</a></li>
+            <li><a href="beta-sprint-3-3/confirmation-error">Error page for expired account creation confirmation links</a></li>
+          </ul>
+
+          <br />
+
+          <h2>Account creation screens</h2>
+          <ul>
+            <li><a href="beta-sprint-3-3/reset-password">Reset password</a></li>
+            <li><a href="beta-sprint-3-3/password-link-expired">Request another password reset link</a></li>
+            <li><a href="beta-sprint-3-3/confirm-reset-password">Confirm password reset</a></li>
+            <li><a href="beta-sprint-3-3/confirm-password-created">Confirm password created</a></li>
+            <h3>Email templates</h3>
+            <li><a href="beta-sprint-3-3/emails/create-password">Activiate account / create password</a></li>
+            <li><a href="beta-sprint-3-3/emails/account-verified">Account verified</a></li>
+            <li><a href="beta-sprint-3-3/emails/account-rejected">Account rejected</a></li>
+          </ul>
+
+          <br />
+
+          <h2>Design system</h2>
+          <ul>
+            <li><a href="design-system">Design system</a></li>
+          </ul>
+
+          <p class="view_design_tracker">
+            <a class="design_tracker_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1Uu14G07xVecEnPiXo6UdfSjyyLNzvLiC2VMDy368-Sw/edit#gid=137157252">See full sprint 4 design change log</a>
+          </p>
+
+        </section>
+
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="sandbox3">
+          <span class="govuk-caption-m">Experimental concepts. Not signed off.</span>
+          <h2 class="govuk-heading-l">Sandbox</h2>
+
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-4-sandbox/listingspage">Listings Page POC</a></p>
+        </section>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+        <div class="sprint-wrap">
+
+          <h2 class="govuk-heading-l">Beta - Sprint 3</h2>
+          <div class="govuk-tabs" data-module="tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#current">
+              Current
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#sandbox">
+                Sandbox
+              </a>
+            </li>
+          </ul>
+
+          <section class="govuk-tabs__panel" id="current">
+            <h2 class="govuk-heading-l">Current</h2>
+
+            <h2 class="govuk-heading-m"><a href="beta-sprint-3-2/start-v2">Version 3.2</a></h2>
+            <h2 class="govuk-heading-m"><a href="beta-sprint-3-2/listingspage-context-3-flat-with-history">Context 3 users returning</a>.</h2>
+            <h2 class="govuk-heading-m"><a href="beta-sprint-3-2/emails/email-templates">Email templates</a></h2>
+
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(19 December 2018)</p>
+
+            <h2 class="govuk-heading-m"><a href="beta-sprint-3/start-v2">Version 3.1</a></h2>
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(5 December 2018)</p>
+
+            <div class="index-info">
+            <h3>Contexts of variants</h3>
+            <ul>
+              <li><p><span class="govuk-body govuk-!-font-weight-bold">Context 1:</span> denotes a user who is not signed-in. (both a non-registered user and a registered user who is not signed-in)</p></li>
+              <li><p><span class="govuk-body govuk-!-font-weight-bold">Context 2:</span> denotes a user who is signed-in, but has not agreed to any licence</p></li>
+              <li><p><span class="govuk-body govuk-!-font-weight-bold">Context 3:</span> denotes a user who is signed-in and has already agreed to at least one licence</p></li>
+            </ul>
+
+            </div>
+
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-3/createaccount">Create an account journeys</a></p>
+            <p>Stripping down "Agree to the licence, terms of use and service notifications" to only include the terms of use.</p>
+            <p>Agreeing to terms of use as a checkbox found on the check your answers page.</p>
+            <p>Splitting up "Your details" and "Your address" to separate screens.</p>
+            <p>Adding feedback to "Your details" section.</p>
+
+            <p class="view_design_tracker">
+              <a class="design_tracker_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1Uu14G07xVecEnPiXo6UdfSjyyLNzvLiC2VMDy368-Sw/edit#gid=244616055">See full sprint 3 design change log</a>
+            </p>
+
+          </section>
+
+          <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="sandbox">
+            <span class="govuk-caption-m">Experimental concepts. Not signed off.</span>
+            <h2 class="govuk-heading-l">Sandbox</h2>
+
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-3/listingspage-flat-signed-out">Context 1</a></p>
+            <p>Listings page updated to explore how a non-signed-in user would see the listings page</p>
+            <br>
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-3/listingspage-flat-signed-in">Context 2</a></p>
+            <p>Listings page updated to explore how returning users may fast track their download.</p>
+
+            <h3 class="govuk-heading-m">Flat listings page - initial discovery</h3>
+
+            <a href="beta-sprint-3/listingspage-flat-signed-out">Context 1</a>
+            <br>
+            <a href="beta-sprint-3/listingspage-flat">Context 2</a>
+            <br>
+            <a href="beta-sprint-3/listingspage-flat-signed-in">Context 3</a>
+            <br>
+            <a href="beta-sprint-3/listingspage-context-4">Context X</a>
+            <br>
+
+            <h3>Flat UI - JS and non JS variants explored</h3>
+
+            <a href="beta-sprint-3/listingspage-flat">Version 1</a>
+            <br>
+            <a href="beta-sprint-3/listingspage-context-5">Version 2</a>
+            <br><br>
+
+            <h3 class="govuk-heading-m">Flat listings page - full</h3>
+            <a href="beta-sprint-3/listingspage-context-1-flat">Listings page - Context 1</a><br />
+            <a href="beta-sprint-3/listingspage-context-2-flat">Listings page - Context 2</a><br />
+            <a href="beta-sprint-3/listingspage-context-3-flat">Listings page - Context 3</a><br />
+            <a href="beta-sprint-3/listingspage-context-3-flat-with-history">Listings page - Context 3 - with history</a><br />
+            <br>
+
+
+            <h3 class="govuk-heading-m">Other discoveries</h3>
+
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Product page</p>
+            <p>Exploring sample data on a page.</p>
+            <a href="beta-sprint-3-2/detailspages-sample-data-view-context-1">Product page - context 1</a><br />
+            <a href="beta-sprint-3-2/detailspages-sample-data-view-context-2">Product page - context 2</a><br />
+            <a href="beta-sprint-3-2/detailspages-sample-data-view-context-2-modal">Product page - context 2 - with dialog box</a><br />
+            <a href="beta-sprint-3-2/detailspages-sample-data-view-context-3">Product page - context 3</a><br />
+
+
+            <br />
+
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-3/modal-example">Agree to licence</a></p>
+            <p>Exploring licence as a modal. For reference, see <a href="https://govuk-accessibility-sandbox.herokuapp.com/patterns/dialog/01/">dialog box / modal on GDS sandbox</a>.</p>
+
+          </section>
+        </div>
+      </div>
+      <br>
+      <br>
+
+        <!--
+
+        1.2
+
+        -->
+
+
+        <div class="sprint-wrap">
+        <div class="sprint-wrap">
+          <h2 class="govuk-heading-l">Beta - Sprint 2</h2>
+
+          <h2 class="govuk-heading-m"><a href="beta-sprint-2-2/start-v2">Version 2.2</a></h2>
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(22nd November 2018)</p>
+
+          <div class="index-info">
+          <h3>Contexts of variants</h3>
+          <ul>
+            <li><p><span class="govuk-body govuk-!-font-weight-bold">Context 1:</span> denotes a user who is not signed-in. (both a non-registered user and a registered user who is not signed-in)</p></li>
+            <li><p><span class="govuk-body govuk-!-font-weight-bold">Context 2:</span> denotes a user who is signed-in, but has not agreed to any licence</p></li>
+            <li><p><span class="govuk-body govuk-!-font-weight-bold">Context 3:</span> denotes a user who is signed-in and has already agreed to at least one licence</p></li>
+          </ul>
+          </div>
+
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-2-2/listingspage-flat-signed-out">Context 1</a></p>
+          <p>Listings page updated to explore how a non-signed-in user would see the listings page</p>
+<br>
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-2-2/listingspage-flat-signed-in">Context 2</a></p>
+          <p>Listings page updated to explore how returning users may fast track their download.</p>
+
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold"><a href="beta-sprint-2-2/listingspage-context-4">Context X</a></p>
+          <p>Listings page updated to explore how a non-signed-in user would see the listings page and how returning users may fast track their download.</p>
+
+
+          <br>
+
+          <h2 class="govuk-heading-m"><a href="beta-sprint-2-1/start-v2">Version 2.1</a></h2>
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(14 November 2018)</p>
+
+          <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Download confirmation</p>
+          <p>Updating “problem with your download” journey.</p>
+          <p>Content update on link.</p>
+          <p>Moving users towards a separate page with guidance on how to initiate the download again.</p>
+
+          <h3 class="govuk-heading-s">Password reset link expired</h3>
+          <p><a href="beta-sprint-2-1/password-link-expired">Screen to instruct user that password reset link has expired. </a><p>
+
+          <h3>Download journey end</h3>
+          <p><a href="https://land-reg.herokuapp.com/beta-sprint-2-1/check-your-answers-loggedin-js">POC - Download journey end screen with progressive enhancement</a></p>
+
+          <h3>Create an account - personal user </h3>
+          <p>World Pay steps added in as placeholders.</p>
+          <p>Content update on accepting terms of the service.</p>
+
+          <p class="view_design_tracker">
+            <a class="design_tracker_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1Uu14G07xVecEnPiXo6UdfSjyyLNzvLiC2VMDy368-Sw/edit#gid=313515985">See full sprint 2 design change log</a>
+          </p>
+
+          </div>
+
+        <br />
+
+        <h2 class="govuk-heading-l">Beta - Sprint 1</h2>
+        <h2 class="govuk-heading-m"><a href="beta-sprint-1-2/start-v2">Version 1.2</a></h2>
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(5 November 2018)</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Start page</p>
+        <p>Content changes to Start page.</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Product page</p>
+        <p>Updates to product page content.</p>
+        <p>Introducing sample data for CSV file - exploring having the sample data displayed on the product page (Registered Leases), and linking off to a separate page (Overseas companies that own property in England and Wales).</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Download Registered Leases journey</p>
+        <p>Directing users towards the agree to licence screen after sign in from product page.</p>
+        <p>Adding help text on agree to licence page to inform users.</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Download options</p>
+        <p>Allowing users to download historical and change only files for up to 12 months.</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Check your choices</p>
+        <p>Reflecting new download options in table.</p>
+
+
+      </div>
+
+      <!--
+
+      1.1
+
+      -->
+
+
+      <div class="sprint-wrap">
+
+        <h2 class="govuk-heading-m"><a href="beta-sprint-1-1/start-v2">Version 1.1</a></h2>
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(31 October 2018)</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Listings page</p>
+
+        <p>Upating content after content review. Stripping down what we display in each row until we have a clear user need.</p>
+        <p>Removing filter from listings page until we have a clear need.</p>
+        <p>Removing XML and JSON as file formats available.</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Product page</p>
+        <p>Removing XML and JSON as file formats available.</p>
+        <p>Exploring Full file, Change only file and Historical file download.</p>
+
+        <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Sign in</p>
+        <p>Content update.</p>
+        <p>Exploring change password journey from sign in.</p>
+
+
+
+      <p class="view_design_tracker">
+        <a class="design_tracker_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1Uu14G07xVecEnPiXo6UdfSjyyLNzvLiC2VMDy368-Sw/edit#gid=0">See full sprint 1 design change log</a>
+      </p>
+      </div>
+      <!--
+
+      Start of BETA
+      Sprint 1
+
+      -->
+
+      <br>
+      <br>
+
+      <div class="sprint-wrap">
+      <!-- end of alpha -->
+      <h2 class="govuk-heading-l">End of alpha</h2>
+
+      <!--
+
+      5.1
+
+      -->
+
+      <h2 class="govuk-heading-m"><a href="sprint-5-2/start-v2">Version 5.2</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(11 October 2018)</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">API journey removed</p>
+      <p>API journey touch points removed.</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Sign in and password reset added</p>
+
+      <!--
+
+      Sprint 5
+
+      -->
+</div>
+<div class="sprint-wrap">
+      <h2 class="govuk-heading-l">Sprint 5</h2>
+
+      <!--
+
+      5.1
+
+      -->
+
+      <h2 class="govuk-heading-m"><a href="sprint-5-1/start-v2">Version 5.1</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(6th September 2018)</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Create an account</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Exploring the on behalf of a UK organisation create an account journey</li>
+        <li>Exploring the identity verification for a personal account creation journey </li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">API access</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Exploring the ability to access the dataset via API.</li>
+        <li>Expanding the prototype to include a link to find out more about the API from the listings page in each dataset item that has API access</li>
+        <li>Adding an about API access page</li>
+        <li>Allowing the user to download via API - exploring what this will mean for licensing</li>
+      </ul>
+    </div>
+    <div class="sprint-wrap">
+      <!--
+
+      Sprint 4
+
+      -->
+
+      <h2 class="govuk-heading-l">Sprint 4</h2>
+
+      <!--
+
+      4.2
+
+      -->
+
+      <h2 class="govuk-heading-m"><a href="sprint-4-2/start-v2">Version 4.2</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(22nd August 2018)</p>
+
+      <p class="govuk-body govuk-!-font-size-19">Changes made to the prototype after after critique session with content designer</p>
+
+      <p class="govuk-body govuk-!-font-size-19">Name of service changed from Data Publication Service to Get land and property data after critique session with content designer</p>
+
+      <!--
+
+      4.1
+
+      -->
+</div>
+<div class="sprint-wrap">
+      <h2 class="govuk-heading-m"><a href="sprint-4-1/start-v2">Version 4.1</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(14th August 2018)</p>
+
+      <p class="govuk-body govuk-!-font-size-19">Includes create an account journey and placeholder area for the terms and conditions for the service</p>
+      <p class="govuk-body govuk-!-font-size-19">Includes dashboard for standard user who can:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Can access manage licences functionality</li>
+        <li>Can access manage credentials functionality</li>
+        <li>Can access manage downloads functionality</li>
+        <li>See their activities</li>
+        <li>Be able to find other datasets</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Start</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Minor content changes </li>
+        <li>Adding warning text</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Listings page</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Adding insert text to listings page to give user a brief description about the licence type without pushing them to go to another page</li>
+        <li>Adding formats available for download</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Details page for Inspire</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Adding link to Find a Property</li>
+        <li>Removing OGL logo to reduce clutter in table</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Download options</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Adding caption text above heading to remind user what dataset the download options are referring to</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Check your choices</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Following advice from GDS mock assessment and cleaning up visual hierarchy of page</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Dashboard</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Adding link to view the terms and conditions for the service </li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">View download (from dashboard)</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Adding versioning of the dataset, so the user can view the version of that particular download and the most up to data version of the dataset </li>
+        <li>Updating download again journey<li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Create an account</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Cleaning up journey with recommendations from mock assessment brief</li>
+        <li>Swapping position of check your answers and accept terms and conditions in journey</li>
+      </ul>
+    </div>
+    <div class="sprint-wrap">      <!--
+
+      Sprint 3
+
+      -->
+
+      <h2 class="govuk-heading-l">Sprint 3</h2>
+
+      <!--
+
+      3.3
+
+      -->
+
+      <h2 class="govuk-heading-m"><a href="sprint-3-3/start-v2">Version 3.3</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(9th August 2018)</p>
+      <p class="govuk-body govuk-!-font-size-19">Includes journey from login to dashboard before navigating to the download journey</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Dashboard</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>User can view their download details</li>
+        <li>User can manage their account details</li>
+        <li>User can manage their licences</li>
+      </ul>
+    </div>
+    <div class="sprint-wrap">
+      <!--
+
+      3.2
+
+      -->
+
+      <h2 class="govuk-heading-m"><a href="sprint-3-2/start-v2">Version 3.2</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(2nd August 2018)</p>
+
+
+      <p class="govuk-body govuk-!-font-size-19">Includes journey from start now button to listings page before navigating to the download journey</p>
+      <p class="govuk-body govuk-!-font-size-19">Includes journey to dashboard view once the user has logged into their account</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - Licence details page</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Start page</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Giving the user more information about the service</li>
+        <li>More information on why they might have to create an account before downloading</li>
+        <li>Moving other services from the side navigation to the body of the page in order to give more information about these other services to allow the user to make an informed decision </li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Listings page</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Order by select box</li>
+        <li>Adding links to licence details instead of a showing the licence as a label</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Details page</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Altering structure of the page to include page contents section</li>
+        <li>Moving download call to action to the bottom of the page</li>
+        <li>Adding new headings to better structure the page</li>
+        <li>Adding important information about this licence section</li>
+        <li>Adding more information about the download journey and setting the users expectations</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Download options</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Separating the File options from the additional downloads </li>
+      </ul>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Accept licence page</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Adding more content around the licence and putting a placeholder in place for the main points out the licence</li>
+        <li>Adding in some more help text around the third party rights </li>
+      </ul>
+    </div>
+    <div class="sprint-wrap">
+      <!--
+
+      3.1
+
+      -->
+
+      <h2 class="govuk-heading-m"><a href="sprint-3-1/start">Version 3.1</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(25th July 2018)</p>
+
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - Check your choices</p>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - Download options page</p>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - Accept licence page</p>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - <a href="sprint-3-1/dashboard-v6">Dashboard V6</a></p>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - <a href="sprint-3-1/dashboard-v7">Dashboard V7</a></p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Listings page</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Removal of side filter until we have more datasets for the users to filter</li>
+        <li>Removal of adding to download from this section until we have a clear user need</li>
+        <li>Cutting down the information we give to the user at this point in order to find out what the user would expect to see</li>
+      </ul>
+
+    </div>
+    <div class="sprint-wrap">
+      <!--
+
+      Sprint 2
+
+      -->
+
+      <h2 class="govuk-heading-l">Sprint 2</h2>
+    </div>
+    <div class="sprint-wrap">
+      <!--
+
+      2.1
+
+      -->
+      <h2 class="govuk-heading-m"><a href="sprint-2/start">Version 2.1</a></h2>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">(12th July 2018)</p>
+      <p>This journey focuses on a shopping basket approach and what may happen if a user was to transact multiple datasets</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - <a href="sprint-2/start">Start page</a></p>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - <a href="sprint-2/createaccount">Create account</a></p>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">New - <a href="sprint-2/listingspage">Download journey</a></p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Dashboard versions</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="sprint-2/dashboard">Dashboard</a></li>
+        <li><a href="sprint-2/dashboard-v2">Dashboard V2</a></li>
+        <li><a href="sprint-2/dashboard-v3">Dashboard V3</a></li>
+        <li><a href="sprint-2/dashboard-v4">Dashboard V4 (User-1, company admin)</a></li>
+      </ul>
+    </div>
+    <div class="sprint-wrap">
+      <!--
+
+      Sprint 1
+
+      -->
+
+      <h2 class="govuk-heading-l">Sprint 1</h2>
+      <h2 class="govuk-heading-m"><a href="https://invis.io/59LAIGCR4XU">Version 1.1</a> - Invision prototype</h2>
+
+      <p>This journey focuses on a simple linear journey for the tranaction process. In particular trying to gather insight into the "Would you like to download" call to action and how the users may respond to it.</p>
+
+</div>
+</div>    </div>
+
+
+</div>
+<div class="govuk-grid-column-one-third">
+  <div class="gem-c-related-navigation">
+      <br />
+      <h3 class="govuk-heading-m">Design system</h3>
+      <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold"  href="design-system">Design system</a></p>
+  </div>
+    <div class="gem-c-related-navigation">
+        <br />
+        <h3 class="govuk-heading-m">Planning</h3>
+        <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold"  href="https://realtimeboard.com/app/board/o9J_kze_NT0=/">Thing of beauty</a></p>
+    </div>
+
+  <div class="gem-c-related-navigation">
+    <br />
+    <h3 class="govuk-heading-m">Realtime boards</h3>
+
+    <p class="govuk-body govuk-!-font-size-14">Supporting the prototypes are the realtime boards, showcasing thinking and decisions in design.</p>
+
+    <h4 class="govuk-heading-s">Beta</h4>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kyv73js=/">Design Hypothesis</a> - last edited 9th November</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/welcomeonboard/JwNzF6vaKhT3iYZpldWaOZqPAFbmqhY8ydQZ9ZeHFPm1EHCUzVSJTfzIUku0q0PX">Download without JS</a> - last edited 19th November</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/welcomeonboard/DO1XrMH2kqDSBm81ser694ey7WGSBlUUV5tOV41JGqqtFWd0ll70bk4dzIEXvSuR">Returning users</a> - last edited 13th December</p>
+
+    <h4 class="govuk-heading-s">Alpha</h4>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzJCIvw=/">Dashboard - design </a> - last edited 25th July</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzFshrI=/">Create an account - content hierarchy  </a> - last edited 14th September</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzLo1To=/">Create an account - design </a> - last edited 10th July</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzLrAso=/">Download journey - content hierarchy </a> - last edited 31st July</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzL36IE=/">Download journey - design </a> - last edited 6th July</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzGzu38=/">Dataset information under 10 datasets - content hierarchy  </a> - last edited 31st July </p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzGZJIs=/">Dataset information under 10 datasets - design </a> - last edited 26th June</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzEKMpM=/ ">Dataset information 20+ datasets - content hierarchy </a> - last edited 31st July</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzFsCec=/">Dataset information 20+ datasets - design </a> - last edited 26th June</p>
+
+    <p class="govuk-body govuk-!-font-size-14"><a class="govuk-!-font-weight-bold" href="https://realtimeboard.com/app/board/o9J_kzf3pbc=/">API journey map - first pass</a> - last edited 20th September</p>
+
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h2 class="govuk-panel__title">
+          Your account is ready to use
+        </h2>
+      </div>
+
+      <h3 class="govuk-heading-m">What happens next</h3>
+
+      <p class="govuk-body">
+          Check your email. HM Land Registry has sent you a link to the email address you used to create your account. You can sign in to the service from this link.
+      </p>
+
+      <a href="../login-fromstart" role="button" draggable="false" class="govuk-button">
+        Sign in
+      </a>
+      <br />
+      <p><a href="#">What did you think of this service?</a> (takes 30 seconds)</p>
+      <br />
+      <p>[For testing. <a href="start-v2">Link back to homepage</a>.]</p>
+
+</div>
+
+
+{% endblock %}

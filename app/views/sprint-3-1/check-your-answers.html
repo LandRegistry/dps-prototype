@@ -1,0 +1,115 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <!-- <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="dashboard-v6" data-topnav="Get started">Your profile</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Logout</a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL-v2">Inspire</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="download-file-options-v2">Download options</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Check your answers</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          Check your choices before downloading
+        </h1>
+
+        <h2 class="govuk-heading-m">
+        Download details
+        </h2>
+
+        <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Dataset</th>
+                <td class="govuk-table__cell ">Inspire</td>
+                <td class="govuk-table__cell "></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Download options</th>
+                <td class="govuk-table__cell">
+                  <ul class="check-your-answers">
+                    {% for option in data['download-option'] %}
+                    <li>
+                      {{ option }}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </td>
+                <td class="govuk-table__cell change-answer"><a href="download-file-options-v2">Change</a></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <h2 class="govuk-heading-m">
+        Licence details
+        </h2>
+
+        <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Open Government Licence
+                  <svg role="presentation" focusable="false" class="govuk-footer__licence-logo ogl-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                    <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+                  </svg>
+                </th>
+                <td class="govuk-table__cell "></td>
+                <td class="govuk-table__cell change-answer"><a href="">Review</a></td>
+                <td class="govuk-table__cell "></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h2 class="govuk-heading-m">
+        Now download your dataset
+        </h2>
+
+        <p>
+          [Any last minute text here? ie reference to licence again, referece to file size and download size?]
+        </p>
+
+        <a href="download-confirmation" role="button" class="govuk-button">
+          Download
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

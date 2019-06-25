@@ -1,0 +1,63 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row filter-user-type">
+
+    <div class="govuk-grid-column-two-thirds">
+      <a href="start-v2" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+      <h1 class="govuk-heading-xl">
+        Create an account
+      </h1>
+
+      <p>Some of the datasets avaliable through this service will require you to create an account and be verified. These are used to prevent the misuse of HM Land Registry data.</p>
+
+      <p>Once you have an account, you can use it to access and download datasets with a free and licenced licence.</p>
+
+      <h3 class="govuk-heading-m">Choose your account type</h3>
+
+      <div class="govuk-form-group">
+        <form id="user-select">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="personal" name="personal" type="radio" value="personal">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                  for my own personal use
+                  <!-- <span class="govuk-caption-m">What does this mean to the user</span> -->
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="uk-organisation" name="uk-organisation" type="radio" value="uk-organisation">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                  on behalf of a UK organisation
+                  <!-- <span class="govuk-caption-m">What does this mean to the user</span> -->
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="overseas-organisation" name="overseas-organisation" type="radio" value="overseas-organisation">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  on behalf of an overseas organisation
+                  <!-- <span class="govuk-caption-m">What does this mean to the user</span> -->
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+        <a href="createaccount-yourdetails" role="button" class="govuk-button">
+          Continue
+        </a>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Sign in to your account</li>
+    </ol>
+  </div>
+
+  <div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sign in to your account</h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="post-code">
+            Username
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="post-code" name="post-code" type="text">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="post-code">
+            Password
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="post-code" name="post-code" type="password">
+        </div>
+        <a href="dashboard-v6" type="submit" class="govuk-button">
+          Sign in
+        </a>
+        <br>
+        <p class="govuk-body"><a href="#">Having trouble signing in?</a></p>
+
+        <br>
+
+        <h3 class="govuk-heading-m">Don't have an account?</h3>
+          <p><a href="createaccount">Create an account</a></p>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

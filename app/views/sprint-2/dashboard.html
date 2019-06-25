@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row dashboard">
+
+      <h1 class="govuk-heading-xl">
+        Your account
+      </h1>
+<a href="#" class="float_right">Log out</a>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Your profile</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <ul>
+              <li><a href="#">Change password</a></li>
+              <li><a href="#">Change email address</a></li>
+            </ul>
+        </div>
+
+
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Downloads</h2>
+          <p>Vestibulum porttitor est at massa venenatis, in vulputate sem ultricies. </p>
+          <ul>
+            <li><a href="#">Download history</a></li>
+        </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Licences</h2>
+          <p>In sit amet nisl auctor, ultrices libero vel, dignissim ligula.</p>
+          <ul>
+            <li><a href="#">View licences</a></li>
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Search datasets</h2>
+          <p>Sed ac dui lacus. Curabitur in nisi quis mi mollis commodo.</p>
+          <ul><li><a href="listingspage">Search datasets</a></li></ul>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

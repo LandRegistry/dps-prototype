@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs show-breads">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="http:www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Get land and property data</a>
+      </li>
+    </ol>
+  </div>
+
+    <div class="latest-subscribe">
+            <ul>
+              <li class="email primary">
+                <a href="/topic/land-registration/data/email-signup">
+                Subscribe to email alerts
+    </a>          </li>
+                <li><a href="/topic/land-registration/data/latest">See latest changes to this content</a></li>
+            </ul>
+          </div>
+  <br /><br />
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+<p>From <a href="#">Land Registry</a></p>
+
+
+<span class="govuk-caption-xl">HM Land Registry</span>
+        <h1 class="govuk-heading-xl">Get land and property data</h1>
+
+        <p>This page describes the different places you can access bulk data available from HMLR.</p>
+
+        <p class="govuk-inset-text">If you are looking for information about a single address, try <a href="https://eservices.landregistry.gov.uk/eservices/FindAProperty/view/QuickEnquiryInit.do">this service</a> instead.</p>
+
+        <p>HMLR has released a new service to hold the datasets and will be migrating datasets held in other locations over time.</p>
+
+        <h2 class="govuk-heading-m"><a href="start-page">Get land and property data service</a></h2>
+        <p class="govuk-caption-m">(Last updated 31 Mar 2019)</p>
+        </div>
+
+<br /><br />
+  <table class="govuk-table collections-table">
+ <tbody class="govuk-table__body">
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row" style="vertical-align: top;">Ownership data</th>
+     <td class="govuk-table__cell">
+       <p class="govuk-body govuk-!-font-weight-bold">UK companies that own property in England and Wales</p>
+       <p class="govuk-caption-m">This dataset was originally named Commercial and Corporate Data (CCOD).</p>
+       <p class="govuk-body govuk-!-font-weight-bold">Overseas companies that own property in England and Wales</p>
+       <p class="govuk-caption-m">This dateset was originally named Overseas Companies Ownership Data (OCOD).</p>
+     </td>
+   </tr>
+ </tbody>
+</table>
+
+<br />
+<br />
+<h2 class="govuk-heading-m tweak">Other data offered by HMLR</h2>
+<table class="govuk-table collections-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Data overview</th>
+      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/hm-land-registry-data">HM Land Registry data</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Ownership data</th>
+      <td class="govuk-table__cell">
+        <a href="https://www.gov.uk/guidance/1862-act-register">HM Land Registry: 1862 Act Register</a><br>
+        <a href="https://land-reg.herokuapp.com/beta-sprint-3-3/detailspages-sample-data-view-context-1-uk">HM Land Registry: Commercial and Corporate Ownership Data</a><br>
+        <a href="https://land-reg.herokuapp.com/beta-sprint-3-3/detailspages-sample-data-view-context-1-overseas">HM Land Registry: Overseas Companies Ownership Data</a>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Sales and transaction data</th>
+      <td class="govuk-table__cell">
+        <a href="https://www.gov.uk/government/collections/price-paid-data">HM Land Registry: Price Paid Data</a><br>
+        <a href="https://www.gov.uk/guidance/hm-land-registry-transaction-data">HM Land Registry: Transaction Data</a><br>
+        <a href="https://www.gov.uk/government/collections/uk-house-price-index-reports">UK House Price Index: reports</a><br>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Spatial data</th>
+      <td class="govuk-table__cell">
+        <a href="https://www.gov.uk/guidance/inspire-index-polygons-spatial-data">INSPIRE Index Polygons spatial data</a><br>
+        <a href="https://www.gov.uk/guidance/national-polygon-service">National Polygon Service</a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

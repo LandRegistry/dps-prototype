@@ -1,0 +1,222 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign in</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <h1 class="govuk-heading-xl">
+        Registered leases
+      </h1>
+
+      <p>Download data about leasehold properties in England and Wales.</p>
+
+        <h2 class="govuk-heading-l">
+          Example of Registered leases data
+        </h1>
+
+        <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.<p>
+
+        <table class="govuk-table table-hack">
+          <tbody>
+<thead>
+<td><strong>Data</strong></td>
+<td><strong>What this means</strong></td>
+<td><strong>Example data</strong></td>
+</thead>
+<tr>
+<td>Property description</td>
+<td>Description of the leased land, for example an address</td>
+<td>1 Smith Street&nbsp;</td>
+</tr>
+<tr>
+<td>Region and county</td>
+<td>Location of the leasehold property</td>
+<td>Region</td>
+</tr>
+<tr>
+<td>Unique property reference number (UPRN)</td>
+<td>
+<p>Number used by HM Land Registry to identify the property location.</p>
+<p>Similar to postcode, but more specific</p>
+</td>
+<td>abc00000003</td>
+</tr>
+<tr>
+<td>Unique identifier</td>
+<td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
+<td>123456</td>
+</tr>
+<tr>
+<td>Date of lease</td>
+<td>When the lease started</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Term</td>
+<td>How long the lease lasts for</td>
+<td>999 years</td>
+</tr>
+<tr>
+<td>Tenure</td>
+<td>How the land is owned (type of lease)</td>
+<td>Leasehold</td>
+</tr>
+<tr>
+<td>Alienation cause indicator</td>
+<td>
+<p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
+<p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
+</td>
+<td>Clause details</td>
+</tr>
+<tr>
+<td>Reg order</td>
+<td>
+<p>Some pieces of land have more than 1 lease on them.</p>
+<p>The reg order shows the order of registration (which lease came first).</p>
+</td>
+<td>
+<p>Lease 1 (DD/MM/YY)</p>
+<p>Lease 2 (DD/MM/YY)</p>
+</td>
+</tr>
+<tr>
+<td>Price paid&nbsp;</td>
+<td>Price paid for the land</td>
+<td>1000000</td>
+</tr>
+</tbody>
+        </table>
+
+        <br>
+
+        <h2 id="about-this-dataset" class="govuk-heading-l">Data set details</h2>
+
+          <dl class="app-check-your-answers app-check-your-answers--short">
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                 <a href="free-commercial-licence">Free and licensed</a>
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Technical specification
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                <a href="#">View technical specification</a>
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Last update
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                1 August 2018
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Next update
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                1 September 2018
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+              Version
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                1.2.1
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                File size
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                500MB
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Rows in dataset
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                Approximately 7 million
+              </dd>
+            </div>
+
+          </dl>
+
+          <br>
+
+          <h2 id="how-to-download" class="govuk-heading-l">How to download the data set</h2>
+
+          <div class="govuk-inset-text">
+            <p>Due to the licence for this dataset you will need to sign in to your account before downloading</p>
+              <a href="login-fromstart" role="button" class="govuk-button">
+                Sign in
+              </a>
+            <p>Or</p>
+            <p><a href="createaccount">Create an account</a></p>
+          </div>
+
+          <p>When downloading you will need to read and accept the <a href="free-commercial-licence">licence agreement</a>.</p>
+
+          <p>You will need to choose your file type, which comprise:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>full file</li>
+              <li>change only file</li>
+              <li>historical file</li>
+            </ul>
+
+          <p>You can also download the:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Technical specification</li>
+              <li>Licence agreement </li>
+            </ul>
+
+        </div>
+
+
+{% endblock %}

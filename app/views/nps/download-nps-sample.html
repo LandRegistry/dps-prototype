@@ -1,0 +1,140 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <nav class="app-navigation-1 govuk-clearfix full-screen download-page product-page">
+      <ul class="app-navigation__list">
+        <li>
+          <a class="govuk-link" href="detailspages-overseas" data-topnav="Community">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="govuk-grid-column-full download-page-new">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+    </div>
+    <h1 class="govuk-heading-xl" id="datatitle">Download National Polygon Service example data</h1>
+
+
+
+    <div class="govuk-tabs nps-tabs" data-module="tabs">
+
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+            Download sample data
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-week">
+            API Key
+          </a>
+        </li>
+      </ul>
+
+      <section class="govuk-tabs__panel" id="past-day">
+        <h2 class="govuk-heading-l">Download Sample data</h2>
+
+        <a class="govuk-inset-text" href="#" download>Download a sample of this data. ZIP, contains shape file - 25Mb </a>
+        <br /><br /><br />
+        <h2 id="purchase-the-data">Purchase the data</h2>
+
+        <p>If you would like to purchase the data, please contact us:</p>
+
+        <div class="contact postal-address" id="contact_2135">
+        <div class="content">
+          <h3>Data Services Team</h3>
+
+          <div class="vcard contact-inner">
+              <p class="adr">
+        <span class="fn">HM Land Registry</span><br>
+        <span class="street-address">Rosebrae Court
+        <br>
+        Woodside Ferry Approach</span><br>
+        <span class="locality">Birkenhead</span><br>
+        <span class="region">Merseyside</span><br>
+        <span class="postal-code">CH41 6DU</span>
+        </p>
+
+
+              <div class="email-url-number">
+                  <p class="email">
+                    <span class="type">Email</span>
+                    <a class="email" href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk</a>
+                  </p>
+                  <p class="contact_form_url">
+                    <span class="type">Contact form</span>
+                    <a href="https://help.landregistry.gov.uk/app/contactus_comm_services/">https://help.landregis...</a>
+                  </p>
+                  <p class="tel">
+                    <span class="type">Telephone</span>
+                    0300 006 0478
+                  </p>
+              </div>
+
+
+          </div>
+        </div>
+        </div>
+
+      </section>
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+        <h2 class="govuk-heading-m">Your API Key</h2>
+        <div class="highlight">
+          <pre class="highlight plaintext">
+            <code>1d6909c5-5e5e-4edc-889c-575a59569ea2-575a59569ea2-5e5e-4edc</code>
+          </pre>
+        </div>
+        <button class="app-copy-button js-copy-button" aria-live="assertive">Copy key</button>
+
+        <p><a class="govuk-link" href="api">See documentation</a></p>
+        <br />
+        <h2>Reset your API key</h2>
+        <button type="submit" class="govuk-button govuk-button--warning">
+          Reset key
+        </button>
+
+
+
+      </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.body.className += ' ' + 'product-page';
+  function $_GET(q,s) {
+    s = (s) ? s : window.location.search;
+    var re = new RegExp('&amp;'+q+'=([^&amp;]*)','i');
+    return (s=s.replace(/^\?/,'&amp;').match(re)) ?s=s[1] :s='';
+  }
+
+  var value = $_GET('fname');
+  if (value == "overse") {
+    document.getElementById('datatitle').innerHTML = 'Choose a file to download for Overseas companies that own property in England and Wales';
+        document.getElementById('serps').innerHTML = 'Download data about overseas companies that own land in England and Wales.';
+  }
+  if (value == "uk") {
+    document.getElementById('datatitle').innerHTML = 'Choose a file to download for UK companies that own property in England and Wales';
+    document.getElementById('serps').innerHTML = 'Download data about UK companies that own UK property.';
+  }
+  if (value == "registered") {
+    document.getElementById('datatitle').innerHTML = 'Choose a file to download for Registered leases';
+    document.getElementById('serps').innerHTML = 'Download data about leasehold properties in England and Wales.';
+  }
+</script>
+
+{% endblock %}

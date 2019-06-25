@@ -1,0 +1,319 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="context" data-id="id-1"></div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page"><a class="govuk-breadcrumbs__link" href="listingspage">Use land or property data</a></li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+<div class="grid-row">
+  <div class="column-two-thirds listings-v7">
+    <span class="govuk-caption-xl">HM Land Registry</span>
+    <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Use land or property data</h1>
+    <br />
+
+
+    <div class="govuk-tabs" data-module="tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+            Past day
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-week">
+            Past week
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-month">
+            Past month
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-year">
+            Past year
+          </a>
+        </li>
+      </ul>
+
+      <section class="govuk-tabs__panel" id="past-day">
+        <h2 class="govuk-heading-l">Past day</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Case manager</th>
+              <th class="govuk-table__header" scope="col">Cases opened</th>
+              <th class="govuk-table__header" scope="col">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">3</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">2</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+        <h2 class="govuk-heading-l">Past week</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Case manager</th>
+              <th class="govuk-table__header" scope="col">Cases opened</th>
+              <th class="govuk-table__header" scope="col">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">24</td>
+              <td class="govuk-table__cell">18</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">16</td>
+              <td class="govuk-table__cell">20</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">24</td>
+              <td class="govuk-table__cell">27</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+        <h2 class="govuk-heading-l">Past month</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Case manager</th>
+              <th class="govuk-table__header" scope="col">Cases opened</th>
+              <th class="govuk-table__header" scope="col">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">98</td>
+              <td class="govuk-table__cell">95</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">122</td>
+              <td class="govuk-table__cell">131</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">126</td>
+              <td class="govuk-table__cell">142</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+        <h2 class="govuk-heading-l">Past year</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Case manager</th>
+              <th class="govuk-table__header" scope="col">Cases opened</th>
+              <th class="govuk-table__header" scope="col">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">1380</td>
+              <td class="govuk-table__cell">1472</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">1129</td>
+              <td class="govuk-table__cell">1083</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">1539</td>
+              <td class="govuk-table__cell">1265</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </div>
+
+
+  <div class="dps-grid-tile first-tile">
+    <br />
+      <div class="attachment-thumb">
+        <img src="https://www.gov.uk/government/assets/pub-cover-spreadsheet-471052e0d03e940bbc62528a05ac204a884b553e4943e63c8bffa6b8baef8967.png">
+      </div>
+      <div class="dataset-info">
+        <h2><a href="detailspages-overseas-toc">Overseas companies that own property in England and Wales</a></h2>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">FREE</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">CSV, 1.25Gb</span>
+        </p>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">Register to download</span>
+        </p>
+        <p class="meta">Updated on the second day of every month</p>
+        <p class="flag"></p>
+        <p class="govuk-body govuk-!-font-weight-bold">Download data about non-UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more. </p>
+        <p class="download-docs"><a class="download" href="/public/files/ocod-sample-data.csv" download>Download example data - <span class="file-size">CSV,15Kb</span></a> | <a class="download" href="/public/files/licence_agreement.html" download>Download licence agreement - <span class="file-size">HTML, 16Kb</span></a></a></p>
+      </div>
+    </div>
+
+
+    <div class="dps-grid-tile">
+      <div class="attachment-thumb">
+        <img src="https://www.gov.uk/government/assets/pub-cover-spreadsheet-471052e0d03e940bbc62528a05ac204a884b553e4943e63c8bffa6b8baef8967.png">
+      </div>
+      <div class="dataset-info">
+        <h2><a href="detailspages-uk-companies-toc">UK companies that own property in England and Wales</a></h2>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">FREE</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">CSV, 1.25Gb</span>
+        </p>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">Register to download</span>
+        </p>
+        <p class="meta">Updated on the second day of every month</p>
+        <p class="flag"></p>
+        <p class="govuk-body govuk-!-font-weight-bold">Download data about UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more.  </p>
+        <p class="download-docs"><a class="download" href="/public/files/uk-dataset-sample.csv" download>Download example data - <span class="file-size">CSV, 15Kb</span></a>  |  <a class="download" href="/public/files/licence_agreement.html" download>Download licence agreement - <span class="file-size">HTML, 16Kb</span></a></a></p>
+      </div>
+    </div>
+
+
+    <div class="dps-grid-tile">
+      <div class="attachment-thumb">
+        <img src="https://www.gov.uk/government/assets/pub-cover-spreadsheet-471052e0d03e940bbc62528a05ac204a884b553e4943e63c8bffa6b8baef8967.png">
+      </div>
+      <div class="dataset-info">
+        <h2><a href="detailspages-registered-leases-toc">Registered leases</a></h2>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">FREE</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">CSV, 1.25Gb</span>
+        </p>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">Register to download</span>
+        </p>
+        <p class="meta">Updated on the second day of every month</p>
+        <p class="flag"></p>
+        <p class="govuk-body govuk-!-font-weight-bold">Download data about leasehold properties in England and Wales. This includes the title number, price paid, address, length and type of lease, legal clauses that affect the lease and more.</p>
+        <p class="download-docs"><a class="download" href="/public/files/registered-leases-sample-data.csv" download>Download example data - <span class="file-size">CSV,15Kb</span></a>  |  <a class="download" href="/public/files/licence_agreement.html" download>Download licence agreement - <span class="file-size">HTML, 16Kb</span></a></p>
+      </div>
+    </div>
+
+    <br />
+    <h2>You do not need an account to download these files</h2>
+    <br /><br />
+    <div class="dps-grid-tile go-right">
+      <div class="dataset-info">
+        <h2><a href="https://www.gov.uk/guidance/1862-act-register">HM Land Registry: 1862 Act Register</a></h2>
+        <p class="govuk-body govuk-!-font-weight-bold">Download data about leasehold properties in England and Wales.</p>
+      </div>
+    </div>
+
+    <div class="dps-grid-tile go-right">
+      <div class="dataset-info">
+        <h2><a href="http://landregistry.data.gov.uk/app/ppd/">HM Land Registry: Price Paid Data</a></h2>
+        <p class="govuk-body govuk-!-font-weight-bold">Price Paid Data contains the sale prices of properties in England and Wales submitted to HM Land Registry for registration.</p>
+      </div>
+    </div>
+
+    <div class="dps-grid-tile go-right">
+      <div class="dataset-info">
+        <h2><a href="https://data.gov.uk/dataset/7d866093-2af5-4076-896a-2d19ca2708bb/hm-land-registry-monthly-property-transaction-data">HM Land Registry: Transaction Data</a></h2>
+        <p class="govuk-body govuk-!-font-weight-bold">Our Transaction Data includes information about the number and types of applications we have completed.</p>
+      </div>
+    </div>
+
+    <div class="dps-grid-tile go-right">
+      <div class="dataset-info">
+        <h2><a href="https://www.gov.uk/government/collections/uk-house-price-index-reports">UK House Price Index: reports</a></h2>
+        <p class="govuk-body govuk-!-font-weight-bold">The UK House Price Index (HPI) uses house sales data from HM Land Registry, Registers of Scotland, and Land and Property Services Northern Ireland and is calculated by the Office for National Statistics.</p>
+      </div>
+    </div>
+
+
+    <div class="dps-grid-tile go-right">
+      <div class="dataset-info">
+        <h2><a href="https://www.gov.uk/guidance/inspire-index-polygons-spatial-data">Index Polygons spatial data</a></h2>
+        <p class="govuk-body govuk-!-font-weight-bold">[CONTENT]</p>
+      </div>
+    </div>
+
+    <div class="dps-grid-tile go-right">
+      <div class="dataset-info">
+        <h2><a href="https://www.gov.uk/guidance/national-polygon-service">National Polygon Service</a></h2>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">Available for purchase</span>
+        </p>
+        <p class="govuk-body govuk-!-font-weight-bold">[CONTENT]</p>
+      </div>
+    </div>
+
+    <div class="dps-grid-tile go-right">
+      <div class="dataset-info">
+      <h2><a href="https://www.gov.uk/government/publications/geospatial-commission-data-catalogue-hm-land-registry">Geospatial Commission Data Catalogue: HM Land Registry</a></h2>
+        <p class="govuk-body govuk-!-font-weight-bold">[CONTENT]</p>
+      </div>
+    </div>
+
+
+</div>
+
+<div class="base-bar">
+  <div class="base-bar-inset">
+    <a class="app-c-back-to-top dont-print" href="#top">
+        <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+          <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+        </svg>
+          Back to top
+    </a>
+  </div>
+</div>
+</div>
+
+{% endblock %}

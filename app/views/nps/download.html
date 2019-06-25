@@ -1,0 +1,130 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <nav class="app-navigation-1 govuk-clearfix full-screen download-page product-page">
+      <ul class="app-navigation__list">
+        <li>
+          <a class="govuk-link" href="detailspages-overseas" data-topnav="Community">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="govuk-grid-column-full download-page-new">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+    </div>
+<h1 class="govuk-heading-xl" id="datatitle"></h1>
+
+
+<p>You can download:</p>
+<ul>
+  <li>all records, or</li>
+  <li>the records that changed each month (this is a smaller file)</li>
+</ul>
+<p>You can download other datasets from <a href="listingspage-v7">HM Land Registry here</a></p>
+<br><br><br>
+
+
+<h2 class="govuk-heading-l" style="margin-bottom:2px" id="datatitle">The latest data</h2>
+<span class="govuk-caption-m">Last updated on the <span class="govuk-!-font-weight-bold">2 May 2019</span> (updated monthly)</span>
+<br><br>
+<table class="govuk-table latest-data-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col"></th>
+      <th class="govuk-table__header" scope="col">Download all of the data</th>
+      <th class="govuk-table__header" scope="col">What changed this month</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row add-row">
+      <td class="govuk-table__cell"><div class="cell-spacer govuk-!-font-weight-bold">May 2019</div></td>
+      <td class="govuk-table__cell" width="362">
+        <a href="#" role="button" draggable="false" class="govuk-button cta-download" download><span class="govuk-body govuk-!-font-weight-bold">Download</span> - 1.23Gb, CSV</a><br>
+      </td>
+      <td class="govuk-table__cell">
+        <a href="#" role="button" draggable="false" class="cta-download govuk-button" download><span class="govuk-body govuk-!-font-weight-bold">Download</span> - 25Mb, CSV</a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<br />
+<h2 class="govuk-heading-l" id="datatitle">Historic data from the last 12 months</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Date</th>
+      <th class="govuk-table__header" scope="col">All data from that month</th>
+      <th class="govuk-table__header" scope="col">What changed that month</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">April 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">March 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">February 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">January 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">March 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">December 2018</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">November 2018</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  document.body.className += ' ' + 'product-page';
+  function $_GET(q,s) {
+    s = (s) ? s : window.location.search;
+    var re = new RegExp('&amp;'+q+'=([^&amp;]*)','i');
+    return (s=s.replace(/^\?/,'&amp;').match(re)) ?s=s[1] :s='';
+  }
+
+  var value = $_GET('fname');
+  if (value == "overse") {
+    document.getElementById('datatitle').innerHTML = 'Choose a file to download for Overseas companies that own property in England and Wales';
+        document.getElementById('serps').innerHTML = 'Download data about overseas companies that own land in England and Wales.';
+  }
+  if (value == "uk") {
+    document.getElementById('datatitle').innerHTML = 'Choose a file to download for UK companies that own property in England and Wales';
+    document.getElementById('serps').innerHTML = 'Download data about UK companies that own UK property.';
+  }
+  if (value == "registered") {
+    document.getElementById('datatitle').innerHTML = 'Choose a file to download for Registered leases';
+    document.getElementById('serps').innerHTML = 'Download data about leasehold properties in England and Wales.';
+  }
+</script>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Dataset publication service</h1>
+
+        <p class="govuk-body">This service provides access to HMLR bulk datasets. They cover all of England and Wales</p>
+        <p class="govuk-body"><span class="govuk-!-font-weight-bold">Please note:</span> the datasets are generally large and designed to be suitable for machine reading and databases</p>
+
+        <a href="listingspage-v3" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <div class="govuk-inset-text">
+          <p class="govuk-body">Some of the datasets available are covered by a licence that will require you to register for an account before downloading</p>
+          <p class="govuk-body govuk-!-font-weight-bold">Already have an account?</p>
+          <p class="govuk-body"><a class="govuk-link" href="login-fromstart">Sign in</a></p>
+          <p>Or</p>
+          <p class="govuk-body"><a class="govuk-link" href="">Create one now</a></p>
+        </div>
+
+        <h2 class="govuk-heading-m">Other services</h2>
+
+        <p>This service allows for the download of bulk datasets. If this is not what you are looking for, there are a range of alternative services which may be helpful </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="">Find a property</a>: search for individual land and property details</li>
+          <li><a href="">Property alert</a>: register and monitor your registered land against fraud</li>
+          <li><a href="">Price paid search</a>: search for property transactions by location, postcode or town</li>
+        </ul>
+
+      </div>
+
+      <!-- <div class="govuk-grid-column-one-third">
+
+
+
+        <aside class="app-related-items" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Other services
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a href="#">
+                Find Property Information
+              </a>
+              </li>
+              <li>
+                <a href="#">
+                Business and mortgage services
+              </a>
+              </li>
+
+              <li>
+                <a href="#">
+                Planning permission
+              </a>
+              </li>
+              <li>
+                <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+              </li>
+            </ul>
+          </nav>
+
+
+        </aside>
+
+      </div> -->
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}

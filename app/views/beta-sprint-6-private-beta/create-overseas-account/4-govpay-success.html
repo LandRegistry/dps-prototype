@@ -1,0 +1,117 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="world-pay-screen-one govpay-confirm">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0c0c">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://www.payments.service.gov.uk/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="https://www.payments.service.gov.uk/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.payments.service.gov.uk/assets/images/govuk-apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="https://www.payments.service.gov.uk/assets/images/govuk-apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.payments.service.gov.uk/assets/images/govuk-apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" href="https://www.payments.service.gov.uk/assets/images/govuk-apple-touch-icon.png">
+
+
+
+<!--[if IE 8]>
+<link href="/govuk-frontend/all-ie8.css" rel="stylesheet" />
+<![endif]-->
+
+
+<!--[if lt IE 9]>
+<script src="/html5-shiv/html5shiv.js"></script>
+<![endif]-->
+
+<link href="./govpay-01_files/application.1a72a29.css" media="screen" rel="stylesheet" type="text/css">
+
+<script async="" src="./govpay-01_files/analytics.js"></script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+        { (i[r].q=i[r].q||[]).push(arguments)}
+        ,i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-72121642-2', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('set', 'transport', 'beacon');
+ga('send', 'pageview', {
+  'page': '/card_details/ri2vsjh3gevaadt6skimdbqtq9',
+  'dimension1': '',
+  'dimension2': 'test',
+  'dimension3': 'sandbox',
+  'dimension4': 'original',
+});
+</script>
+
+
+<meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+  <div class="govuk-grid-row">
+    <div class="govuk-width-container">
+      <main class="govuk-main-wrapper charge-new" id="main-content" role="main">
+<div class="govuk-grid-row govuk-!-margin-bottom-9">
+<div class="govuk-grid-column-two-thirds">
+
+
+  <h1 class="govuk-heading-xl">Your payment was successful</h1>
+  <p>Your payment was susccuessful. No money was taken.</p>
+  <a href="5-confirmation" class="govuk-button">Continue</a>
+
+</div>
+
+</div>
+<script id="govuk-script-charge">
+  window.chargeId = "ri2vsjh3gevaadt6skimdbqtq9"
+</script>
+</div>
+<script id="govuk-script-analytics" type="text/javascript">
+  var i18n = {"cardDetails":{"withdrawalText":{"debit_credit":"Accepted credit and debit card types","debit":"Credit card payments are not accepted. Please use a debit card."},"title":"Enter card details","expiry":"Expiry date","expiryHint":"For example, 10/20","expiryMonth":"Month","expiryYear":"Year","cvc":"Card security code","cvcTip":"The last 3 digits on the back of the card","amexcvcTip":"The last 4 digits after the card number on the front","amexcvcNonjs":"For American Express,","cardNo":"Card number","cardholderName":"Name on card","billingAddress":"Billing address","billingAddressHint":"This is the address associated with the card","building":"Building number or name and street","city":"Town or city","postcode":"Postcode","country":"Country or territory","email":"Email","emailHint":"We’ll send your payment confirmation here","emailConfirmation":"An email will be sent to:","corporateCreditCardSurchargeMessage":"There is a fee of £%s for using a corporate credit card","corporateDebitCardSurchargeMessage":"There is a fee of £%s for using a corporate debit card"},"commonButtons":{"continueButton":"Continue","confirmButton":"Confirm payment","cancelButton":"Cancel payment","goBackToService":"Go back to the service"},"confirmDetails":{"title":"Confirm your payment","card":"Card number:","expiry":"Expiry date:","name":"Name on card:","address":"Billing address:","email":"Confirmation email:"},"commonConjunctions":{"or":"or"},"commonHeadings":{"inProgress":"Your payment is in progress"},"paymentSummary":{"title":"Payment summary","amount":"Amount:","corporateCardFee":"Corporate card fee:","totalAmount":"Total amount:"},"errorViews":{"either":"You can either:","continue":"Continue with your payment","tryAgain":"Go back to try the payment again","problem":"There was a problem with your payment","declined":"Your payment has been declined","contactYourBank":"No money has been taken from your account. Contact your bank for more details.","paymentStatus":"Your payment was","unsuccessful":"Your payment was unsuccessful","noMoneyTaken":"No money has been taken from your account.","sessionExpiredNoMoneyTaken":"For your security, payment sessions expire after 90 minutes. No money has been taken from your account.","toMakeChanges":"To make any changes to your payment you’ll need to contact the service.","viewSummary":"View your payment summary","paymentExpired":"Your payment expired","sessionExpired":"Your payment session has been cancelled","paymentCancelled":"Your Payment was cancelled","paymentCancelledTitle":"Payment cancelled","paymentCancelledDescription":"The service you’re trying to pay has cancelled your payment. No money has been taken from your account.","error":"An error occurred","technicalProblems":"We’re experiencing technical problems"},"authorisation":{"extraSteps":"You may need to complete some extra verification steps.","approvalNeeded":"To continue with your payment, we need your bank’s approval.","approved":"The card details have been approved by the bank.","checkingDetails":"Checking card details","checkingDetailsDescription":"Your payment details are being checked.","spinnerAltText":"waiting","processingPayment":"Your payment is being processed.","processing":"Processing card details","userCancelledPayment":"Your payment has been cancelled"},"fieldErrors":{"summary":"The following fields are missing or contain errors","generic":"Enter a valid %s","fields":{"cardholderName":{"name":"name","message":"Enter the name as it appears on the card","containsTooManyDigits":"Enter the name as it appears on the card","containsSuspectedCVC":"Enter the name as it appears on the card"},"cardNo":{"name":"card number","message":"Enter a valid card number","numberIncorrectLength":"Card number is not the correct length","luhnInvalid":"Enter a valid card number","cardNotSupported":"This card type is not accepted","nonNumeric":"Enter a valid card number","unsupportedBrand":"%s is not supported","unsupportedDebitCard":"%s debit cards are not supported","unsupportedCreditCard":"%s credit cards are not supported"},"cvc":{"name":"card security code","message":"Enter a valid card security code","invalidLength":"Enter a valid card security code"},"expiryDate":{"name":"expiry date","message":"Enter a valid expiry date"},"expiryMonth":{"name":"expiry date","message":"Enter a valid expiry date","invalidMonth":"Enter a valid expiry date","invalidYear":"Enter a valid expiry date","inThePast":"Enter an expiry date in the future"},"expiryYear":{"name":"expiry year","message":"Enter a valid expiry date","invalidYear":"This expiry year is not a valid"},"addressLine1":{"name":"building name/number and street","message":"Enter a valid billing address","containsTooManyDigits":"Enter a valid billing address"},"addressLine2":{"name":"additional address line","message":"Enter valid address information","containsTooManyDigits":"Enter valid address information"},"addressCity":{"name":"town/city","message":"Enter a valid town/city","containsTooManyDigits":"Enter a valid town/city"},"addressPostcode":{"name":"postcode","message":"Enter a valid postcode","containsTooManyDigits":"Enter a valid postcode"},"email":{"name":"email","message":"Enter a valid email","containsTooManyDigits":"Enter a valid email","typo":"There might be a mistake in the last part of your email address. Select your email address."},"addressCountry":{"name":"country or territory","message":"Enter a valid country or territory"}},"webPayments":{"apple":"There was an error contacting Apple Pay, please try again","failureTitle":"There was a problem processing your payment.","failureBody":"No money has been taken from your account, please try again"}}}
+
+  window.paymentDetails = {
+    description: 'Data Publication Service verification',
+    amount: '0.01',
+    chargeID: 'ri2vsjh3gevaadt6skimdbqtq9'
+  };
+
+  window.Card = {
+    allowed:
+        [{"brand":"american-express","debit":false,"credit":true},{"brand":"visa","debit":true,"credit":true},{"brand":"master-card","debit":true,"credit":true},{"brand":"unionpay","debit":false,"credit":true},{"brand":"jcb","debit":false,"credit":true},{"brand":"discover","debit":false,"credit":true},{"brand":"diners-club","debit":false,"credit":true}],
+    corporate_card_surcharge_amounts:
+        {"credit":0,"debit":0,"prepaidCredit":0,"prepaidDebit":0}
+  };
+  window.Charge = {
+    email_collection_mode: 'MANDATORY',
+    collect_billing_address: true
+  }
+
+
+  var mainWrap = document.getElementsByTagName('main')[0]
+  document.addEventListener('DOMContentLoaded', function() {
+    GOVUK.stopDoubleSubmit.init();
+    if (mainWrap.classList.contains('charge-new')) {
+      formValidation();
+      showCardType().init();
+      window.payScripts.inputConfirm.init();
+    } else if (mainWrap.classList.contains('confirm-page')) {
+      analyticsTrackConfirmClick().init('', 'test', 'sandbox', '0.01', '');
+    }
+  });
+</script>
+<script src="./govpay-01_files/application.b3a9ba8.js"></script>
+  <script type="text/javascript" src="./govpay-01_files/location-autocomplete.min.js"></script>
+  <script type="text/javascript">
+    openregisterLocationPicker({
+      selectElement: document.getElementById('address-country'),
+      url: '/public/countries-autocomplete-graph.json',
+      autoselect: true,
+      displayMenu: 'overlay'
+    })
+  </script>
+</div>
+{% endblock %}

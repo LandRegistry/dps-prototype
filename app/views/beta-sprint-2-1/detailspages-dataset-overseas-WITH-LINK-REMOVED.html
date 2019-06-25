@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <h1 class="govuk-heading-xl">
+        Overseas companies that own property in England and Wales
+      </h1>
+
+      <p>Overseas companies that own land and property in England and Wales. This data set was originally named Overseas companies ownership data.<p>
+
+      <h2 id="about-this-dataset" class="govuk-heading-l">Example of data from Overseas companies that own property in England and Wales</h2>
+
+
+        <p>You can see a sample of this dataset by <a href="detailspages-spec-table">clicking here</a>.</p>
+        <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.</p>
+
+        <p>When downloading you will need to read and accept the <a href="">licence agreement</a>.</p>
+        <h2 class="govuk-heading-l">Technical spcefications</h2>
+        <p><a href="#">Read the technical specification for Overseas companies that own property in England and Wales</a></p>
+<br /><br />
+        <h2 id="how-to-download" class="govuk-heading-l">How to download the data set</h2>
+
+        <div class="govuk-inset-text">
+          <p>Due to the licence for this dataset you will need to sign in to your account before downloading</p>
+            <a href="login-fromstart" role="button" class="govuk-button">
+              Sign in
+            </a>
+            <p>Or</p>
+            <p><a href="createaccount">Create an account</a></p>
+        </div>
+
+        <p>When downloading you will need to read and accept the <a href="free-commercial-licence">licence agreement</a>.</p>
+
+        <p>You will need to choose your file type, which comprise:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>full file</li>
+          <li>change only file</li>
+          <li>historical file</li>
+        </ul>
+      </div>
+  </div>
+
+{% endblock %}

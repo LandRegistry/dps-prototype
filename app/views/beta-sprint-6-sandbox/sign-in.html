@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="detailspages-dataset-v4-logged-in" class="govuk-back-link">Back</a>
+  <div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sign in</h1>
+        <div class="sign-in-validate">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="post-code">
+            Email
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="email_signin" name="post-code" type="text">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="post-code">
+            Password
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="password_signin" name="post-code" type="password">
+        </div>
+        <a href="" type="submit" class="govuk-button targetloginpage">
+          Sign in
+        </a>
+        <br>
+        </div>
+        <p class="govuk-body"><a href="reset-password">I forgot my password</a></p>
+
+        <p><a href="start">Create an account</a></p>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+//get currebnt URL
+var pathname = window.location.pathname; // Returns path only
+var url      = window.location.href;     // Returns full URL
+var origin   = window.location.origin;   // Returns base URL
+//alert(origin);
+
+
+var referrer =  document.referrer;
+var referrer = referrer.replace(""+origin+"/beta-sprint-6-sandbox/", "");
+//copy and paste below and change tagert to logged in version
+
+if (referrer == 'listingspage') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-signed-in';
+}
+
+
+//sign in for product pages
+if (referrer == 'detailspages-uk') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-uk-signed-in';
+}
+if (referrer == 'detailspages-overseas') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-overseas-signed-in';
+}
+if (referrer == 'detailspages-leases') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-leases-signed-in';
+}
+if (referrer == 'detailspages-overseas-toc') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-overseas-toc-signed-in';
+}
+if (referrer == 'detailspages-uk-companies-toc') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-uk-companies-toc-signed-in';
+}
+if (referrer == 'detailspages-registered-leases-toc') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-registered-leases-toc-signed-in';
+}
+//
+//https://land-reg.herokuapp.com/beta-sprint-4-sandbox/listingspage
+</script>
+{% endblock %}

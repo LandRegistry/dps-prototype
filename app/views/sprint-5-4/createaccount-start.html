@@ -1,0 +1,66 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Creating an account</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <a href="listingspage-v3" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+        <h1 class="govuk-heading-xl">
+          Creating an account
+        </h1>
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <p>Some of the datasets avaliable through this service will require you to create an account and be verified. These are used to prevent the misuse of HM Land Registry data.</p>
+
+        <p>Once you have an account, you can use it to access and download datasets with a free and licenced licence.</p>
+
+        <h3 class="govuk-heading-m">Choose your account type</h3>
+        <h4 class="govuk-heading-s">For my own personal use</h4>
+        <p>What does this mean to the user</p>
+        <p>How long does the creation of an account usually take? Inform the user about the possible wait time until they are verified?</p>
+        <h4 class="govuk-heading-s">On behalf of a UK organisation</h4>
+        <p>What does this mean to the user</p>
+        <p>How long does the creation of an account usually take? Inform the user about the possible wait time until they are verified?</p>
+        <h4 class="govuk-heading-s">On behalf of an overseas organisation</h4>
+        <p>What does this mean to the user</p>
+        <p>How long does the creation of an account usually take? Inform the user about the possible wait time until they are verified?</p>
+
+
+        <a href="createaccount" role="button" class="govuk-button">
+          Create an account
+        </a>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

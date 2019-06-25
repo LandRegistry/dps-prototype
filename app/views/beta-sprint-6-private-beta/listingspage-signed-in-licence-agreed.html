@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="context listings-page-logged-in ccod-licence-agreed" data-id="id-1">
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      <a href="https://www.gov.uk/government/organisations/land-registry">HM Land Registry</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      Use land and property data
+    </li>
+  </ol>
+</div>
+<!--
+<div class="state-1 toggle-states"><a href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a href="#">Agree</a></div><div class="state-3 toggle-states"><a href="#" download>Dowload latest</a></div>
+-->
+
+<div class="grid-row">
+  <div class="column-two-thirds listings-grid">
+    <span class="govuk-caption-xl">HM Land Registry</span>
+    <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Use land or property data</h1>
+
+    <div class="dps-grid">
+      <div class="statement-bar">
+        <h2>You are signed in</h2>
+        <a class="govuk-button" href="sign-in">Sign out</a>
+      </div>
+      <br />
+
+      <div class="dps-grid-tile">
+        <h3><a href="detailspages-ccod-signed-in-licence-agreed">UK companies that own property in England and Wales</a></h3>
+        <p class="float_left"><span class="new">Licence agreed</span></p>
+        <p>Download data about UK companies that own UK property. This includes the compy name, type of company, registration number, address, the price paid and more</p>
+        <p id="small-text"></div>
+      </div>
+
+
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+    </div>
+
+</div>
+
+
+
+<div class="column-one-third">
+
+<div class="gem-c-contextual-sidebar">
+
+    <!-- Rendering related navigation sidebar because no browse, no related links, no live taxons -->
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+</div>
+<script>
+  var smallText = document.getElementById('small-text');
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+
+  if (mm = 02) {
+    var mm = 'February';
+  }
+  if (mm = 03) {
+    var mm = 'March';
+  }
+  if(dd<10) {
+      dd = '0'+dd
+  }
+
+  if(mm<10) {
+      mm = '0'+mm
+  }
+
+  today = mm + '/' + dd + '/' + yyyy;
+  smallText.innerHTML += 'You last downloaded this on ' + dd + ' ' + mm + ' ' + yyyy;
+</script>
+{% endblock %}
