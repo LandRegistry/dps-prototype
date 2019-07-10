@@ -20,8 +20,6 @@
     </div>
     <h1 class="govuk-heading-xl" id="datatitle">Download National Polygon Service</h1>
 
-
-
     <div class="govuk-tabs nps-tabs" data-module="tabs">
 
       <ul class="govuk-tabs__list">
@@ -38,91 +36,84 @@
       </ul>
 
       <section class="govuk-tabs__panel" id="past-day">
-        <h2 class="govuk-heading-l">Download</h2>
+        <h2 class="govuk-heading-l" style="margin-bottom:2px" id="datatitle">The latest data</h2>
+        <span class="govuk-caption-m">Last updated on the <span class="govuk-!-font-weight-bold">2 May 2019</span> (updated monthly)</span>
+        <br>
 
+        <table class="govuk-table latest-data-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col"></th>
+              <th class="govuk-table__header" scope="col">Download all of the data</th>
+              <th class="govuk-table__header" scope="col">What changed this month</th>
+            </tr>
+          </thead>
 
-        <p class="meta">Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly)</p>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row add-row">
+              <td class="govuk-table__cell"><div class="cell-spacer govuk-!-font-weight-bold">May 2019</div></td>
+              <td class="govuk-table__cell" width="362">
+                <a href="#" role="button" draggable="false" class="govuk-button cta-download" download><span class="govuk-body govuk-!-font-weight-bold">Download</span> - 7.4Gb, ZIP</a><br>
+              </td>
+              <td class="govuk-table__cell">
+                <a href="#" role="button" draggable="false" class="cta-download govuk-button" download><span class="govuk-body govuk-!-font-weight-bold">Download</span> - 520Mb, ZIP</a><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
 
-<br />
-        <a class="govuk-inset-text" href="#" download>Download a sample of this data. ZIP, contains shape file - 25Mb </a>
-        <br /><br /><br /><br />
-    <h2 class="govuk-heading-l" style="margin-bottom:2px" id="datatitle">The latest data</h2>
-    <span class="govuk-caption-m">Last updated on the <span class="govuk-!-font-weight-bold">2 May 2019</span> (updated monthly)</span>
-    <br><br>
-    <table class="govuk-table latest-data-table">
+        <h2 class="govuk-heading-l" id="datatitle">Historic data from the last 12 months</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Date</th>
+              <th class="govuk-table__header" scope="col">All data from that month</th>
+              <th class="govuk-table__header" scope="col">What changed that month</th>
+            </tr>
+          </thead>
 
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="col"></th>
-          <th class="govuk-table__header" scope="col">Download all of the data</th>
-          <th class="govuk-table__header" scope="col">What changed this month</th>
-        </tr>
-      </thead>
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row add-row">
-          <td class="govuk-table__cell"><div class="cell-spacer govuk-!-font-weight-bold">May 2019</div></td>
-          <td class="govuk-table__cell" width="362">
-            <a href="#" role="button" draggable="false" class="govuk-button cta-download" download><span class="govuk-body govuk-!-font-weight-bold">Download</span> - 7.4Gb, ZIP</a><br>
-          </td>
-          <td class="govuk-table__cell">
-            <a href="#" role="button" draggable="false" class="cta-download govuk-button" download><span class="govuk-body govuk-!-font-weight-bold">Download</span> - 520Mb, ZIP</a><br>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
-    <br />
-    <h2 class="govuk-heading-l" id="datatitle">Historic data from the last 12 months</h2>
-    <table class="govuk-table">
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="col">Date</th>
-          <th class="govuk-table__header" scope="col">All data from that month</th>
-          <th class="govuk-table__header" scope="col">What changed that month</th>
-        </tr>
-      </thead>
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">April 2019</th>
-          <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
-          <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">March 2019</th>
-          <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
-          <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">February 2019</th>
-          <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
-          <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">January 2019</th>
-          <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
-          <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">March 2019</th>
-          <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
-          <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">December 2018</th>
-          <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
-          <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">November 2018</th>
-          <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
-          <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
-        </tr>
-      </tbody>
-    </table>
-
-
-
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">April 2019</th>
+              <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
+              <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">March 2019</th>
+              <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
+              <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">February 2019</th>
+              <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
+              <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">January 2019</th>
+              <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
+              <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">March 2019</th>
+              <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
+              <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">December 2018</th>
+              <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
+              <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">November 2018</th>
+              <td class="govuk-table__cell"><a href="#" download>Download  7.4Gb</a></td>
+              <td class="govuk-table__cell"><a href="#" download>Download 250Mb</a></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
+
       <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
         <h2 class="govuk-heading-m">Your API Key</h2>
         <div class="highlight">
@@ -138,20 +129,9 @@
         <button type="submit" class="govuk-button govuk-button--warning">
           Reset key
         </button>
-
-
-
       </section>
     </div>
-
-
-
-
-
-
-
-
-
+  </div>
 
 
 <script>
