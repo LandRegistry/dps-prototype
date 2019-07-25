@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get land and property
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+       <div class="govuk-grid-row">
+          <a href="detailspages-dataset-v4" class="govuk-back-link">Back</a>
+
+          <h1 class="govuk-heading-xl">Accessing data with the API</h1>
+       </div>
+
+       <div class="govuk-grid-row">
+           <div class="govuk-grid-column-one-third">
+               <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 300px;">
+                   <h2 class="page-contents__title">Page contents:</h2>
+                   <ul class="govuk-list govuk-list--bullet api-toc">
+                       <li><a href="#p1" class="active">About the API</a></li>
+                       <li><a href="#p2">What datasets you can access</a></li>
+                       <li><a href="#p3">How to generate an API key</a></li>
+                       <li><a href="#p4">Full documentation</a></li>
+                   </ul>
+               </div>
+           </div>
+
+           <div class="govuk-grid-column-two-thirds">
+               <h2 id="p1" class="govuk-heading-l">About the API</h2>
+               <p>
+                   Software engineers can use this API to access datasets in the Use land and property data service.
+                   This is a RESTful API in JSON format, making it suitable for a range of programming languages.
+               </p>
+
+               <h2 id="p2" class="govuk-heading-l">What you can access with the API</h2>
+               <p>You can use the API to get:</p>
+               <ul>
+                   <li>a list of HM Land Registry datasets that you can get from this service</li>
+                   <li>a list of HM Land Registry datasets that are not part of the service</li>
+                   <li>information and metadata about datasets</li>
+                   <li>secure links for downloading datasets</li>
+               </ul>
+
+               <p>You can access datasets that show:</p>
+               <ul>
+                   <li>
+                       <a href="overseas-product-signed-in">Overseas companies that own property in England and Wales</a>
+                   </li>
+                   <li>
+                       <a href="uk-product-signed-in">UK companies that own property in England and Wales</a>
+                   </li>
+               </ul>
+
+
+               <h2 id="p3" class="govuk-heading-l">How to access the datasets</h2>
+               <p>You need to create an account and agree to a licence to access the datasets.</p>
+               <ol>
+                   <li><a href="create-account">Create an account</a> if you don't have one</li>
+                   <li><a href="sign-in">Sign in</a> to get your API key</li>
+                   <li>Agree to the data licence(s) on the <a href="#">Get land and property data</a> website</li>
+               </ol>
+
+               <h2 id="p3" class="govuk-heading-l">Base URL</h2>
+               <p>
+                   Access the API from the base URL: <a href="http://base-url/api/3/action/{action}">http://base-url/api/3/action/{action}</a>
+
+
+
+        <h2 id="p4" class="govuk-heading-l">Full documentation</h2>
+          <p>The API is provided by the CKAN software and <a href="http://docs.ckan.org/en/release-v2.2.3/api.html">full documentation is provided here</a>.</p>
+
+      </div>
+     </div>
+
+  </main>
+</div>
+ {% endblock %}
