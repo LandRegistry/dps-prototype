@@ -61,7 +61,7 @@ ga('send', 'pageview', {
     <main class="govuk-main-wrapper confirm-page" id="main-content" role="main">
 <div class="govuk-grid-row govuk-!-margin-bottom-9">
 <div class="govuk-grid-column-two-thirds">
-<h1 class="govuk-heading-l">Confirm your card details</h1>
+<h1 class="govuk-heading-l">Confirm your payment</h1>
 
 <table class="govuk-table">
   <tbody class="govuk-table__body">
@@ -111,11 +111,11 @@ ga('send', 'pageview', {
 <form id="confirmation" method="POST" action="https://www.payments.service.gov.uk/card_details/ri2vsjh3gevaadt6skimdbqtq9/confirm" class="form">
   <input id="csrf" name="csrfToken" type="hidden" value="3b5GrJdZ-ek_VWGCI_FngMTFZoqzHDF7M6CA">
   <input id="chargeId" name="chargeId" type="hidden" value="ri2vsjh3gevaadt6skimdbqtq9">
-  <a href="5-confirmation" id="confirm" class="govuk-button govuk-!-margin-top-6" data-module="stop-double-submit">Confirm</a>
+  <a href="4-govpay-success" id="confirm" class="govuk-button govuk-!-margin-top-6" data-module="stop-double-submit">Confirm payment</a>
 </form>
 <form id="cancel" name="cancel" method="POST" action="https://www.payments.service.gov.uk/card_details/ri2vsjh3gevaadt6skimdbqtq9/cancel" class="form">
   <div>
-    <input id="cancel-payment" type="submit" class="button-reset" value="Cancel" name="cancel">
+    <input id="cancel-payment" type="submit" class="button-reset" value="Cancel payment" name="cancel">
     <input id="csrf2" name="csrfToken" type="hidden" value="3b5GrJdZ-ek_VWGCI_FngMTFZoqzHDF7M6CA">
   </div>
 </form>
@@ -128,7 +128,7 @@ ga('send', 'pageview', {
   </p>
   <p class="govuk-body govuk-!-margin-bottom-0">
     Total amount:
-    <span id="amount" class="amount govuk-!-font-size-36 govuk-!-font-weight-bold">£0.00</span>
+    <span id="amount" class="amount govuk-!-font-size-36 govuk-!-font-weight-bold">£0.01</span>
   </p>
 </aside>
 </div>

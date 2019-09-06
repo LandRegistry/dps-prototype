@@ -1,0 +1,406 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get land and property data
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="govuk-width-container">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="govuk-width-container">
+                <a href="users-accounts.html" class="govuk-back-link">Back to user accounts</a>
+
+                <br><br><br>
+
+                <span class="govuk-caption-xl">Mr Wibble Fibble</span>
+                <h1 class="govuk-heading-xl">Account information</h1>
+
+
+                <div class="govuk-tabs listings-with-history" data-module="tabs">
+                    <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#details">
+                                Account details
+                            </a>
+                        </li>
+
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" href="#activity">
+                                Dataset activity
+                            </a>
+                        </li>
+                    </ul>
+
+                    <section class="govuk-tabs__panel" id="details">
+                        <div class="govuk-grid-row govuk-!-margin-top-3 govuk-!-margin-bottom-6">
+                            <div class="govuk-grid-column-full">
+                                <h2 class="govuk-heading-l">Details</h2>
+
+                                <table class="govuk-summary-list">
+                                    <tr class="govuk-summary-list__row">
+                                        <td class="govuk-summary-list__key">
+                                            Full Name
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            Mr Wibble Fibble
+                                        </td>
+                                        <td class="govuk-summary-list__value"></td>
+                                    </tr>
+
+                                    <tr class="govuk-summary-list__row">
+                                        <td class="govuk-summary-list__key">
+                                            Status
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            Approved
+                                        </td>
+                                        <td class="govuk-summary-list__value"></td>
+                                    </tr>
+
+                                    <tr class="govuk-summary-list__row">
+                                        <td class="govuk-summary-list__key">
+                                            Address
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            1 Wibble Street<br>Plymouth<br>UK<br>PL1 3RF<br>
+                                        </td>
+                                        <td class="govuk-summary-list__value"></td>
+                                    </tr>
+
+                                    <tr class="govuk-summary-list__row">
+                                        <td class="govuk-summary-list__key">
+                                            Telephone Number
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            07527883344
+                                        </td>
+                                        <td class="govuk-summary-list__value"></td>
+                                    </tr>
+
+                                    <tr class="govuk-summary-list__row">
+                                        <td class="govuk-summary-list__key">
+                                            Email
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            wibble@fibble.com
+                                        </td>
+                                        <td class="govuk-summary-list__value"></td>
+                                    </tr>
+
+                                    <tr class="govuk-summary-list__row">
+                                        <td class="govuk-summary-list__key">
+                                            Contactable
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            No
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            <a href="worklist_item.html" id="changed">Change</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="govuk-summary-list__row">
+                                        <td class="govuk-summary-list__key">
+                                            Account Type
+                                        </td>
+                                        <td class="govuk-summary-list__value">
+                                            UK Personal
+                                        </td>
+                                        <td class="govuk-summary-list__value"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="govuk-grid-row govuk-!-margin-bottom-6">
+                            <div class="govuk-grid-column-full">
+                                <h2 class="govuk-heading-l">Notes</h2>
+
+                                <div class="lr-notepad govuk-!-margin-bottom-6">
+                                    <ul class="govuk-list">
+                                        <li class="lr-notepad__note">
+                                            <span class="govuk-body">dsfsd</span><br>
+                                            <span class="govuk-body-s lr-notepad__note__metadata">Added by testuser on 05/03/2019 09:46:43</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="note_text">
+                                        Enter the text for your note
+                                    </label>
+
+                                    <textarea class="govuk-textarea" id="note_text" name="note_text" rows="5" required="required"></textarea>
+
+                                    <button type="submit" class="govuk-button lr-button--blue">
+                                        Add note
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="govuk-grid-row">
+                            <div class="govuk-grid-column-full">
+                                <h2 class="govuk-heading-l">Actions</h2>
+
+                                <div class="govuk-tabs" data-module="tabs">
+                                    <ul class="govuk-tabs__list">
+                                        <li class="govuk-tabs__list-item">
+                                            <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#data">
+                                                Data access
+                                            </a>
+                                        </li>
+
+                                        <li class="govuk-tabs__list-item">
+                                            <a class="govuk-tabs__tab" href="#close">
+                                                Close account
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <section class="govuk-tabs__panel" id="data">
+                                        <h3 class="govuk-heading-l">Data access</h3>
+                                        <p class="govuk-body">
+                                            Allow access to the following datasets.
+                                        </p>
+
+                                        <div class="govuk-form-group">
+                                            <fieldset class="govuk-fieldset" aria-describedby="datasets">
+                                                <span id="waste-hint" class="govuk-hint">
+                                                    Select all that apply
+                                                </span>
+
+                                                <div class="govuk-checkboxes">
+                                                    <div class="govuk-checkboxes__item">
+                                                        <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                        <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                            NPS
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <button type="submit" class="govuk-button">
+                                            Update account
+                                        </button>
+                                    </section>
+
+                                    <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="close">
+                                        <h3 class="govuk-heading-m">Close account</h3>
+                                        <p class="govuk-body">
+                                            Closing will remove that users account. An email will need to be sent to the user to inform
+                                            them that their account is now closed.
+                                        </p>
+
+                                        <h4 class="govuk-heading-s">Who requested to close this account?</h4>
+                                        <div class="govuk-form-group">
+                                            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                                                <div class="govuk-radios govuk-radios--inline">
+                                                    <div class="govuk-radios__item">
+                                                        <input class="govuk-radios__input" id="requester1" name="who-requested" type="radio" value="customer">
+                                                        <label class="govuk-label govuk-radios__label" for="requester1">
+                                                            Customer
+                                                        </label>
+                                                    </div>
+                                                    <div class="govuk-radios__item">
+                                                        <input class="govuk-radios__input" id="requester2" name="who-requested" type="radio" value="hmlr">
+                                                        <label class="govuk-label govuk-radios__label" for="requester2">
+                                                            HMLR
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="govuk-form-group">
+                                            <label class="govuk-label" for="decline_reason">
+                                                Explain the reason for closing this account
+                                            </label>
+                                            <textarea class="govuk-textarea" id="decline_reason" name="decline_reason" rows="8" required="required"></textarea>
+                                        </div>
+
+                                        <button type="submit" class="govuk-button lr-button--red">
+                                            Close account
+                                        </button>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="govuk-tabs__panel" id="activity">
+                        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+                            <div class="govuk-accordion__controls">
+                                <button type="button" class="govuk-accordion__open-all" aria-expanded="false">
+                                    Open all<span class="govuk-visually-hidden"> sections</span>
+                                </button>
+                            </div>
+
+                            <div class="govuk-accordion__section">
+                                <div class="govuk-accordion__section-header">
+                                    <h2 class="govuk-accordion__section-heading">
+                                        <button type="button" id="ccod-heading-1" aria-controls="ccod-content-1"
+                                                class="govuk-accordion__section-button" aria-describedby="ccod-summary-1"
+                                                aria-expanded="true">
+                                            UK companies that own property in England and Wales
+                                        </button>
+                                        <span class="govuk-accordion__icon" aria-hidden="true"></span>
+                                    </h2>
+                                    <div class="govuk-accordion__section-summary govuk-body" id="ccod-summary-1">
+                                        Licence agreed on 19 July 2018
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="box">
+                                    <style type="text/css">
+                                        .box{padding:0px 70px 0px 0px;}
+                                    </style>
+                                    <table class="govuk-table">
+                                        <thead class="govuk-table__head">
+                                            <tr class="govuk-table__row">
+                                                <th class="govuk-table__header">Dataset filename</th>
+                                                <th class="govuk-table__header">Date/time downloaded</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="govuk-table__body">
+                                            <tr>
+                                                <td class="govuk-table__cell">Full dataset Jan 19</td>
+                                                <td class="govuk-table__cell">04 January 2019 14:54</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="govuk-table__cell">Change only Jan 19</td>
+                                                <td class="govuk-table__cell">04 January 2019 11:44</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="govuk-table__cell">Full dataset Dec 18</td>
+                                                <td class="govuk-table__cell">05 December 2018 12:29</td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td class="govuk-table__cell">Full dataset Oct 18</td>
+                                                <td class="govuk-table__cell">03 Novemeber 2018 11:13</td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td class="govuk-table__cell">Full dataset Nov 18</td>
+                                                <td class="govuk-table__cell">03 Novemeber 2018 10:19</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <br>
+
+                                <!-- <div id="ccod-content-1" class="govuk-accordion__section-content" aria-labelledby="ccod-heading-1">
+                                    <p>Table to downloads to go here</p>
+                                </div> -->
+                            </div>
+
+                            <div class="govuk-accordion__section ">
+                                <div class="govuk-accordion__section-header">
+                                    <h2 class="govuk-accordion__section-heading">
+                                        <button type="button" id="ocod-heading-1" aria-controls="ocod-content-1"
+                                                class="govuk-accordion__section-button" aria-describedby="ocod-summary-1"
+                                                aria-expanded="true">
+                                            Overseas companies that own property in England and Wales
+                                        </button>
+                                        <span class="govuk-accordion__icon" aria-hidden="true"></span>
+                                    </h2>
+                                    <div class="govuk-accordion__section-summary govuk-body" id="ocod-summary-2">
+                                        Licence agreed on 19 July 2018
+                                    </div>
+                                </div>
+
+                                <div id="ocod-content-1" class="govuk-accordion__section-content" aria-labelledby="ocod-heading-1">
+                                    <p>Table to downloads to go here</p>
+                                </div>
+                            </div>
+
+                            <div class="govuk-accordion__section ">
+                                <div class="govuk-accordion__section-header">
+                                    <h2 class="govuk-accordion__section-heading">
+                                        <button type="button" id="nps-heading-1" aria-controls="nps-content-1"
+                                                class="govuk-accordion__section-button" aria-describedby="nps-summary-1"
+                                                aria-expanded="true">
+                                          National Polygon Service
+                                        </button>
+                                        <span class="govuk-accordion__icon" aria-hidden="true"></span>
+                                    </h2>
+                                    <div class="govuk-accordion__section-summary govuk-body" id="nps-summary-3">
+                                        Access approved on 01 November 2019
+                                    </div>
+                                </div>
+
+                                <div id="nps-content-1" class="govuk-accordion__section-content" aria-labelledby="nps-heading-1">
+                                    <p>Table to downloads to go here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!--[if gt IE 8]><!-->
+    <script src="main.js"> </script>
+    <script src="/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="/javascripts/govuk-frontend-d998b60a5d585fe347e111112b0b9e97.js"></script>
+    <script src="/javascripts/example-aed4a541bd2d7a731e08f3e64294f90d.js"></script>
+    <!--<![endif]-->
+
+{% endblock %}
+
+
+<!-- <div class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                        Leases
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                        Daylist
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                        Register
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="govuk-grid-column-half">
+                                                <div class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                        NPS
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                        Leases
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                        Daylist
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="data2" name="waste" type="checkbox" value="nps">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="data2">
+                                                        Register
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            -->

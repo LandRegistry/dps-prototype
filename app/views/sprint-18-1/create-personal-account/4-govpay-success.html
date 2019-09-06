@@ -56,87 +56,14 @@ ga('send', 'pageview', {
     <div class="govuk-width-container">
       <main class="govuk-main-wrapper charge-new" id="main-content" role="main">
 <div class="govuk-grid-row govuk-!-margin-bottom-9">
-
-  <div class="govuk-width-container">
-    <main class="govuk-main-wrapper confirm-page" id="main-content" role="main">
-<div class="govuk-grid-row govuk-!-margin-bottom-9">
 <div class="govuk-grid-column-two-thirds">
-<h1 class="govuk-heading-l">Confirm your card details</h1>
 
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-width-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-3" scope="row">
-        Card number:
-      </th>
-      <td class="govuk-table__cell govuk-!-font-weight-bold" id="card-number">
-        ************1111
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-width-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-3" scope="row">
-        Expiry date:
-      </th>
-      <td class="govuk-table__cell govuk-!-font-weight-bold" id="expiry-date">
-        12/21
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-width-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-3" scope="row">
-        Name on card:
-      </th>
-      <td class="govuk-table__cell govuk-!-font-weight-bold" id="cardholder-name">
-        Rhys Barrett
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-width-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-3" scope="row">
-        Billing address:
-      </th>
-      <td class="govuk-table__cell govuk-!-font-weight-bold" id="address">
-        1 High St, Birmingham, B15 2EE, United Kingdom
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-width-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-3" scope="row">
-        Confirmation email:
-      </th>
-      <td class="govuk-table__cell govuk-!-font-weight-bold" id="email">
-        rtbarrett27@gmail.com
-      </td>
-    </tr>
-  </tbody>
-</table>
 
-<form id="confirmation" method="POST" action="https://www.payments.service.gov.uk/card_details/ri2vsjh3gevaadt6skimdbqtq9/confirm" class="form">
-  <input id="csrf" name="csrfToken" type="hidden" value="3b5GrJdZ-ek_VWGCI_FngMTFZoqzHDF7M6CA">
-  <input id="chargeId" name="chargeId" type="hidden" value="ri2vsjh3gevaadt6skimdbqtq9">
-  <a href="5-confirmation" id="confirm" class="govuk-button govuk-!-margin-top-6" data-module="stop-double-submit">Confirm</a>
-</form>
-<form id="cancel" name="cancel" method="POST" action="https://www.payments.service.gov.uk/card_details/ri2vsjh3gevaadt6skimdbqtq9/cancel" class="form">
-  <div>
-    <input id="cancel-payment" type="submit" class="button-reset" value="Cancel" name="cancel">
-    <input id="csrf2" name="csrfToken" type="hidden" value="3b5GrJdZ-ek_VWGCI_FngMTFZoqzHDF7M6CA">
-  </div>
-</form>
+  <h1 class="govuk-heading-xl">Your payment was successful</h1>
+  <p>Your payment was susccuessful. No money was taken.</p>
+  <a href="5-confirmation" class="govuk-button">Continue</a>
+
 </div>
-<div class="govuk-grid-column-one-third">
-<aside class="payment-summary">
-  <h2 class="govuk-heading-m">Payment summary</h2>
-  <p id="payment-description" class="govuk-body govuk-!-font-weight-bold">
-    Data Publication Service verification
-  </p>
-  <p class="govuk-body govuk-!-margin-bottom-0">
-    Total amount:
-    <span id="amount" class="amount govuk-!-font-size-36 govuk-!-font-weight-bold">£0.00</span>
-  </p>
-</aside>
-</div>
-</div>
-    </main>
-  </div>
-
-
 
 </div>
 <script id="govuk-script-charge">

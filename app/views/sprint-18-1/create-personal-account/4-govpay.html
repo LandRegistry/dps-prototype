@@ -69,7 +69,7 @@ ga('send', 'pageview', {
 
 
   <div id="enter-card-details-container">
-    <h1 class="govuk-heading-l">Enter your card details</h1>
+    <h1 class="govuk-heading-l">Enter card details</h1>
 
     <form id="card-details" name="cardDetails" method="POST" action="4-govpay-confirm" _lpchecked="1">
 
@@ -130,7 +130,7 @@ ga('send', 'pageview', {
           </span>
         </label>
         <span class="govuk-hint govuk-!-margin-bottom-2">
-          For example, 05/22</span>
+          For example, 10/20</span>
         <div class="govuk-date-input__item govuk-date-input__item--month govuk-date-input__item--with-separator">
             <label class="govuk-label govuk-date-input__label" for="expiry-month">Month</label>
             <input id="expiry-month" type="number" name="expiryMonth" value="" class="govuk-input govuk-date-input__input govuk-input--width-2" min="1" max="12" minlength="1" maxlength="2" autocomplete="cc-exp-month">
@@ -155,13 +155,13 @@ ga('send', 'pageview', {
           </span>
           <span class="govuk-hint govuk-!-margin-bottom-2">
             <span class="generic-cvc">
-              The last 3 numbers on the back of the card
+              The last 3 digits on the back of the card
             </span>
             <span class="hidden">
               For American Express,
             </span>
             <span class="amex-cvc hidden">
-              The last 4 numbers after the card number on the front
+              The last 4 digits after the card number on the front
             </span>
           </span>
         </label>
@@ -174,7 +174,7 @@ ga('send', 'pageview', {
       </div>
       <div class="govuk-form-group govuk-!-width-two-thirds " data-validation="addressCountry">
         <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Billing address</h2>
-        <span class="govuk-hint govuk-!-margin-bottom-2">This is the address linked to the card</span>
+        <span class="govuk-hint govuk-!-margin-bottom-2">This is the address associated with the card</span>
 
         <label id="address-country-lbl" for="address-country" class="govuk-label govuk-label--s">
               <span class="address-country-label" data-label-replace="addressCountry" data-original-label="Country or territory">
@@ -463,7 +463,7 @@ ga('send', 'pageview', {
               <span class="email-label" data-label-replace="email" data-original-label="Email">
                 Email
               </span>
-          <span class="govuk-hint govuk-!-margin-bottom-2">We’ll send your account approval here</span>
+          <span class="govuk-hint govuk-!-margin-bottom-2">We’ll send your payment confirmation here</span>
 
         </label>
         <input id="email" type="email" name="email" maxlength="254" class="govuk-input govuk-!-width-two-thirds" value="" autocomplete="email" data-confirmation="true" data-confirmation-label="An email will be sent to: ">
@@ -476,7 +476,7 @@ ga('send', 'pageview', {
     </form>
     <form id="cancel" name="cancel" method="POST" action="https://www.payments.service.gov.uk/card_details/ri2vsjh3gevaadt6skimdbqtq9/cancel" class="form">
       <div>
-        <input id="cancel-payment" type="submit" class="button-reset" value="Cancel" name="cancel">
+        <input id="cancel-payment" type="submit" class="button-reset" value="Cancel payment" name="cancel">
         <input id="csrf2" name="csrfToken" type="hidden" value="xJZakE6j-ougvCP0MthS7OZMncTrzAMHZKW4">
       </div>
     </form>
@@ -486,7 +486,7 @@ ga('send', 'pageview', {
   <aside class="payment-summary">
     <h2 class="govuk-heading-m">Payment summary</h2>
     <p id="payment-description" class="govuk-body govuk-!-font-weight-bold">
-      Use land and property data identity check
+      Data Publication Service verification
     </p>
     <p class="govuk-body hidden" id="payment-summary-breakdown">
       Amount: <span class="govuk-!-font-weight-bold" id="payment-summary-breakdown-amount"></span><br>
@@ -494,7 +494,7 @@ ga('send', 'pageview', {
     </p>
     <p class="govuk-body govuk-!-margin-bottom-0">
       Total amount:
-      <span id="amount" class="amount govuk-!-font-size-36 govuk-!-font-weight-bold" data-amount="0.01">£0.00</span>
+      <span id="amount" class="amount govuk-!-font-size-36 govuk-!-font-weight-bold" data-amount="0.01">£0.01</span>
     </p>
   </aside>
 </div>
