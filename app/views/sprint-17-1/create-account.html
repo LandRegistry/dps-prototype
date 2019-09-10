@@ -5,6 +5,15 @@
 {% endblock %}
 
 {% block content %}
+<style>
+.multiple-choice {
+    border:none !important;
+}
+.input_selected  {
+    background:none !important;
+}
+</style>
+
 
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
@@ -26,7 +35,7 @@
 
             <div class="multiple-choice">
               <div class="govuk-radios__item">
-                <input id="personal" name="what-is-this-data-for" type="radio" value="personal">
+                <input class="govuk-radios__input" id="personal" name="what-is-this-data-for" type="radio" value="personal">
                 <label class="govuk-label govuk-radios__label" for="personal">
                   my own use
                   <!--<p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-regular">I have a personal interest in this data</p>-->
@@ -36,7 +45,7 @@
 
             <div class="multiple-choice">
               <div class="govuk-radios__item">
-                <input id="uk-organisation" name="what-is-this-data-for" type="radio" value="uk-organisation">
+                <input class="govuk-radios__input" id="uk-organisation" name="what-is-this-data-for" type="radio" value="uk-organisation">
                 <label class="govuk-label govuk-radios__label" for="uk-organisation">
                   a UK organisation
                   <!--<p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-regular">I will use this data for work</p>-->
@@ -46,7 +55,7 @@
 
             <div class="multiple-choice">
               <div class="govuk-radios__item">
-                <input id="overseas-organisation" name="what-is-this-data-for" type="radio" value="overseas-organisation">
+                <input class="govuk-radios__input" id="overseas-organisation" name="what-is-this-data-for" type="radio" value="overseas-organisation">
                 <label class="govuk-label govuk-radios__label" for="overseas-organisation">
                   an overseas organisation
                  <!-- <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-regular"></p> -->
