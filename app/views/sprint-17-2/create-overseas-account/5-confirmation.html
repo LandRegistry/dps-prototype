@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get land and property data
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h2 class="govuk-panel__title">
+        Your application has been sent to<br> HM Land Registry
+      </h2>
+    </div>
+
+    <br><br>
+    <h3 class="govuk-heading-m">What happens next</h3>
+    <p class="govuk-body">Check your email. We'll email you when your account is ready to use.</p>
+    <p class="govuk-body">
+      We process most accounts on the same day, but it can take up to 2 working days because a member of staff has to
+      check your identity.
+    </p>
+
+    <h3 class="govuk-heading-m">Your confirmation email</h3>
+    <p class="govuk-body">
+      The email will have a link to create your account password. Once you've created your password, you'll be able
+      to sign in and download data.
+    </p>
+
+    <br>
+    <p><a href="../listingspage">Link back to homepage</a>.</p>
+  </div>
+</div>
+
+
+{% endblock %}
