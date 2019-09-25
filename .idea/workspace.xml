@@ -24,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.69174755">
+              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -78,7 +78,6 @@
         <option value="$PROJECT_DIR$/app/views/sprint-17-1/overseas-product-signed-in.html" />
         <option value="$PROJECT_DIR$/app/views/sprint-17-2/create-personal-account/4-govpay.html" />
         <option value="$PROJECT_DIR$/app/views/sprint-17-2/create-personal-account/4-govpay-confirm.html" />
-        <option value="$PROJECT_DIR$/app/views/index.html" />
         <option value="$PROJECT_DIR$/app/views/sprint-17-2/create-overseas-account/gov-pay.html" />
         <option value="$PROJECT_DIR$/app/views/sprint-17-1/listingspage.html" />
         <option value="$PROJECT_DIR$/app/views/sprint-17-1/listingspage-signed-in.html" />
@@ -92,6 +91,7 @@
         <option value="$PROJECT_DIR$/app/views/sprint-17-2/overseas-product-signed-in.html" />
         <option value="$PROJECT_DIR$/app/views/sprint-17-2/uk-product.html" />
         <option value="$PROJECT_DIR$/app/views/sprint-17-2/uk-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/index.html" />
       </list>
     </option>
   </component>
@@ -955,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.69174755">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding />
         </state>
       </provider>
