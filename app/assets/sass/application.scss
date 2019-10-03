@@ -117,9 +117,7 @@ code, pre {
   margin-bottom: 40px;
   padding: 1% 2%;
 }
-.history-item {
-    border-bottom: 1px solid #dee0e2;
-}
+
 .pill-green {
   background: #069652 !important;
 }
@@ -130,10 +128,8 @@ code, pre {
   }
 }
 .history-item {
-  border-bottom:1px solid #dee0e2;
   padding-bottom: 58px;
   padding: 3%;
-  margin-left: -25px;
 
   h3 {
     font-size: 27px;
@@ -1161,7 +1157,7 @@ span.licence-type {
 
 //formatting tabs to show example snippets of Datasets
 pre {
-  background-color: #8c8c8c;
+  background-color: #f3f2f1;
   border: 1px solid silver;
   /* padding: 10px 20px; */
   margin: 20px;
@@ -1171,7 +1167,7 @@ pre {
   /* padding: 15px; */
   /* overflow: auto; */
   border: 1px solid #bfc1c3;
-  background-color: #8c8c8c;
+  background-color: #f3f2f1;
   font-size: 16px;
   /* max-width: 38em; */
   margin-bottom: 15px;
