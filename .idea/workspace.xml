@@ -24,8 +24,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69174755">
-              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.65925926">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agree-to-licence.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/agree-to-licence.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.0588236">
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,56 +51,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/index_LOCAL_22986.html" />
-        <option value="$PROJECT_DIR$/app/views/index_REMOTE_22986.html" />
-        <option value="$PROJECT_DIR$/app/views/listingspage2.html" />
-        <option value="$PROJECT_DIR$/app/views/version-prototype.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/create-uk-business-account/2-6-createaccount-confirmation.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/create-overseas-account/2-6-createaccount-confirmation.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/agree-to-nps-licence.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/nps-product.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/nps-product-context2.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/download-nps-sample.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/download-nps-full.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/download-overseas.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/download-uk.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/uk-product.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/nps-product-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/overseas-product-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/uk-product-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/nps-product-licence-agreed.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/listingspage-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-15-1/dst/user_account_item.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/create-account.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/api-tech.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/api.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/dst/user_account_item.html" />
-        <option value="$PROJECT_DIR$/app/assets/sass/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/sprint-18-1/listingspage-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/create-overseas-account/2-6-createaccount-check-answers.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/3-check-answers.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/4-govpay.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/4-govpay-confirm.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/5-confirmation.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/uk-product-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/uk-product.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/overseas-product.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/overseas-product-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/create-personal-account/4-govpay.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/create-personal-account/4-govpay-confirm.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/create-overseas-account/gov-pay.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/listingspage.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-1/listingspage-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/listingspage-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/layout.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/contact.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/cookies.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/terms-of-use.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/listingspage.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/overseas-product.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/overseas-product-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/uk-product.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint-17-2/uk-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/3-check-answers.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/4-govpay.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/4-govpay-confirm.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/4-govpay-success.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/5-confirmation.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/createaccount.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/govpay.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/terms-of-use.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/1-2-create-password.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-1-createaccount-uk.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-2-createaccount-uk.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-3-org-add.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-4-contact-info.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-5-createaccount-terms-conditions.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-6-createaccount-check-answers.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/change-organisation-details.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/organisation-details.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/terms-of-use.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/api.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/api-key.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/api-tech.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/confirm-reset-password.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/contact.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/cookies.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-account.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/download-nps-full.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/download-nps-sample.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/download-overseas.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/download-uk.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/nps-product-context2.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/nps-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/nps-product-licence-agreed.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/nps-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/overseas-product.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/overseas-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/reset-password.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/overseas-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/sign-in.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/terms-of-use.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/title-desc-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/title-number-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/uk-product.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/uk-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/uk-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-overseas-account/2-6-createaccount-confirmation.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-6-createaccount-confirmation.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/agree-to-nps-licence.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/listingspage-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/nps-product.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint-19-1/agree-to-licence.html" />
         <option value="$PROJECT_DIR$/app/views/index.html" />
       </list>
     </option>
@@ -132,7 +142,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,14 +212,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sprint-17-2" />
+              <option name="myItemId" value="sprint-19-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,11 +235,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/sprint-19-1" />
+      <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app/views/sprint-17-2" />
       <recent name="$PROJECT_DIR$/app/views/sprint-17-2/create-overseas-account" />
       <recent name="$PROJECT_DIR$/app/views/sprint-17-2/create-oversease-account" />
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/app/views/sprint-17-1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/sprint-17-2/create-overseas-account" />
@@ -551,7 +561,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32739726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3369863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -592,371 +602,410 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-15-1/nps-product-signed-in.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/4-govpay-success.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.503876">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-15-1/overseas-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7209302">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-15-1/uk-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4883721">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-15-1/listingspage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="16" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-15-1/agree-to-licence.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.875">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-15-1/dst/user_account_item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07964602">
-          <caret line="258" column="32" selection-start-line="258" selection-start-column="32" selection-end-line="289" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-15-1/listingspage-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5072464">
-          <caret line="33" column="62" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-overseas-account/2-2-createaccount-uk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4710145">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/download-nps-full.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.0">
-          <caret line="127" column="14" selection-start-line="81" selection-start-column="6" selection-end-line="127" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/download-overseas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="125" column="16" selection-start-line="89" selection-start-column="8" selection-end-line="125" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2941177">
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.74657536">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/govuk-frontend/components/footer/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8082192">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/nps-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/dst/user_account_item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79710144">
-          <caret line="286" column="49" selection-start-line="286" selection-start-column="49" selection-end-line="286" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-18-1/dst/user_account_item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/application-ie8.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/unbranded.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042016808">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-18-1/listingspage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7246377">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-18-1/listingspage-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/3-check-answers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9583335">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-uk-business-account/2-6-createaccount-check-answers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2916667">
-          <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-overseas-account/2-6-createaccount-check-answers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5940594">
-          <caret line="145" column="6" selection-start-line="145" selection-start-column="6" selection-end-line="152" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/4-govpay-confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8700696">
-          <caret line="126" column="41" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/4-govpay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8700696">
-          <caret line="496" column="109" selection-start-line="496" selection-start-column="109" selection-end-line="496" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/create-personal-account/5-confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81206495">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/create-personal-account/4-govpay-confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4117646">
-          <caret line="130" column="45" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/create-personal-account/4-govpay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.791667">
-          <caret line="476" column="6" selection-start-line="476" selection-start-column="6" selection-end-line="476" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/create-overseas-account/4-govpay-confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/create-overseas-account/5-confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/create-overseas-account/gov-pay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61503416">
-          <caret line="477" column="0" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/overseas-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61047834">
-          <caret line="296" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/overseas-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="281" column="58" selection-start-line="0" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/uk-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41002277">
-          <caret line="45" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/uk-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13211845">
-          <caret line="312" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/listingspage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27562642">
-          <caret line="106" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-1/listingspage-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034168564">
-          <caret line="107" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38496584">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/cookies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33252427">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="45" />
+        <state vertical-scroll-proportion="-2.3529413">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layout.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/5-confirmation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/createaccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/govpay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-personal-account/terms-of-use.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="241" column="13" selection-start-line="241" selection-start-column="10" selection-end-line="241" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/1-2-create-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-2-createaccount-uk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-1-createaccount-uk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-3-org-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-4-contact-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-5-createaccount-terms-conditions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-6-createaccount-check-answers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-overseas-account/2-6-createaccount-confirmation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.75">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="33" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/2-6-createaccount-confirmation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.1764708">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/change-organisation-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/organisation-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-uk-business-account/terms-of-use.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="241" column="13" selection-start-line="241" selection-start-column="10" selection-end-line="241" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/agree-to-nps-licence.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2962963">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/api.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/api-tech.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="442" column="19" selection-start-line="442" selection-start-column="16" selection-end-line="442" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/confirm-reset-password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/terms-of-use.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/overseas-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48747152">
-          <caret line="185" column="14" selection-start-line="185" selection-start-column="14" selection-end-line="185" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/overseas-product.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/cookies.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30825242">
-          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="197" selection-end-column="14" />
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="133" column="19" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/listingspage.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/create-account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53246754">
-          <caret line="170" column="10" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
+        <state vertical-scroll-proportion="-2.3529413">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/listingspage-signed-in.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/download-nps-full.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17995444">
-          <caret line="448" column="84" selection-start-line="448" selection-start-column="84" selection-end-line="448" selection-end-column="84" />
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/uk-product-signed-in.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/download-nps-sample.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5899772">
-          <caret line="181" column="46" selection-start-line="181" selection-start-column="46" selection-end-line="181" selection-end-column="46" />
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint-17-2/uk-product.html">
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/download-overseas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36407766">
-          <caret line="187" column="14" selection-start-line="73" selection-start-column="6" selection-end-line="187" selection-end-column="14" />
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/download-uk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/expired-link.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/listingspage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/listingspage-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="426" column="17" selection-start-line="426" selection-start-column="14" selection-end-line="426" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/new-link-sent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/nps-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/nps-product-context2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="255" column="19" selection-start-line="255" selection-start-column="16" selection-end-line="255" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/nps-product-licence-agreed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="220" column="3" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/nps-product-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/nps-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="552" column="11" selection-start-line="552" selection-start-column="8" selection-end-line="552" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/overseas-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="271" column="9" selection-start-line="271" selection-start-column="6" selection-end-line="271" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/overseas-product-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="272" column="9" selection-start-line="272" selection-start-column="6" selection-end-line="272" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/title-number-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/uk-product-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="278" column="9" selection-start-line="278" selection-start-column="6" selection-end-line="278" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/uk-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="851" column="11" selection-start-line="851" selection-start-column="8" selection-end-line="851" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/uk-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="274" column="9" selection-start-line="274" selection-start-column="6" selection-end-line="274" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/title-desc-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="483" column="11" selection-start-line="483" selection-start-column="8" selection-end-line="483" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/terms-of-use.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="391" column="19" selection-start-line="391" selection-start-column="16" selection-end-line="391" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/sign-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2962963">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/session-expired.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2962963">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/reset-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2962963">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/overseas-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="765" column="11" selection-start-line="765" selection-start-column="8" selection-end-line="765" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint-19-1/agree-to-licence.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0588236">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69174755">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.65925926">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,614 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="detailspages-dataset-v4" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Technical specification</span>
+          National Polygon dataset
+        </h1>
+
+        <div class="toc" id="contents">
+          <p>Contents</p>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#scope">Specification scope</a></li>
+            <li><a href="#identification">Data product identification</a></li>
+            <li><a href="#content">Data content and structure</a></li>
+            <li><a href="#quality">Data quality</a></li>
+            <li><a href="#capture">Data capture information</a></li>
+            <li><a href="#maintenance">Data maintenance</a></li>
+            <li><a href="#glossary">Glossary</a></li>
+            <li><a href="#product">Data product delivery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <h2 class="govuk-heading-l" id="overview">Overview</h2>
+        <p>
+          This is the published dataset of HM Land Registry Index Polygons. Index Polygons are a representation of a
+          registered title showing its location and extent.
+        </p>
+        <p>
+          The title plan and register record the general position of the boundaries of a registered title (unless shown
+          as having been determined as an exact boundary in accordance to section 60, Land Registration Act 2002.
+        </p>
+        <p>
+          An index polygon is part of the Index referred to in section 68, 2002 Land Registration Act and rule 10, Land
+          Registration Rules 2003. Its purpose is to provide an index to show the indicative location of a registered
+          title. Index polygons are held in vector format.
+        </p>
+        <p>
+          The title plan and register share the same ID called the Title Number. Every registered title has at least one
+          index polygon. An index polygon has a unique Polygon ID (Poly_ID). The relationship between the registered title
+          and index polygon(s) is managed through the title number.
+        </p>
+        <p>
+          HM Land Registry Index Polygons are mapped against Ordnance Survey large scale data, MasterMap, Index Polygons
+          will follow features in MasterMap where those features relate to the ownership boundary. Ownership boundaries
+          do not always follow features mapped in MasterMap.
+        </p>
+
+        <h2 class="govuk-heading-l" id="scope">Specification scope</h2>
+        <h3 class="govuk-heading-m">Inclusion and exclusions</h3>
+        <table class="govuk-table table-hack">
+          <thead>
+          <tr>
+            <th class="govuk-table__header">Key features</th>
+            <th class="govuk-table__header"></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Polygons</td>
+            <td>HM Land Registry’s Index Polygons</td>
+          </tr>
+          <tr>
+            <td>Format</td>
+            <td><abbr title="Environmental Systems Research Institute">ESRI</abbr> shapefile</td>
+          </tr>
+          <tr>
+            <td>Coordinate reference system</td>
+            <td>British National Grid (EPSG:27700)</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h3 class="govuk-heading-m">Relationship to other HM Land Registry data products</h3>
+        <p>
+          The National Polygon Dataset is the published dataset of Index polygons for England and Wales. Each index polygon
+          contains a title number to enable the polygons to be linked to the Title Descriptor and
+          <abbr title="Unique Property Reference Number">UPRN</abbr> datasets. The separation of this data into three data
+          sets means that each data set is smaller and easier to handle and that data currency and updates can be more simply managed.
+        </p>
+        <p>
+          The INSPIRE Index Polygons are a sub-set of the National Polygon dataset, made up of polygons related to
+          freehold titles. INSPIRE Index Polygons have a much simpler set of attributes, describing the polygon unique
+          identifier, the polygon create date and the polygon last updated date.
+        </p>
+        <p>
+          Relationships can be made between the National Polygon Dataset and other information in the title register by
+          linking via the title number.
+        </p>
+
+        <h2 class="govuk-heading-l" id="identification">Data product identification</h2>
+        <h3 class="govuk-heading-m">Purpose</h3>
+        <p>
+          HM Land Registry are mandated to create an index polygon for each title registration as described in section 68,
+          2002 Land Registration Act and rule 10, Land Registration Rules 2003.
+        </p>
+        <p>
+          The purpose of the index polygon is to show the location of a registered title, to general boundaries and in
+          context of HM Land Registry practice.
+        </p>
+        <p>
+          The National Polygon Dataset (<abbr title="National Polygons Dataset">NPD</abbr>) is a data product to enable
+          HM Land Registry customers to efficiently locate the indicative ownership extent of registered titles across
+          England and Wales. The data can be used in a geographic information system (GIS) to view and query title index extents.
+        </p>
+        <p>
+          The data contains a title number to enable relationships to be made between the <abbr title="National Polygons Dataset">
+          NPD</abbr> and other HM  Land Registry data. The data also includes the Title Descriptor and
+          <abbr title="Unique Property Reference Number">UPRN</abbr> datasets which describes the relationship between the
+          <abbr title="National Polygons Dataset">NPD</abbr> polygons and the Unique Property Reference Number
+          (<abbr title="Unique Property Reference Number">UPRN</abbr>) from AddressBase. This means that customers can use the
+          <abbr title="Unique Property Reference Number">UPRN</abbr> to make relationships between
+          <abbr title="National Polygons Dataset">NPD</abbr> and other central and local Government data that uses AddressBase
+          <abbr title="Unique Property Reference Number">UPRN</abbr>’s.
+        </p>
+
+        <h3 class="govuk-heading-m">Spatial representation</h3>
+        <p>
+          Data is available as vector polygons.
+        </p>
+
+        <h3 class="govuk-heading-m">Spatial resolution</h3>
+        <p>
+          Polygons captured against the Ordnance Survey large scale map at a scale of 1:1,250, 1:2,500 and 1:10,000
+          dependent upon the scale of OS MasterMap.
+        </p>
+
+        <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
+        <p>
+          The class diagram below defines the geometry and attribute content of a HM Land Registry index polygon.
+        </p>
+
+        <h3 class="govuk-heading-m">Table 1: <abbr title="National Polygons Dataset">NPD</abbr> class diagram</h3>
+        <table class="govuk-table table-hack">
+          <thead>
+          <tr>
+            <th class="govuk-table__header">Polygon</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Shape</td>
+          </tr>
+          <tr>
+            <td>Poly_ID</td>
+          </tr>
+          <tr>
+            <td>Title_No</td>
+          </tr>
+          <tr>
+            <td>INSERT</td>
+          </tr>
+          <tr>
+            <td>UPDATE</td>
+          </tr>
+          <tr>
+            <td>Rec_Status</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h3 class="govuk-heading-m">Table 2: <abbr title="National Polygons Dataset">NPD</abbr> table structure</h3>
+        <table class="govuk-table table-hack">
+          <thead class="govuk-table__header">
+          <tr>
+            <th>Field name</th>
+            <th>Data type</th>
+            <th>Mandatory?</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Shape</td>
+            <td>Geometry</td>
+            <td>Yes</td>
+            <td>Geometry of the Index Polygon must be a single area</td>
+          </tr>
+          <tr>
+            <td>Poly_ID</td>
+            <td>Number</td>
+            <td>Yes</td>
+            <td>Unique polygon reference. Identifier is unique to spatial object and managed through lifecycle rules for the dataset</td>
+          </tr>
+          <tr>
+            <td>Title_No</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Identifier of the title registration, required to enable associations to be made with the text register</td>
+          </tr>
+          <tr>
+            <td>INSERT</td>
+            <td>Text</td>
+            <td>Yes</td>
+            <td>Date on which the polygon in the title was initially created on the index map</td>
+          </tr>
+          <tr>
+            <td>UPDATE</td>
+            <td>Text</td>
+            <td>Yes</td>
+            <td>Date on which all or part of the title was last updated</td>
+          </tr>
+          <tr>
+            <td>Rec_Status</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Identifier to describe status of the polygon. Added (A), Changed (C), Deleted (D)</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h2 class="govuk-heading-l" id="quality">Data quality</h2>
+        <p>
+          The National Polygon Dataset contains a number of known issues, including:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>small sliver gaps and overlaps</li>
+          <li>
+            technical overlapping polygons (polygons where small overlaps exist due to mapping inconsistencies, that do
+            not describe a real conflict of registered titles)
+          </li>
+          <li>
+            actual overlaps, where two or more registered titles include the same land/property and will be resolved upon application
+          </li>
+        </ul>
+        <p>
+          The data also contains data types that facilitate the process of Land Registration and are a real managed part
+          of the data model but could be considered an issue if the data is not understood, these feature types are
+          explained further on in the document.
+        </p>
+        <p>
+          The data has been captured for the purposes of enabling land registration, and thus has evolved to be fit for
+          our purpose and the processes and tools that we use.
+        </p>
+        <p>
+          We welcome <a href="#contact">feedback</a> on any data quality issues.
+        </p>
+
+        <h2 class="govuk-heading-l" id="capture">Data capture information</h2>
+        <p>
+          An index polygon is a representation of the title extent.  HM Land Registry practice allows for an index polygon
+          extent to be the same size, larger or smaller than the extent shown on a title plan. This means that index
+          polygons cannot and should not be relied upon as showing the extent of registered titles. Practice has been
+          reviewed and changed over many years, the index polygon dataset includes polygons based on former practice(s)
+          and does contain inconsistencies.
+        </p>
+        <p>
+          Index polygons were manually captured on OS county series sheets, national grid sheets and parcels books.
+        </p>
+        <p>
+          HM Land Registry implemented its computer mapping system (production environment) in 2001, and all 19 million
+          index polygons held in paper format at that time had to be vectorised. The program of vectorisation started in
+          August 2001 and was completed in February 2004.These polygons were mapped against OS Land-Line.
+        </p>
+        <p>
+          With so many polygons to vectorise within a finite time frame, HM Land Registry was pragmatic in achieving an
+          effective and efficient capture at that time. This meant that we introduced temporary practice, index polygons
+          were completed pictorially and title plans were seldom used to validate an indexed extent.
+        </p>
+        <p>
+          Index polygons affected by the OS’ Positional Accuracy Programme (PAI) were subsequently amended. HM Land
+          Registry’s PAI program ran from 2005 to 2008.Many were moved in sympathy with the OS mapping. This was done
+          through an automated process. Those that did not meet certain criteria were referred for manual investigation
+          whereby index polygons were manually compared with the title plan.
+        </p>
+        <p>
+          Around 2009 HM Land Registry embarked on a quality initiative called the Quality Improvement Flowline (QIF);
+          almost 14 million index polygons went through this process. Some minor overlaps were resolved and extent matching
+          was done automatically, each index polygon was reconciled with the title plan. By this time HM Land Registry
+          was taking OS MasterMap (<abbr title="Ordnance Survey MasterMap">OSMM</abbr>), the new large scale map product
+          from Ordnance Survey which replaced LandLine.
+        </p>
+        <p>
+          HM Land Registry receives a daily change only update (<abbr title="change only update">COU</abbr>) of
+          <abbr title="Ordnance Survey MasterMap">OSMM</abbr> but this is used for the creation of new Index Polygons and
+          Title Plans, rather than to review or update current registrations. Index Polygons will be updated when there
+          is appropriate activity on a title, or an adjoining title demands a change.
+        </p>
+        <p>
+          Large scale OS map products (OS Land-Line and <abbr title="Ordnance Survey MasterMap">OSMM</abbr>) capture features
+          at various scales 1:1,250 for urban areas, 1:2,500 for semi urban and rural areas and 1:10,000 for mountain
+          and moorland areas.
+        </p>
+        <p>
+          All HM Land Registry data including index polygons are captured to British National Grid.
+        </p>
+
+        <h3 class="govuk-heading-m">Table 3: <abbr title="National Polygons Dataset">NPD</abbr> feature types</h3>
+        <table class="govuk-table table-hack">
+          <thead class="govuk-table__header">
+          <tr>
+            <th>No</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>Indicative Extent Current practice</td>
+            <td>
+              The index polygon is a good representation of, if not identical to the title plan. This is the most common
+              feature in the dataset.
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Footprint Current practice</td>
+            <td>
+              Capturing indicative extents where multiple registered titles exist in a building result in a cluttered and
+              difficult to interrogate index map. To deal with this, HM Land Registry captures footprint index polygons
+              Footprint indexing involves the capture of an area larger than the title extent. Whilst normally the
+              footprint will be captured to the defined boundaries of a building shown on <abbr title="Ordnance Survey MasterMap">
+              OSMM</abbr>. The index polygon should be captured to the smallest footprint that fully accommodates the title extent.<br>
+              Where the registered title comprises land that falls outside the building footprint for example garden ground
+              or parking space this should be shown as a separate polygon(s) with an indicative extent.<br>
+              Commonly seen in floor level registrations, also bin stores, advertising hoardings and solar panels.
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Artificial Footprint Current practice</td>
+            <td>
+              Where a large number of floor level registrations affect an unusually large defined area on the
+              <abbr title="Ordnance Survey MasterMap">OSMM</abbr> (typically a shopping mall or similar development)
+              indexing to the footprint of the whole development makes interrogating the index map less effective. HM
+              Land Registry mapping system struggles to deal with a huge amount of multiple layered polygons. In such
+              circumstances HM Land Registry may be divide the area into smaller artificial footprint areas within the
+              building footprint.<br>Additionally if it is difficult to clearly show small registrations that are not
+              defined on the <abbr title="Ordnance Survey MasterMap">OSMM</abbr>. We may capture a larger artificial
+              footprint to include all the small areas.<br>Commonly seen in shopping malls, small plot schemes and bin stores.
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Exaggerated Extent Current practice</td>
+            <td>
+              To allow small areas of land that are undefined on the <abbr title="Ordnance Survey MasterMap">OSMM</abbr>
+              to be easily identified all index polygons should have a width of at least 1m. Where a narrow strip of
+              registered land adjoins other registered land, the adjoining index polygon will be reduced in size to allow
+              for the strip to be shown with a 1m width.<br>Commonly seen with ransom strips and pipelines &lt;1m.
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Gridding Former practice</td>
+            <td>
+              Index polygons were indexed on the appropriate national grid 1km or quadrant sheet. The vectorisation
+              programme was managed by national grid reference. Therefore where index polygons fell across sheets this
+              was replicated. This means that index polygons stopped at sheet joins. The impact of this is that fields,
+              houses, roads for example are sometimes split into parts each with its own PID.
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Coextensive leasehold<br>Former practice</td>
+            <td>
+              Some leasehold index polygons were captured to the extent of the freehold index polygon, even though the
+              extent was lesser than the freehold. HM Land Registry changed this practice because it caused difficulties
+              interrogating the index map to determine title numbers for parts of garden ground and parking spaces.
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <p>
+          Topology is defined as how point, line and polygon features share coincident geometry, in the context of index
+          polygons topology describes how polygons relate to and interact with each other.
+        </p>
+        <p>
+          Overlaps, gaps, slivers and underlaps all exist in the dataset. Many are genuine and are acceptable but there
+          are some that exist which should not.
+        </p>
+
+        <table class="govuk-table table-hack">
+          <thead class="govuk-table__header">
+          <tr>
+            <th>Relationship</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Acceptable overlapping polygons</td>
+            <td>
+              HM Land Registry deals with registrations at different floor levels, strata, different tenures and classes
+              of title; it is therefore acceptable for polygons to overlap. When overlapping polygons of this nature are
+              referred to the caseworker they classify it accordingly and allow it to remain in the dataset.
+            </td>
+          </tr>
+          <tr>
+            <td>Illegal overlapping polygons</td>
+            <td>
+              These are overlaps that arise that shouldn’t be in our data. On system referral of an index polygon overlap,
+              the caseworker investigates and may resolve index polygon overlaps.<br>However, where title extents genuinely
+              overlap, HM Land Registry has limited powers to amend registered extents so no action is taken until an
+              application to amend/rectify is received.
+            </td>
+          </tr>
+          <tr>
+            <td>Minor overlapping polygons</td>
+            <td>
+              Overlaps &lt;0.5m<sup>2</sup> are not referred to caseworkers for remedial action, this is because they are
+              insignificant and are too small to satisfactorily resolve with the mapping toolset in the mapping system.
+            </td>
+          </tr>
+          <tr>
+            <td>Gaps, slivers and underlaps between polygons</td>
+            <td>
+              As part of the registration process consideration is given to adjoining registrations. Where titles are
+              intended to adjoin, practice advices that minor index polygon discrepancies should be resolved.<br>
+              It is right that some registered titles do not adjoin and in that instance the index polygons will not either
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h2 class="govuk-heading-l" id="maintenance">Data maintenance</h2>
+        <p>
+          HM Land Registry does not routinely update title plans or index polygons. We may do so in the following circumstances:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>upon receipt of a query received from a customer</li>
+          <li>
+            in dealing with an application for registration, HM Land Registry will consider adjoining registrations, after
+            investigation this can give rise to amendments to a title plan and/or index polygon
+          </li>
+          <li>when an incorrect index polygon is observed</li>
+          <li>
+            some applications, for example sales off from parts of registered titles require the removal of a piece of
+            land from a registered title and the index polygon
+          </li>
+        </ul>
+        <p>
+          Overnight, index polygons created/updated/deleted in the production environment that day are uploaded to the
+          publication environment as <abbr title="Environmental Systems Research Institute">ESRI</abbr> (Environmental
+          Systems Research Institute) <a rel="external" href="https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">
+          shapefiles (PDF)</a>. Through this process the polygons undergo simple validation; checking for zero co-ordinate
+          polygons, zero area polygons and duplicate co-ordinate points within polygons. Many of the self-intersections
+          are cleaned for the publication environment and polygons with zero areas and those with an area below 0.1m<sup>2</sup>
+          are removed from it.
+        </p>
+        <p>
+          An index polygon may go through several changes but the change only update (<abbr title="change only update">COU</abbr>)
+          delivery will only contain the latest version. HM Land Registry does not keep the previous versions of it.
+        </p>
+        <p>
+          <abbr title="National Polygons Dataset">NPD</abbr> is updated monthly.
+        </p>
+
+        <h2 class="govuk-heading-l" id="glossary">Glossary</h2>
+        <table class="govuk-table table-hack">
+          <tbody>
+          <tr>
+            <td>Attribute</td>
+            <td>
+              Data that describes the properties of a feature, for example a point feature may have an attribute describing
+              the point as; a well or a telegraph pole or a tree
+            </td>
+          </tr>
+          <tr>
+            <td>Class Diagram</td>
+            <td>A diagram describing the structure and content of a dataset</td>
+          </tr>
+          <tr>
+            <td>Feature</td>
+            <td>A data entity, for example a point, line or polygon</td>
+          </tr>
+          <tr>
+            <td>Feature Catalogue</td>
+            <td>A document that defines features, often by describing the feature attributes</td>
+          </tr>
+          <tr>
+            <td>Feature Types</td>
+            <td>Homogenous collections of common features</td>
+          </tr>
+          <tr>
+            <td>GIS</td>
+            <td>
+              Geographic information systems, a combination of information technology hardware and software and trained
+              user that together can capture, analyse and use geographic information
+            </td>
+          </tr>
+          <tr>
+            <td>Index Polygons</td>
+            <td>A polygon feature representing the indexed extent of a registered title</td>
+          </tr>
+          <tr>
+            <td>Index Map</td>
+            <td>A collection of index polygons to cover a particular area of interest</td>
+          </tr>
+          <tr>
+            <td>MasterMap</td>
+            <td>The Ordnance Survey large scale topographic map of the UK</td>
+          </tr>
+          <tr>
+            <td>Topology</td>
+            <td>The relationship between geographic features, either within or between layers of information</td>
+          </tr>
+          </tbody>
+        </table><br>
+
+
+        <h2 class="govuk-heading-l" id="product">Data product delivery</h2>
+        <h3 class="govuk-heading-m">Access to the dataset</h3>
+        <p>
+          There is a charge for the dataset and you will be required to sign a licence.
+        </p>
+        <p>
+          If you intend to reuse the data within your products and services for commercial gain you must indicate on the
+          Licence and confirm your choice of reuse model.
+        </p>
+        <p>
+          The Business Development Fulfilment Team can assist in determining your terms of proposed use, such as internal
+          use or permitted reuse.
+        </p>
+        <p>
+          Should you have any queries about the National Polygon Dataset, please contact the<a href="#contact">Data Services Team</a>.
+        </p>
+
+        <h3 class="govuk-heading-m">Download package</h3>
+        <p>
+          This package can start at any month of the year, you will be granted access to the Full Dataset, the change only
+          updates and the validation files.
+        </p>
+        <p>
+          All the files in this package are refreshed and available from the second working day of the stated months.
+        </p>
+
+        <h3 class="govuk-heading-m">File structure</h3>
+        <p>
+          The data is provided as a CSV file. The format of each file will conform to the following:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the character used to delimit each field is a comma: ‘ , ’ (ASCII 44)</li>
+          <li>all fields will be enclosed within double-quote’s “ “ (ASCII 34)</li>
+          <li>when a field is NULL, it will be transmitted as no character between double quotes, i.e. ,” “,</li>
+          <li>
+            date fields will be provided in the format DD-MM-YYYY HH:MM:SS For example the date; the fourteenth of
+            December twenty thirteen would be represented as 14-12-2013
+          </li>
+          <li>the file will use UTF-8 and ASCII encoding.</li>
+          <li>steps will be taken to remove carriage return and line feeds from the data.</li>
+          <li>the column heading name will be the first row of the file.</li>
+        </ul>
+
+        <h3 class="govuk-heading-m">Naming convention</h3>
+        <p>
+          Please note, if you intend to copy and paste the code below, you must remove any spaces within the text string.
+        </p>
+        <p>
+          The full file has been split into several files which have a 2GB limit:
+        </p>
+        <p>
+          Full file    LR_POLY_FULL_&lt;     3 character Month     &gt;     _     &lt;     number of file     &gt;<br><br>
+          Change Only Update file   LR_POLY_COU_&lt;     DD_MMM_YYYY     &gt;<br><br>
+          Validation file    LR_POLY_VALI_&lt;     3 character Month     &gt;
+        </p>
+
+        <h2 class="govuk-heading-l" id="contact">Contact</h2>
+        <p>
+          If you want to know more about the National Polygon dataset, please contact us:
+        </p>
+        <p>
+          <strong>Data Services Team</strong>​<br>
+          HM Land Registry​<br>
+          Rosebrae Court ​<br>
+          Woodside Ferry Approach​<br>
+          Birkenhead​<br>
+          Merseyside​<br>
+          CH41 6DU
+        </p>
+        <p>
+          Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+        </p>
+        <p>​
+          Telephone: 0300 006 0478
+        </p>
+      </div>
+    </div>
+
+    <div class="base-bar">
+      <div class="base-bar-inset">
+        <a class="app-c-back-to-top dont-print" href="#contents">
+          <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+          </svg>
+          Contents
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
