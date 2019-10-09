@@ -1,0 +1,277 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="detailspages-dataset-v4" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Technical specification</span>
+          Title Number and UPRN Look Up dataset
+        </h1>
+
+        <div class="toc" id="contents">
+          <p>Contents</p>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#scope">Specification scope</a></li>
+            <li><a href="#content">Data content and structure</a></li>
+            <li><a href="#quality">Data quality</a></li>
+            <li><a href="#capture">Data capture information</a></li>
+            <li><a href="#maintenance">Data maintenance</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <h2 class="govuk-heading-l" id="overview">Overview</h2>
+        <p>
+          This dataset contains HM Land Registry Title Numbers and AddressBase Unique Property Reference Numbers (UPRN).
+          Customers can use this dataset to make relationships between National Polygon Dataset and other central and
+          local Government data that uses AddressBase UPRNs.
+        </p>
+
+        <h2 class="govuk-heading-l" id="scope">Specification scope</h2>
+        <h3 class="govuk-heading-m">Inclusion and exclusions</h3>
+        <p>
+          The Title Number and UPRN Look Up dataset is a subset of HM Land Registry’s Title Numbers, it is also a subset
+          of the UPRNs supplied from AddressBase. Data is only included where HM Land Registry has made an association
+          between a UPRN and Title Number.
+        </p>
+        <p>
+          HM Land Registry takes customer addresses at the point of registration and relate them to Ordnance Survey
+          AddressBase data where possible. When a customer address does not relate to an AddressBase address, HM Land
+          Registry will create a new address to relate our title to.
+        </p>
+        <p>
+          As more AddressBase addresses become available, we match HM Land Registry created addresses to new AddressBase
+          addresses and create relationships where possible.
+        </p>
+        <p>
+          The title number / UPRN relationship will only be available for those titles where we have been able to make a
+          relationship between our titles and AddressBase addresses.
+        </p>
+
+        <h3 class="govuk-heading-m">Relationship to other HM Land Registry data products</h3>
+        <p>
+          As this dataset contains the Title Number, the dataset can be linked to the Title Descriptor and National
+          Polygon datasets (NPD). We have separated this data into three datasets to make each dataset smaller and easier
+          to handle and so that data currency and updates can be more simply managed.
+        </p>
+        <p>
+          Relationships can be made between the Title Number and UPRN Look Up dataset and other information in the title
+          register by linking through the title number, subject to the download or purchase of additional HM Land Registry data.
+        </p>
+
+        <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
+        <h3 class="govuk-heading-m">Table 1: UPRN class diagram</h3>
+        <table class="govuk-table table-hack">
+          <thead class="govuk-table__header">
+          <tr>
+            <th>Title Number and UPRN Look Up dataset</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Title Number</td>
+          </tr>
+          <tr>
+            <td>UPRN</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h3 class="govuk-heading-m">Table 2: UPRN table structure</h3>
+        <table class="govuk-table table-hack">
+          <thead class="govuk-table__header">
+          <tr>
+            <th>Field name</th>
+            <th>Data type</th>
+            <th>Mandatory?</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Title_No</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Identifier of the title registration, required to enable associations to be made with the text register</td>
+          </tr>
+          <tr>
+            <td>UPRN</td>
+            <td>Integer</td>
+            <td>Yes</td>
+            <td>Identifier of a spatial address</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h2 class="govuk-heading-l" id="quality">Data quality</h2>
+        <p>
+          As part of the address searching, ingest and matching process it is possible that:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            duplicate addresses may be created because either the information supplied with the application papers or
+            the data in the change only update (<abbr title="change only update">COU</abbr>) does not match the addresses
+            in Land Registry Property Gazetteer (<abbr title="Land Registry Property Gazetteer">LRPG</abbr>). This could
+            result in two addresses in <abbr title="Land Registry Property Gazetteer">LRPG</abbr>, one with a Title Number
+            and no UPRN, the other with a UPRN but no Title Number.
+          </li>
+          <li>
+            an address exists with a UPRN but is not in <abbr title="Land Registry Property Gazetteer">LRPG</abbr> and
+            therefore has no Title Number associated with it.
+          </li>
+        </ul>
+        <p>
+          We welcome <a href="#contact">feedback</a> on any data quality issues.
+        </p>
+
+        <h2 class="govuk-heading-l" id="capture">Data capture information</h2>
+        <p>
+          In the 1990s, HM Land Registry created its first national address database, populated with residential PAF
+          addresses from Royal Mail. Before this we used addressing data sourced from street card indexes and local gazetteers.
+        </p>
+        <p>
+          In 2002, we moved to our current addressing database - <abbr title="Land Registry Property Gazetteer">LRPG</abbr>
+          (Land Registry Property Gazetteer). <abbr title="Land Registry Property Gazetteer">LRPG</abbr> utilised
+          AddressPoint data from the Ordnance Survey to provide a base of national addresses and where appropriate
+          linked our customer address and title numbers to the AddressPoint address.
+        </p>
+        <p>
+          In 2011, HM Land Registry adopted Ordnance Survey MasterMap and moved from Address-Point to AddressLayer2.
+        </p>
+        <p>
+          In 2014, HM Land Registry moved from AddressLayer 2 to AddressBase as our source of national addresses.
+          <abbr title="Land Registry Property Gazetteer">LRPG</abbr> ingests the post office PAF data from AddressBase to
+          maintain consistency with the addressing that we used to take from AddressPoint and AddressLayer 2. By linking
+          AddressBase data to our Title Numbers we have been able to create the Title Number / UPRN dataset.
+        </p>
+        <p>
+          A number of post office addresses that do not match Local Authority addresses have been excluded from AddressBase,
+          though more and more are being added all the time, these addresses will not have a UPRN and so will not be
+          available in this dataset.
+        </p>
+        <p>
+          A significant reason for HM Land Registry creating and managing Land Registry Property Gazetteer
+          (<abbr title="Land Registry Property Gazetteer">LRPG</abbr>) is to enable us to make a relationship between
+          our Title Number(s) and address(es). HM Land Registry caseworkers make this association as part of the
+          registration process.
+        </p>
+        <p>
+          Where there is no address found in <abbr title="Land Registry Property Gazetteer">LRPG</abbr>, HM Land Registry
+          creates its own. These addresses could be for non- addressable property or addressable property.
+        </p>
+        <p>
+          Where a Title Number affects many properties, all affecting UPRNs may be associated.
+        </p>
+        <p>
+          Where no AddressBase address has been ingested in <abbr title="Land Registry Property Gazetteer">LRPG</abbr>,
+          no UPRN will be associated, even though one may exist.
+        </p>
+
+        <h2 class="govuk-heading-l" id="maintenance">Data maintenance</h2>
+        <p>
+          HM Land Registry takes a six weekly change only update (<abbr title="change only update">COU</abbr>) of
+          AddressBase. The data is ingested, data matching processes are managed with business rules and where appropriate,
+          <abbr title="Land Registry Property Gazetteer">LRPG</abbr> is updated and Title associations are made.
+        </p>
+        <p>
+          During the six weeks, the data can change. The data that is published will only show the last updated change made.
+        </p>
+        <p>
+          Find out more information on
+          <a rel="external" href="https://www.geoplace.co.uk/home?p_p_id=101&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;p_p_mode=view&amp;_101_struts_action=%2Fasset_publisher%2Fview_content&amp;_101_returnToFullPageURL=%2F&amp;_101_assetEntryId=75152&amp;_101_type=document&amp;redirect=https%3A%2F%2Fwww.geoplace.co.uk%2Fhome%3Fp_p_id%3D3%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_3_groupId%3D10181%26_3_keywords%3D2015%2Bthe%2BUPRN%2Blifecycle%2BV3%26_3_struts_action%3D%252Fsearch%252Fsearch%26_3_redirect%3D%252F">
+            UPRN Lifecycle</a>.
+        </p>
+
+        <h3 class="govuk-heading-m">Access to the dataset</h3>
+        <p>
+          There is a charge for the dataset and you will be required to sign a licence.
+        </p>
+        <p>
+          If you intend to reuse the data within your products and services for commercial gain you must indicate this
+          on the Licence and confirm your choice of reuse model. Contact the <a href="#contact">Data Services Team</a>
+          for further guidance.
+        </p>
+
+        <h3 class="govuk-heading-m">Download package</h3>
+        <p>
+          This package can start at any month of the year, you will be granted access to the Full Dataset, the change
+          only updates and the validation files.
+        </p>
+        <p>
+          All the files in the above package are refreshed and available from the second working day of the stated months.
+        </p>
+
+        <h3 class="govuk-heading-m">File structure</h3>
+        <p>
+          The data is provided as a CSV file. The format of each file will conform to the following:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the character used to delimit each field is a comma: ‘,’ (ASCII 44)</li>
+          <li>all fields will be enclosed within double-quote’s “ “ (ASCII 34)</li>
+          <li>when a field is NULL, it will be transmitted as no character between double quotes, i.e. ,” “,</li>
+          <li>
+            date fields will be provided in the format DD-MM-YYYY HH:MM:SS For example the date; the fourteenth of
+            December twenty thirteen would be represented as 14-12-2013
+          </li>
+          <li>the file will use UTF-8 and ASCII encoding.</li>
+          <li>steps will be taken to remove carriage return and line feeds from the data.</li>
+          <li>the column heading name will be the first row of the file.</li>
+        </ul>
+
+        <h3 class="govuk-heading-m">Naming convention</h3>
+        <p>
+          Full file: LR_UPRN_FULL_&lt;3 character Month&gt;
+        </p>
+        <p>
+          Validation file: LR_UPRN_VALI_&lt;3 character Month&gt;
+        </p>
+
+        <h2 class="govuk-heading-l" id="contact">Contact</h2>
+        <p>
+          Should you have any queries about the Title Number and UPRN Look Up dataset, please contact us:
+        </p>
+        <p>
+          <strong>Data Services Team</strong>​<br>
+          HM Land Registry​<br>
+          Rosebrae Court ​<br>
+          Woodside Ferry Approach​<br>
+          Birkenhead​<br>
+          Merseyside​<br>
+          CH41 6DU
+        </p>
+        <p>
+          Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+        </p>
+        <p>​
+          Telephone: 0300 006 0478
+        </p>
+      </div>
+    </div>
+
+    <div class="base-bar">
+      <div class="base-bar-inset">
+        <a class="app-c-back-to-top dont-print" href="#contents">
+          <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+          </svg>
+          Contents
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

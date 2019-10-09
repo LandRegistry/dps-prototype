@@ -1,0 +1,471 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property
+{% endblock %}
+
+{% block content %}
+
+<style>
+    pre {
+        text-align: left;
+        width: 100%;
+        margin: 20px 0;
+        padding: 15px 20px;
+        line-height: 18px;
+        font-size: 12px;
+        white-space: pre;
+        -moz-tab-size: 2;
+        -o-tab-size: 2;
+        tab-size: 2;
+        -ms-word-break: normal;
+        word-break: normal;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+        overflow: auto;
+        width: 500px;
+    }
+</style>
+
+
+<div class="govuk-width-container">
+    <a href="detailspages-dataset-v4" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h1 class="govuk-heading-xl">
+                    <span class="govuk-caption-xl">HM Land Registry’s Use Land and Property Data</span>
+                    API Technical documentation
+                </h1>
+            </div>
+        </div>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <p class="govuk-body-l">
+                    This is technical information for software engineers who will access Use land and property data using the API.
+                </p>
+
+                <h2 class="govuk-heading-l">API overview</h2>
+                <p>
+                   The API is a subset of the <a href="https://docs.ckan.org/en/2.8/api/">CKAN</a> API with some custom
+                   actions/endpoints added. The custom actions/endpoints are external_package_list and resource_download.
+                </p>
+
+                <h2 class="govuk-heading-l">Authentication</h2>
+                <p>
+                   The Use land and property data API uses the same <a href="https://docs.ckan.org/en/2.8/api/#authentication-and-api-keys">
+                   CKAN authentication method</a> but we’ll ask for authentication on every request.
+                </p>
+                <p>
+                   The API key should be given on every request as the Authorization or X-CKAN-API-Key header.
+                </p>
+
+                <h2 class="govuk-heading-l">Parameters</h2>
+                <p>
+                   Following CKAN conventions, all parameters should be passed to endpoints as URL encoded parameters.
+                </p>
+
+                <h2 class="govuk-heading-l">URL</h2>
+                <p>
+                   The URL for all endpoints should be: <a href="">http://base-url/api/3/action/{action}</a>
+                </p>
+                <p>
+                   {action} should be replaced by an action name below and followed by parameters with a format of ?id=ccod
+                </p>
+
+                <h2 class="govuk-heading-l">Definition of terms</h2>
+                <p>
+                    The dataset names have changed.
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>CCOD is now called UK companies that own property in England and Wales</li>
+                    <li>OCOD is now called Overseas companies that own property in England and Wales</li>
+                </ul>
+                <p>
+                    The terms CCOD and OCOD are still used in the file name and dataset name variables.
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>file name - CCOD_FULL_2019_08.zip</li>
+                    <li>dataset name - CCOD</li>
+                </ul>
+
+                <h2 class="govuk-heading-l">Actions/endpoints</h2>
+                <p>
+                   <strong>package_list</strong> - returns a list of the dataset names available in the service.
+                    Read the CKAN documentation for more information about this endpoint.
+                </p>
+                <p>
+                   Methods available: GET
+                </p>
+                <p>
+                    <strong>Parameters:</strong>
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>
+                       <strong>limit</strong> (int) - when limit is used, the lists of datasets will be broken into pages
+                       for at most limit datasets per page and only one page will be returned at a time (optional)
+                    </li>
+                    <li>
+                        <strong>offset</strong> (int) - when limit is used, offset shows where to start returning packages from.
+                    </li>
+                </ul>
+                <p>
+                   <strong>Return type</strong>: Array of strings
+                </p>
+                <p>
+                   <strong>Example</strong>: [“newname”, “newname2”]
+                </p>
+                <pre>
+{
+  "help": "https://use-land-property-data.landregistry.gov.uk/api/3/action/help_show?name=package_list"
+  "success": true,
+  "result": [
+    "ccod",
+    "nps",
+    "nps_sample",
+    "ocod"
+  ]
+}
+                </pre>
+
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <p>
+                   <strong>external_package_list</strong> - returns a list of HM Land Registry dataset names which are not in the service
+                </p>
+                <p>
+                    Methods available: GET
+                </p>
+                <p>
+                    <strong>Parameters</strong>:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>
+                       <strong>limit</strong> (int) - when limit is used, the lists of datasets will be broken into pages for at
+                       most limit datasets per page and only one page will be returned at a time (optional)
+                    </li>
+                    <li>
+                        <strong>offset</strong> (int) - when limit is used, offset shows where to start returning packages from
+                    </li>
+                </ul>
+                <p>
+                    <strong>Return type</strong>: Array of strings
+                </p>
+                <p>
+                    <strong>Example</strong>:
+                </p>
+                <pre>
+{
+  "help": "https://use-land-property-data.landregistry.gov.uk/api/3/action/help_show?name=external_package_list",
+  "success": true,
+  "result": [
+    "ar",
+    "gpd",
+    "hpi",
+    "ips",
+    "ppd",
+    "rfi",
+    "td"
+  ]
+}
+                </pre>
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <p>
+                    <strong>package_show</strong> – returns the metadata of a dataset and its resources.
+                    Read the CKAN documentation for more information about this endpoint.
+                </p>
+                <p>
+                    Methods available: GET
+                </p>
+                <p>
+                    <strong>Parameters</strong>:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><strong>id</strong> (string) – the id or name of the dataset</li>
+                </ul>
+                <p>
+                   <strong>Return type</strong>: object
+                </p>
+                <p>
+                    <strong>Example</strong>:
+                </p>
+                <pre>
+{
+  "help": "https://use-land-property-data.landregistry.gov.uk/api/3/action/help_show?name=package_show",
+  "success": true,
+  "result": {
+    "name": "ccod",
+    "title": "UK companies that own property in England and Wales",
+    "notes": "Download data about UK companies that own land or property in England and Wales. This data includes (where available) company name, type of company, registration number, address and price paid. This data was originally called Commercial and corporate data (CCOD).",
+    "license_id": "CCOD",
+    "type": "dataset",
+    "metadata_created": “2019-05-25T08:15:24.643131",
+    "metadata_modified": “01-02-2019",
+    "private": false,
+    "state": "active",
+    "license": "Licence for the supply of Commercial and Corporate Ownership Data",
+    "extras": {
+      "text_spec_url": "https://www.gov.uk/government/publications/overseas-companies-ownership-data-technical-specification",
+      "update_frequency": "Monthly"
+    },
+    "resources": [
+      {
+        "description": "Change Only File",
+        "format": "CSV",
+        "created": "2019-05-23T10:47:11.036328",
+        "row_count": 4138,
+        "package_id": "ccod",
+        "file_count": 1,
+        "size": 1299401,
+        "id": "CCOD_COU_XXXX_XX.zip",
+        "name": "CCOD_COU_XXXX_XX.zip"
+      }
+    ]
+  }
+}
+                </pre>
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <p>
+                  <strong>resource_download</strong> - returns a download URL valid for 60 seconds for a specific
+                   resource in a dataset
+                </p>
+                <p>
+                   This action will only work if you have agreed to the dataset licence. You can do this on the Use land
+                   and property data service.
+                </p>
+                <p>
+                    Methods available: GET
+                </p>
+                <p>
+                    <strong>Parameters</strong>:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><strong>id</strong> (string) – the id or name of the dataset</li>
+                    <li><strong>resource_id</strong> (string) – the id or file_name of the resource you wish to download</li>
+                </ul>
+                <p>
+                    <strong>Return type</strong>: object
+                </p>
+                <p>
+                    <strong>Example</strong>:
+                </p>
+                <pre>
+{
+  "help": "https://use-land-property-data.landregistry.gov.uk/api/3/action/help_show?name=resource_download",
+  "success": true,
+  "result": {
+    "resource": "CCOD_FULL_XXXX_XX.zip",
+    "valid_for_seconds": 60,
+    "download_url": “https://link-to-dataset-resource”
+  }
+}
+                </pre>
+
+                <br><br>
+
+                <h2 class="govuk-heading-l">Error response codes</h2>
+                <h3 class="govuk-heading-m">200 OK</h3>
+                <p>
+                    The user request was successful.
+                </p>
+                <p>
+                    <strong>Request example</strong>
+                </p>
+                <p>
+                    openresty:8080/api/3/action/package_list.
+                </p>
+                <p>
+                    <strong>Response example</strong>
+                </p>
+                <pre>
+{
+  "help": "http://openresty:8080/api/3/action/help_show?name=package_list",
+  "success": true,
+  "result": [
+    "ccod",
+    "nps",
+    "nps_sample",
+    "ocod"
+  ]
+}
+                </pre>
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <h3 class="govuk-heading-m">401 unauthorised</h3>
+                <p>
+                    The user entered an endpoint that does not exist or is wrong.
+                </p>
+                <p>
+                    <strong>Request example</strong>
+                </p>
+                <p>
+                    openresty:8080/api/3/action/xyz_random
+                </p>
+                <p>
+                    <strong>Response example</strong>
+                </p>
+                <pre>
+{
+  "error": "Route not available"
+}
+                </pre>
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <h3 class="govuk-heading-m">403 forbidden</h3>
+                <p>
+                    The user is not authorised use the API.
+                </p>
+                <p>
+                    This could happen if the user:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>does not have an API key</li>
+                    <li>has not agreed to the dataset licence</li>
+                </ul>
+                <p>
+                    <strong>Request example</strong>
+                </p>
+                <p>
+                    openresty:8080/api/3/action/resource_download?package_id=nps&resource_id=FILE.zip
+                </p>
+                <p>
+                    <strong>Response example</strong>
+                </p>
+                <pre>
+{
+  "help": "http://openresty:8080/api/3/action/help_show?name=package_list",
+  "success": false,
+  "error": {
+    "message": "Access denied: You need to provide your API Key to perform this operation",
+    "__type": "Authorization Error"
+  }
+}
+                </pre>
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <h3 class="govuk-heading-m">404 Not found</h3>
+                <p>
+                    The user has requested a resource that does not exist.
+                </p>
+                <p>
+                    <strong>Request example</strong>
+                </p>
+                <p>
+                    openresty:8080/api/3/action/package_show?id=non_existant_dataset
+                </p>
+                <p>
+                    <strong>Response example</strong>
+                </p>
+                <pre>
+{
+  "help": "http://openresty:8080/api/3/action/help_show?name=package_show",
+  "success": false,
+  "error": {
+    "message": "Not found",
+    "__type": "Not Found Error"
+  }
+}
+                </pre>
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <h3 class="govuk-heading-m">409 Conflict</h3>
+                <p>
+                    The user has input incorrect query parameters.
+                </p>
+                <p>
+                    <strong>Request example</strong>
+                </p>
+                <p>
+                    openresty:8080/api/3/action/package_show?wrong_parameter=123
+                </p>
+                <p>
+                    <strong>Response example</strong>
+                </p>
+                <pre>
+{
+  "help": "http://openresty:8080/api/3/action/help_show?name=package_show",
+  "success": false,
+  "error": {
+    "__type": "Validation Error",
+    "id": [
+      "Missing value"
+    ]
+  }
+}
+                </pre>
+
+                <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                <h3 class="govuk-heading-m">500 Internal server error</h3>
+                <p>
+                    There is an undefined error in the server.
+                </p>
+                <p>
+                    <strong>Response example</strong>
+                </p>
+                <pre>
+{
+  "help": "http://openresty:8080/api/3/action/help_show?name=package_list",
+  "success": false,
+  "error": {
+    "message": "Internal Server Error",
+    "__type": "Internal Server Error"
+  }
+}
+                </pre>
+                <p>
+                    <strong>Suggested resolution</strong>
+                </p>
+                <p>
+                    Read the <a href="api">API documentation</a> to check you’re using the API as instructed.
+                </p>
+                <p>
+                    There may be a problem with the service. Try again in a few minutes or <a href="#contact">get in contact</a>.
+                </p>
+
+
+                <h2 id="contact" class="govuk-heading-l">Support</h2>
+                <p>
+                    Use our <a href="https://www.smartsurvey.co.uk/s/HMLR_feedback/">online contact form</a> if you:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>need help using the service</li>
+                    <li>want to report a problem</li>
+                    <li>want to leave feedback</li>
+                </ul>
+                <p>
+                    You can also contact us via:
+                </p>
+                <p>
+                    <strong>Data Services Team</strong>​<br>
+                    HM Land Registry​<br>
+                    Rosebrae Court ​<br>
+                    Woodside Ferry Approach​<br>
+                    Birkenhead​<br>
+                    Merseyside​<br>
+                    CH41 6DU
+                </p>
+                <p>
+                    Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+                </p>
+                <p>​
+                    Telephone: 0300 006 0478
+                </p>
+            </div>
+        </div>
+    </main>
+</div>
+
+{% endblock %}
