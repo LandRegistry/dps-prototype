@@ -1,0 +1,838 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="detailspages-dataset-v4" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Technical specification</span>
+          Overseas companies that own property in England and Wales
+        </h1>
+
+        <div class="toc" id="contents">
+          <p>Contents</p>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#scope">Specification scope</a></li>
+            <li><a href="#content">Data content and structure</a></li>
+            <li><a href="#quality">Data quality</a></li>
+            <li><a href="#capture">Data capture information</a></li>
+            <li><a href="#maintenance">Data maintenance</a></li>
+            <li><a href="#product">Data product delivery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <h2 class="govuk-heading-l" id="overview">Overview</h2>
+        <p>
+          This dataset is a list of freehold or leasehold title registrations held by HM Land Registry, covering England
+          and Wales, where the registered legal owner is an overseas company (a company incorporated outside of the UK).
+        </p>
+        <p>
+          Titles registered by private individuals, UK companies with an overseas address and charities are excluded for
+          data protection and fraud prevention purposes.
+        </p>
+
+        <h2 class="govuk-heading-l" id="scope">Specification scope</h2>
+        <h3 class="govuk-heading-m">Inclusion and exclusions</h3>
+        <p>
+          We register legal estates, or ownership, and legal interests (legal rights or restrictions). The Overseas companies
+          that own property in England and Wales dataset describes registered legal estates relating to land or property
+          where the registered legal owner is an overseas company (a company incorporated outside of the UK).
+        </p>
+        <p>
+          The data includes titles registered by the following owner types of:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>corporate bodies</li>
+          <li>limited companies</li>
+          <li>public limited companies</li>
+          <li>unlimited companies</li>
+          <li>limited liability partnerships</li>
+        </ul>
+        <p>
+          The data excludes titles registered by the following owner types of:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>private individuals</li>
+          <li>UK companies with an overseas address</li>
+          <li>charities</li>
+        </ul>
+        <p>
+          If an excluded owner type is the sole owner, all the details (such as address, name and correspondence address,
+          tenure, title) will be excluded from the dataset.
+        </p>
+        <p>
+          If a registered title is owned by both included and excluded owner types, the excluded owner details will be
+          removed from the name, proprietorship and correspondence address columns.
+        </p>
+        <p>
+          Example: When a property is owned by a limited company and private individuals, we will supply the details of
+          the property address, tenure, title and the name and correspondence address for the limited company, but will
+          remove all reference to the private individuals. An indicator will be displayed to highlight there are other proprietors.
+        </p>
+        <p>
+          Email addresses and British Forces Post Office addresses have been removed from the correspondence address records.
+          These are considered private and personal.
+        </p>
+
+        <h3 class="govuk-heading-m">Relationship to other HM Land Registry data products</h3>
+        <p>
+          The dataset is aligned in content, download and usage options with our <a href="uk-product">UK companies that
+          own property in England and Wales</a> which contains more than 3.2 million records of titles registered to a
+          UK commercial organisation or corporate body.
+        </p>
+        <p>
+          The title number allows relational links to be made with other HM Land Registry datasets that also contain the title number.
+        </p>
+
+        <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
+        <h3 class="govuk-heading-m">Table 1 – Overseas companies that own property in England and Wales: class diagram</h3>
+
+        <table class="govuk-table table-hack">
+          <thead>
+          <tr>
+            <th class="govuk-table__header">Overseas companies that own property in England and Wales</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Title number</td>
+          </tr>
+          <tr>
+            <td>Tenure</td>
+          </tr>
+          <tr>
+            <td>Property Address</td>
+          </tr>
+          <tr>
+            <td>District</td>
+          </tr>
+          <tr>
+            <td>County</td>
+          </tr>
+          <tr>
+            <td>Region</td>
+          </tr>
+          <tr>
+            <td>Postcode</td>
+          </tr>
+          <tr>
+            <td>Multiple address Indicator</td>
+          </tr>
+          <tr>
+            <td>Price paid</td>
+          </tr>
+          <tr>
+            <td>Proprietor name (1)</td>
+          </tr>
+          <tr>
+            <td>Company Registration No. (1)</td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (1)</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (1)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (1) address (1)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (1) address (2)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (1) address (3)</td>
+          </tr>
+          <tr>
+            <td>Proprietor name (2)</td>
+          </tr>
+          <tr>
+            <td>Company registration No. (2)</td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (2)</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (2)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (2) address (1)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (2) address (2)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (2) address (3)</td>
+          </tr>
+          <tr>
+            <td>Proprietor name (3)</td>
+          </tr>
+          <tr>
+            <td>Company Registration No. (3)</td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (3)</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (3)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (3) address (1)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (3) address (2)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (3) address (3)</td>
+          </tr>
+          <tr>
+            <td>Proprietor name (4)</td>
+          </tr>
+          <tr>
+            <td>Company Registration No. (4)</td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (4)</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (4)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (4) address (1)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (4) address (2)</td>
+          </tr>
+          <tr>
+            <td>Proprietor (4) address (3)</td>
+          </tr>
+          <tr>
+            <td>Date Proprietor added</td>
+          </tr>
+          <tr>
+            <td>Additional Proprietor Indicator</td>
+          </tr>
+          <tr>
+            <td>Change indicator (<abbr title="Change Only Update">COU</abbr> only)</td>
+          </tr>
+          <tr>
+            <td>Change Date (<abbr title="Change Only Update">COU</abbr> only)</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h3 class="govuk-heading-m">Table 2 – Overseas companies that own property in England and Wales: table structure</h3>
+        <table class="govuk-table table-hack">
+          <thead class="govuk-table__header">
+          <tr>
+            <th>Field name</th>
+            <th>Data type</th>
+            <th>Mandatory?</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Title number</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Number which uniquely identifies a registered title to land or a caution against first registration.</td>
+          </tr>
+          <tr>
+            <td>Tenure</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Freehold or leasehold.</td>
+          </tr>
+          <tr>
+            <td>Property Address</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>The unformatted address in the register.</td>
+          </tr>
+          <tr>
+            <td>District</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>
+              District name. Name of an administrative district created since local government reorganisation in 1974.
+              Administrative district also covers the London boroughs, unitary authorities and (for HM Land Registry’s
+              purposes) the Isles of Scilly parishes.
+            </td>
+          </tr>
+          <tr>
+            <td>County</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>County. Name of current county in England and Wales.</td>
+          </tr>
+          <tr>
+            <td>Region</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>
+              Region name. Name of a geographic region which comprises one or more current counties, former counties or
+              unitary authorities or any combination of these. The names and extents of the regions are the economic planning
+              regions used by various bodies. Note: region names allocated by the Office for National Statistics differ in
+              some instances from names in this field.
+            </td>
+          </tr>
+          <tr>
+            <td>Postcode</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Postcode. Code which is a combination of up to 7 letters and numbers (plus one embedded blank), which defines
+              different levels of geographic units. It is part of a coding system created and used by the Post Office across
+              the UK, to facilitate the mail service.
+            </td>
+          </tr>
+          <tr>
+            <td>Multiple address Indicator</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Indicates the title has a Property Schedule and therefore more than one address.</td>
+          </tr>
+          <tr>
+            <td>Price Paid</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>The sale price stated on the transfer deed.</td>
+          </tr>
+          <tr>
+            <td>Proprietor name (1)</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>
+              Non-private Individual Name. Name of a company, corporate body, local authority or other organisation or
+              establishment other than that of a private individual.
+            </td>
+          </tr>
+          <tr>
+            <td>Company Registration No. (1)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Company Registration Number. Number which is a unique identifier assigned to a company when it is registered at
+              Companies House. Although the name of the company may change, the company registration number will remain the same.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (1)</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Category of proprietor description. Text which describes the category in which a name falls.</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (1)</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>The name of the country where the company is incorporated.</td>
+          </tr>
+          <tr>
+            <td>Proprietor (1) address (1)</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a
+              registered proprietor, in the form in which it appears as the property description in the register. The text
+              will include any commas but exclude any final punctuation marks (such as full stops) and any Index of Proprietors’
+              Names (<abbr title="Index of Proprietors’ Names">IOPN</abbr>) delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (1) address (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include
+              any commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (1) address (3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include
+              any commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor name (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Non-private Individual Name. Name of a company, corporate body, local authority or other organisation or
+              establishment other than that of a private individual.
+            </td>
+          </tr>
+          <tr>
+            <td>Company Registration No. (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Company Registration Number. Number which is a unique identifier assigned to a company when it is registered at
+              Companies House. Although the name of the company may change, the company registration number will remain the same.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>Category of proprietor description. Text which describes the category in which a name falls.</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>The name of the country where the company is incorporated.</td>
+          </tr>
+          <tr>
+            <td>Proprietor (2) address (1)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include
+              any commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (2) address (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include
+              any commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (2) address (3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include
+              any commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor name (3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Non-private Individual Name. Name of a company, corporate body, local authority or other organisation or
+              establishment other than that of a private individual.
+            </td>
+          </tr>
+          <tr>
+            <td>Company Registration No. (3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Company Registration Number. Number which is a unique identifier assigned to a company when it is registered
+              at Companies House. Although the name of the company may change, the company registration number will remain the same.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>Category of proprietor description. Text which describes the category in which a name falls.</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>The name of the country where the company is incorporated.</td>
+          </tr>
+          <tr>
+            <td>Proprietor (3) address (1)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include
+              any commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (3) address (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include any
+              commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (3) address (3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include any
+              commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor name (4)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Non-private Individual Name. Name of a company, corporate body, local authority or other organisation or
+              establishment other than that of a private individual.
+            </td>
+          </tr>
+          <tr>
+            <td>Company Registration No. (4)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Company Registration Number. Number which is a unique identifier assigned to a company when it is registered at
+              Companies House. Although the name of the company may change, the company registration number will remain the same.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietorship Category (4)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>Category of proprietor description. Text which describes the category in which a name falls.</td>
+          </tr>
+          <tr>
+            <td>Country Incorporated (4)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>The name of the country where the company is incorporated.</td>
+          </tr>
+          <tr>
+            <td>Proprietor (4) address (1)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include any
+              commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (4) address (2)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include any
+              commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.
+            </td>
+          </tr>
+          <tr>
+            <td>Proprietor (4) address 3)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>
+              Register address string. Text which is the address (including the postcode) either of a property or a registered
+              proprietor, in the form in which it appears as the property description in the register. The text will include any
+              commas but exclude any final punctuation marks (such as full stops) and any <abbr title="Index of Proprietors’ Names">
+              IOPN</abbr> delimiters.</td>
+          </tr>
+          <tr>
+            <td>Date Proprietor added</td>
+            <td>Date</td>
+            <td>No</td>
+            <td>The date a proprietor was added to the register.</td>
+          </tr>
+          <tr>
+            <td>Additional Proprietor Indicator</td>
+            <td>Character</td>
+            <td>Yes</td>
+            <td>Indicates if there are other proprietors in the register which are not overseas companies.</td>
+          </tr>
+          <tr>
+            <td>Change indicator (<abbr title="Change Only Update">COU</abbr> only)</td>
+            <td>Character</td>
+            <td>No</td>
+            <td>Indicates the change to the row A – Added, D – Deleted.</td>
+          </tr>
+          <tr>
+            <td>Change Date (<abbr title="Change Only Update">COU</abbr> only)</td>
+            <td>Date</td>
+            <td>No</td>
+            <td>The date of the extract.</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h3 class="govuk-heading-m">Table 3 – Overseas companies that own property in England and Wales: tenure code list</h3>
+        <table class="govuk-table table-hack">
+          <thead class="govuk-table__header">
+          <tr>
+            <th>Number</th>
+            <th>Tenure</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>Freehold</td>
+            <td>Freehold estates are held for an infinite duration.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Leasehold</td>
+            <td>
+              Leasehold estates have a fixed or maximum duration. Under the Land Registration Act 2002, only leases granted
+              for a term of more than 7 years are compulsorily registrable and are included in this data.
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h3 class="govuk-heading-m">Table 4 – Overseas companies that own property in England and Wales: proprietor code list</h3>
+        <table class="govuk-table table-hack">
+        <thead class="govuk-table__header">
+          <tr>
+            <th>Number</th>
+            <th>Proprietorship</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>Limited Company or Public Limited Company</td>
+            <td>
+              A company where the liability for debts is limited either by guarantee or by reference to the number of shares
+              issued. The majority of companies are limited.
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Corporate Body</td>
+            <td>An organisation that has its own legal rights and responsibilities.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Unlimited Company</td>
+            <td>An unlimited company is a company with unlimited liability for its debts.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Limited Liability Partnership</td>
+            <td>
+              A Limited Liability Partnership (<abbr title="Limited Liability Partnership">LLP</abbr>) is a corporate
+              body and has legal identity separate from that of its members. It can hold property in its own right and
+              has unlimited powers to deal with estates.
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h2 class="govuk-heading-l" id="quality">Data quality</h2>
+        <p>
+          During more than 150 years of land registration, improvements to working practice may have caused some
+          inconsistencies in the data, as shown below.
+        </p>
+        <p>
+          Only completed register entries are included. No pending applications (meaning applications still being processed
+          at HM Land Registry) or historic owners are included.
+        </p>
+        <p>
+          HM Land Registry did not routinely record the country of incorporation in the register before January 1999.
+        </p>
+        <p>
+          The information provided regarding owners may not always reflect the position in the register, as we have had
+          to remove private individuals, overseas companies and charities.
+        </p>
+        <p>
+          The source data is from citizens and conveyancers supplied on registration deeds and documents. There can often
+          be inconsistency in the way addresses and names are supplied to HM Land Registry.
+        </p>
+        <p>
+          There may be spelling errors in the names of the owners. This could be due to input error or the way the names
+          were presented at the time of registration.
+        </p>
+        <p>
+          Detailed address information is provided wherever possible.
+        </p>
+        <p>
+          The postcode will be derived from the registered property description; if one hasn’t been registered then the
+          postcode will be blank.
+        </p>
+        <p>
+          The ‘registered on’ date is the date the proprietor was registered. If there is more than one proprietor in the
+          register it will be the date the latest proprietor was added. This could mean it is not necessarily when the
+          overseas company was registered, but another proprietor in the register whose details cannot be revealed.
+        </p>
+        <p>
+          If there is a ‘Y’ in the Multiple Address Indicator, this will indicate there is a Property Schedule for the
+          title and no A1 register entry address is available. Within the Property Schedule there will more than likely
+          be one address and if you would like to find out more about these addresses you can purchase an official copy
+          of the register.
+        </p>
+        <p>
+          For Price Paid only be a limited number of the titles will have an amount stated. These figures have been derived
+          from the monthly Property Price Information (PPI) information based on the latest application.
+        </p>
+
+        <h2 class="govuk-heading-l" id="capture">Data capture information</h2>
+        <p>
+          An overseas corporation will become owner of a registered property when land is transferred to it or leased under
+          a registerable lease. The transfer or lease must be completed by registration or, if the land is unregistered,
+          it will trigger first registration of the land.
+        </p>
+        <p>
+          An application for registration must be made using prescribed forms; this will be form AP1 for registered land
+          or form FR1 for first registration. The form requires the applicant to state the territory of incorporation of
+          the corporation and, if it has a registered number in England and Wales, the registration number and prefix.
+          Other HM Land Registry forms, such as transfer form TR1, also require the applicant to state the territory of
+          incorporation of the corporation and, if it has a registered number in England and Wales, the registration number
+          and prefix. When we enter the corporation in the register, HM Land Registry practice is to enter the territory
+          of incorporation and any registration number. This has been the case since 1997.
+        </p>
+        <p>
+          In some countries, a corporation is registered in a particular state or province. In this case, HM Land Registry
+          enters both the state or province and the country. For example: #MONTBLANC HOLDINGS LIMITED# (incorporated in
+          British Columbia, Canada).
+        </p>
+
+        <h2 class="govuk-heading-l" id="maintenance">Data maintenance</h2>
+        <p>
+          During a month, the data can change and can also change more than once. The data that is published will only
+          show the latest change made.
+        </p>
+
+        <h2 class="govuk-heading-l" id="product">Data product delivery</h2>
+
+        <h3 class="govuk-heading-m">Access to the dataset</h3>
+        <p>
+          The Overseas companies that own property in England and Wales dataset is not released under the
+          <a rel="external" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+            Open Government Licence</a>. To download the data, you must provide some information about yourself and accept
+          the <a rel="external" href="https://data.landregistry.gov.uk/data_pub/terms-of-use/read/overseas">terms of use</a>.
+        </p>
+        <p>
+          We collect and hold personal and non-personal information, which may be validated, to identify who has requested
+          the data. For more information about how HM Land Registry handles personal data, see the
+          <a href="https://www.gov.uk/government/organisations/land-registry/about/personal-information-charter">personal
+            information charter</a>.
+        </p>
+        <p>
+          Once approved, access to the dataset will be via an online secure data room. An application followed by the
+          agreement to the relevant terms of use will lead to the creation of an account. Log on information will then be issued.
+        </p>
+        <p>
+          If you need support to access the data, contact the Data Services Team for further guidance.
+        </p>
+        <p>
+          Should you encounter issues during the login process please follow the help icon on the homepage where you will
+          find details for the technical support team.
+        </p>
+
+        <h3 class="govuk-heading-m">File structure</h3>
+        <p>
+          The data is provided as a CSV file. The format of each file will conform to the following:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the character used to delimit each field is a comma: , (ASCII 44)</li>
+          <li>all fields will be enclosed within double quotes: “ ” (ASCII 34)</li>
+          <li>when a field is NULL, it will be transmitted as no character between double quotes: ,“ ”,</li>
+          <li>
+            date fields will be provided in the format DD-MM-YYYY. For example, the date ‘the fourteenth of December
+            twenty thirteen’ would be represented as 14-12-2013
+          </li>
+          <li>the file will use UTF-8 and ASCII encoding</li>
+          <li>steps will be taken to remove carriage return and line feeds from the data</li>
+          <li>the column heading name will be the first row of the file</li>
+        </ul>
+
+        <h3 class="govuk-heading-m">File name</h3>
+        <p>
+          The file names will be structured as below.
+        </p>
+        <p>
+          OV_&lt;1&gt;<em>&lt;2&gt;</em>&lt;3&gt;.csv
+        </p>
+        <p>
+          &lt;1&gt;File Type. FULL denotes Full monthly extract, <abbr title="Change Only Update">COU</abbr> denotes
+          Monthly <abbr title="Change Only Update">COU</abbr>.
+        </p>
+        <p>
+          &lt;2&gt;Year of file creation (format YYYY).
+        </p>
+        <p>
+          &lt;3&gt;Month of file creation (format MM).
+        </p>
+        <p>
+          The following are examples for the two types of file:
+        </p>
+        <p>
+          OV_FULL_2015_8.csv
+        </p>
+        <p>
+          OV_COU_2015_8.csv
+        </p>
+
+        <h2 class="govuk-heading-l" id="contact">Contact</h2>
+        <p>
+          <strong>Data Services Team</strong>​<br>
+          HM Land Registry​<br>
+          Rosebrae Court ​<br>
+          Woodside Ferry Approach​<br>
+          Birkenhead​<br>
+          Merseyside​<br>
+          CH41 6DU
+        </p>
+        <p>
+          Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+        </p>
+        <p>​
+          Telephone: 0300 006 0478
+        </p>
+      </div>
+    </div>
+
+    <div class="base-bar">
+      <div class="base-bar-inset">
+        <a class="app-c-back-to-top dont-print" href="#contents">
+          <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+          </svg>
+          Contents
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+  {% endblock %}

@@ -1,0 +1,176 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+
+<nav class="app-navigation-1 govuk-clearfix full-screen">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="create-account" data-topnav="Community">Create account</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="sign-in" data-topnav="Community">Sign in</a>
+    </li>
+  </ul>
+</nav>
+
+<br>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Home</li>
+  </ol>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-xl">HM Land Registry</span>
+    <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Use land and property data</h1>
+
+    <p>
+      You can use this service to download large data files from HM Land Registry. It is free to download most of this
+      data, but you may need to create an account and sign a licence agreement first.
+    </p>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-column-two-thirds">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <div class="listings-v7">
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-l"><a href="overseas-product">Overseas companies that own property in England and Wales</a></h2>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">Free of charge</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">CSV, 1.25Gb</span>
+        </p>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">Register to download</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">API available</span>
+        </p>
+
+        <p class="meta">Updated on the second working day of each month</p>
+        <p class="flag"></p>
+        <p class="govuk-body">
+          Download data about non-UK companies that own land or property in England and Wales. The data includes (where available) company name, type of company,
+          registration number, address and price paid. This dataset was originally called Overseas companies
+          ownership data (OCOD).
+        </p>
+      </div>
+
+      <div class="dps-grid-tile first-tile.odd">
+        <h2 class="govuk-heading-l"><a href="uk-product">UK companies that own property in England and Wales</a></h2>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">Free of charge</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">CSV, 1.25Gb</span>
+        </p>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">Register to download</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">API available</span>
+        </p>
+
+        <p class="meta">Updated on the second working day of each month</p>
+        <p class="flag"></p>
+        <p class="govuk-body">
+          Download data about UK companies that own land or property in England and Wales. This data includes (where available) company name, type of company, registration
+          number, address and price paid. This data was originally called Commercial and corporate data (CCOD).
+        </p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-l"><a href="nps-product">National Polygon Service</a></h2>
+        <p class="dataset-meta free">
+          <span class="govuk-body govuk-!-font-weight-bold">£20,000 + VAT</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">Zip file. inc. shape file & CSV, 7.3Gb</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">API available</span>
+        </p>
+        <p class="dataset-meta">
+          <span class="govuk-body govuk-!-font-weight-bold">Sample available</span>
+        </p>
+        <p class="meta">Updated on the second working day of each month</p>
+        <p class="flag"></p>
+        <p>Download 3 datasets about registered land and property in England and Wales that show:<br>
+          - indicative shape and position of boundaries <br>
+          - legal interests and class of title <br>
+          - unique property reference numbers <br>
+        </p>
+        <br>
+        <p class="govuk-body">
+          This data includes (where available) polygons, title number, estate interest, class of title, date of creation,
+          date of update and Unique Property Reference Number (UPRN)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">These datasets are free of charge and you do not need an account to access them:</p>
+      <br>
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-m"><a href="#">1862 Act Register</a></h2>
+        <p>Download data about leasehold properties in England and Wales.</p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-m"><a href="#">Price Paid Data</a></h2>
+        <p>
+          Price Paid Data contains the sale prices of properties in England and Wales submitted to HM Land Registry
+          for registration.
+        </p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-m"><a href="#">Transaction Data</a></h2>
+        <p>
+          Our Transaction Data includes information about the number and types of applications we have completed.
+        </p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-m"><a href="#">UK House Price Index: reports</a></h2>
+        <p>
+          The UK House Price Index (HPI) uses house sales data from HM Land Registry, Registers of Scotland, and Land
+          and Property Services Northern Ireland and is calculated by the Office for National Statistics.
+        </p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-m"><a href="#">Index Polygons spatial data</a></h2>
+        <p>
+          Index Polygons are provided in predefined pots of data corresponding to local authority areas in England and Wales.
+        </p>
+      </div>
+
+      <div class="dps-grid-tile">
+        <h2 class="govuk-heading-m"><a href="#">Geospatial Commission Data Catalogue</a></h2>
+        <p>
+          This catalogue contains information on some of the electronic data we hold and is based on datasets which are
+          ‘linked to location’ through HM Land Registry title registrations.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
